@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 430d29c4520cbe28801b6912b58a5819a59b5168
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
+ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690527"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48874427"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Usar funções nas condições para verificar diversos valores
 Neste passo a passo, você aprenderá a usar expressões e **Condições** para comparar diversos valores no **modo Avançado**.
@@ -44,7 +44,7 @@ Expressão|Descrição|Exemplo
 |[greater](#use-the-greater-expression)|Obtém dois argumentos e retorna true se o primeiro argumento é maior que o segundo. <br><b>Observação</b>: os tipos suportados são: inteiro, flutuante e cadeia de caracteres.|Essa expressão retorna false:<br>greater(10,10)
 |greaterOrEquals|Obtém dois argumentos e retorna true se o primeiro argumento é maior que ou igual ao segundo argumento. <br><b>Observação</b>: os tipos suportados são: inteiro, flutuante e cadeia de caracteres.|Essa expressão retorna false:<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Retorna true se a matriz, cadeia de caracteres ou objeto estiver vazio.|Essa expressão retorna true:<br>empty('')
-|not|Obtém dois argumentos e retorna true se os argumentos são falsos. <br><b>Observação</b>: ambos os argumentos devem ser boolianos.|Essa expressão retorna true:<br>not(contains('200 Success','Fail'))
+|not|Retorna o oposto de um valor booliano. |Essa expressão retorna true:<br>not(contains('200 Success','Fail'))
 |if|Retorna um valor específico se a expressão resulta em true ou false.|Essa expressão retorna "yes":<br>if(equals(1, 1), 'yes', 'no')
 
 ## <a name="prerequisites"></a>Pré-requisitos
