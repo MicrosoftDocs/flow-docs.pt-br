@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 15f7a58f6cee58d588cf10976cabf55b800f28ce
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
+ms.openlocfilehash: 1d2560a2a15a77a516701bce977c5bed9fbbe1cf
+ms.sourcegitcommit: c8646cff9ca510203cd0414d1be93a7d12e6018d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711647"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892394"
 ---
 # <a name="frequently-asked-questions"></a>Perguntas frequentes
 ## <a name="audience-and-strategy"></a>Público e estratégia
@@ -133,7 +133,7 @@ Consulte a tabela a seguir para entender como seu fluxo responde quando ele é a
 
 Tipo de gatilho|Descrição
 -------|--------
-Sondagem, tal como o gatilho **Recorrência**|Quando o fluxo é ativado novamente, todos os eventos não processados/pendentes são processados.
+Sondagem, tal como o gatilho **Recorrência**|Quando o fluxo é ativado novamente, todos os eventos não processados/pendentes são processados. Exclua seu fluxo se não desejar processar itens pendentes.
 Webhook|Quando o fluxo é ativado novamente, ele processa somente novos eventos que são gerados depois que o fluxo é ativado.
 
 ### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>Para quais regiões e idiomas o Microsoft Flow oferece suporte?

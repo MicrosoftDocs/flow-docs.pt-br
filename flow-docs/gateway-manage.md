@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 04246007fabacabaf86914f906eee1741df217a1
-ms.sourcegitcommit: b5395b7f3d6610990cbbeeff8f6972224bc2149a
+ms.openlocfilehash: b25f63a3980d21e60b26a0783ac4bf5eb6030cd3
+ms.sourcegitcommit: 282059c82bfcf5896d06043476c34641906e20e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817931"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087898"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Gerenciar um gateway de dados locais no Microsoft Flow
 
@@ -34,6 +34,7 @@ Instale e gerencie um gateway de dados local para integrar com segurança uma va
 Com um gateway, você pode conectar aos dados locais através dessas conexões:
 
 * Apache Impala
+* Conectores personalizados criados por você
 * DB2
 * Sistema de arquivos
 * HTTP com Microsoft Azure AD
