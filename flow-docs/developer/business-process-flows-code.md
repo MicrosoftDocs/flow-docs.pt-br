@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: ae3633047bda556058c8e2ec94e6411e7f277e76
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
+ms.lasthandoff: 11/28/2018
 ms.locfileid: "44691056"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Trabalhar com fluxos de processo empresarial usando código
@@ -354,7 +354,7 @@ Por padrão, para uma entidade que tem vários fluxos de processo empresarial de
 1. Identificar todos os fluxos de processo empresarial aplicáveis para o novo registro de entidade com base no atributo **Workflow.PrimaryEntity** dos registros de definição de fluxo do processo empresarial.
 2. Identifique as definições de fluxo de processo empresarial as quais o usuário atual tem acesso. Para obter informações sobre como o acesso a um fluxo de processo empresarial é determinado e gerenciado, consulte [Gerenciar a segurança para fluxos de processo empresarial](#BPFSecurity) anteriormente neste tópico.<br/>  
 3. Todas as definições de fluxo de processo empresarial no sistema estão sujeitas a uma ordem global por entidade. A ordem do fluxo de processo empresarial é armazenada no atributo **Workflow.ProcessOrder**. As definições de fluxo do processo empresarial para uma entidade são classificadas com base nessa ordem, e a que tiver o menor valor de ordem é escolhida.
-4. Por fim, se o registro de entidade é criado de um aplicativo de negócios (módulo de aplicativo), mais um nível de filtragem é aplicado para escolher o fluxo do processo empresarial que será aplicado automaticamente ao novo registro de entidade. Ao trabalhar em um aplicativo, os usuários podem acessar apenas entidades relevantes, fluxos de processo empresarial, exibições e formulários aos quais eles tenham acesso em virtude de funções de segurança atribuídas ao aplicativo de negócios. 
+4. Por fim, se o registro de entidade é criado de um aplicativo de negócios (módulo de aplicativo), mais um nível de filtragem é aplicado para escolher o fluxo do processo empresarial que será aplicado automaticamente ao novo registro de entidade. Ao trabalhar em um aplicativo, os usuários podem acessar apenas entidades relevantes, fluxos de processo empresarial, exibições e formulários aos quais eles tenham acesso em virtude de funções de segurança atribuídas ao aplicativo de negócios. 
     - Se o aplicativo de negócios não contiver qualquer fluxo de processo empresarial, então o fluxo do processo empresarial será aplicado conforme explicado até a etapa 3.
     - Se o aplicativo de negócios tiver um ou mais fluxos de processo empresarial, então apenas os fluxos de processo empresarial presentes no aplicativo serão aplicáveis. Nesse caso, quando o usuário está trabalhando em um contexto de aplicativo de negócios, a lista de fluxos de processo empresarial da etapa 3 é filtrada para aqueles que fazem parte do aplicativo de negócios e que estão presentes dentro do módulo de aplicativo e são classificados com base na ordem do processo. 
     - Se nenhum fluxo de processo empresarial estiver disponível em um aplicativo de negócios para a entidade ou um que o usuário tenha acesso, então nenhum fluxo de processo empresarial será aplicado para o novo registro de entidade.
