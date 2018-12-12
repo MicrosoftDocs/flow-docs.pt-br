@@ -16,5 +16,5 @@
    
      Este cartão é um modelo para o email que é enviado quando o status das solicitações de férias for alterado.
    
-     Observação: na caixa **Corpo**, no cartão **Enviar um email**, use o token **Comentários** da ação **Aprovações - Iniciar uma aprovação**.
+     Observação: na caixa **Corpo**, no cartão **Enviar um email**, use o token **Comentários** da ação **Aprovações – iniciar uma aprovação**.
 

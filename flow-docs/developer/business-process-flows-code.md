@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: ae3633047bda556058c8e2ec94e6411e7f277e76
-ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
+ms.openlocfilehash: 1283d9d0a8e7f2b9b0495400c5db1f624ef91954
+ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "44691056"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53006991"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Trabalhar com fluxos de processo empresarial usando código
 
@@ -54,7 +54,7 @@ Uma definição de fluxo de processo empresarial é armazenada na entidade <xref
   
 <a name="ActivateBPF"></a>   
 ## <a name="activate-business-process-flow"></a>Ativar fluxo do processo empresarial  
- Antes de usar o fluxo do processo, você precisará ativá-lo. Para ativá-lo, você deve ter o privilégio `prvActivateBusinessProcessFlow` para a entidade `Workflow`. Use a mensagem <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> para definir o estado do registro da entidade `Workflow` para `Activated`. Mais informações: [Executar operações especializadas usando Atualizar](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
+ Antes de usar o fluxo do processo, você precisará ativá-lo. Para ativá-lo, você deve ter o privilégio `prvActivateBusinessProcessFlow` para a entidade `Workflow`. Use a mensagem <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> para definir o estado do registro da entidade `Workflow` para `Activated`. Mais informações: [Executar operações especializadas usando Update](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
 
  > [!NOTE]
  > Você também pode usar o designer de fluxo do processo empresarial para ativar um fluxo de processo empresarial. 
@@ -65,7 +65,7 @@ Uma definição de fluxo de processo empresarial é armazenada na entidade <xref
   
  Por exemplo, se você especificou "Meu BPF personalizado" como o nome da definição de fluxo de processo empresarial e estiver usando o editor padrão (novo) para sua solução ativa, o nome da entidade personalizada criada para armazenar as instâncias de processo será "new_mycustombpf".  
   
- Se o valor `uniquename` não estiver disponível para uma definição de fluxo de processo empresarial, por exemplo, se o fluxo do processo empresarial foi importado como parte da solução de uma versão anterior, o nome padrão da entidade personalizada será "*\<activesolutionprefix>*\_bpf\_*<GUID_BPF_Definition>*:  
+ Se o valor de `uniquename` não estiver disponível para uma definição de fluxo do processo empresarial, por exemplo, se o fluxo do processo empresarial tiver sido importado como parte da solução de uma versão anterior, o nome padrão da entidade personalizada será "`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`:  
   
 > [!IMPORTANT]
 >  Os registros de fluxo de processo empresarial de amostra usam entidades do sistema para armazenar os registros de instância do fluxo de processo empresarial correspondentes.  
@@ -74,7 +74,7 @@ Uma definição de fluxo de processo empresarial é armazenada na entidade <xref
 
 Você pode recuperar o nome da sua entidade de fluxo do processo empresarial usando qualquer uma das seguintes maneiras:
 
-- **Usando a interface do usuário**: use a interface do usuário de personalização para navegar até sua entidade de fluxo do processo empresarial:
+- **Usando a interface do usuário**: use a interface do usuário de personalização para navegar até a entidade de fluxo do processo empresarial:
 
     ![](media/bpf-entity-name.png)
 - **Usando a API Web**: use a seguinte solicitação:
@@ -97,8 +97,8 @@ Você pode recuperar o nome da sua entidade de fluxo do processo empresarial usa
          }
       ]
     }
-
-- **Using the Organization service**: Use the following code sample:
+    ```
+- **Usando o serviço da organização**: use o exemplo de código a seguir:
 
     ```c#
     QueryExpression query = new QueryExpression
@@ -119,35 +119,35 @@ Você pode recuperar o nome da sua entidade de fluxo do processo empresarial usa
         }
     };
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
-
+    ```
 > [!NOTE]
-> The <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> property is `true` for business process flow entities. You can retrieve all the business process flow entities in your instance by running the following Web API request:
+> A propriedade <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> é `true` para as entidades do fluxo do processo empresarial. Você pode recuperar todas as entidades do fluxo do processo empresarial em sua instância executando a seguinte solicitação de API Web:
 > ```http
 > GET [Organization URI]/api/data/v9.0/EntityDefinitions?$select=SchemaName,LogicalName,DisplayName&$filter=IsBPFEntity eq true HTTP/1.1
 > ```
 
 <a name="BPFSecurity"></a>   
-## Manage security for business process flows
+## <a name="manage-security-for-business-process-flows"></a>Gerenciar a segurança dos fluxos dos processos empresariais
 
-The custom entity that is automatically created on activating a business process flow to store business process flow instances adheres to the standard security model as for any other custom entity in Customer Engagement. This implies that privileges granted on these entities define the runtime permissions for users for business process flows.
+A entidade personalizada que é criada automaticamente na ativação de um fluxo do processo empresarial para armazenar as instâncias dele segue o modelo de segurança padrão como qualquer outra entidade personalizada no Customer Engagement. Isso implica que os privilégios concedidos nessas entidades definem as permissões de tempo de execução dos usuários dos fluxos dos processos empresariais.
 
-The custom business process flow entity has organization scope. The regular create, retrieve, update and delete privileges on this entity define the permission the user would have based on his/her assigned roles. By default, when the business process flow custom entity is created, only **System Administrator** and **System Customizer** security roles are granted access to it, and you must explicitly grant permissions to the new business process flow entity (for example, **My Custom BPF**) for other security roles as required.
+A entidade personalizada do fluxo do processo empresarial tem um escopo da organização. Os privilégios regulares para criar, recuperar, atualizar e excluir nessa entidade definem a permissão do usuário com base em suas funções atribuídas. Por padrão, quando a entidade personalizada do fluxo do processo empresarial é criada, somente as funções de segurança **administrador do sistema** e **personalizador do sistema** recebem acesso a ela. Para outras funções de segurança, você precisa conceder as permissões explicitamente para a nova entidade do fluxo do processo empresarial (por exemplo, **Meu BPF personalizado**), conforme o necessário.
 
 ![](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
-## Create, retrieve, update, and delete business process flow entity records (process instances)  
- The custom entity that is automatically created on activating a business process flow definition stores all the process instances for the business process flow definition. The custom entity supports the standard programmatic creation and management of records (process instances) using Web API and CRM 2011 endpoint.
+## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>Criar, recuperar, atualizar e excluir registros de entidade do fluxo do processo empresarial (instâncias de processo)  
+ A entidade personalizada que é criada automaticamente na ativação de uma definição de fluxo do processo empresarial armazena todas as instâncias de processo dessa definição. A entidade personalizada permite a criação e o gerenciamento programáticos padrão de registros (instâncias de processo) usando a API Web e o ponto de extremidade do CRM 2011.
 
 > [!IMPORTANT]
-> Switching to another process instance for an entity record is only supported through UI (client) or programmatically using information available in this section. You can no longer use the `SetProcess` message (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> or <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) to programmatically switch processes (set another business process flow as the active process instance) for the target entity record. 
+> A mudança para outra instância de processo de um registro de entidade apenas é permitida por meio da interface do usuário (cliente) ou de forma programática usando as informações disponíveis nesta seção. Não é mais possível usar a mensagem `SetProcess` (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> ou <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) para mudar de processo de forma programática (definir outro fluxo do processo empresarial como a instância de processo ativa) no registro da entidade de destino. 
 
- Lets consider the following example where we have a cross-entity business process flow, "My Custom BPF," with 3 stages: S1:Account, S2:Account, and S3:Contact. 
+ Vamos considerar o seguinte exemplo contendo um fluxo do processo empresarial entre entidades, "Meu BPF personalizado", com três estágios: S1:Account, S2:Account e S3:Contact. 
 
  ![](media/sample-bpf.png)
  
-### Retrieve all the records (instances) for a business process flow entity
- If the name of your business process flow entity is "new_mycustombpf", use the following query to retrieve all the records (process instances) for your business process flow entity:  
+### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>Recuperar todos os registros (instâncias) de uma entidade do fluxo do processo empresarial
+ Se o nome da entidade do fluxo do processo empresarial for "new_mycustombpf", use a seguinte consulta para recuperar todos os registros (instâncias de processo) dessa entidade:  
   
 ```http
 GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -264,18 +264,18 @@ OData-Version: 4.0
 }
 ```
 
-#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Alterar o estado de uma instância do processo: Anular, Reativar ou Concluir 
+#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Altere o estado de uma instância de processo: Anular, Reativar ou Concluir 
 
-Uma instância de processo pode ter um dos seguintes estados: **Ativo**, **Concluído** ou **Anulado**. O estado é determinado pelos seguintes atributos no registro de instância do processo:
+Uma instância de processo pode estar em um dos seguintes estados: **Ativa**, **Concluída** ou **Anulada**. O estado é determinado pelos seguintes atributos no registro de instância do processo:
 
-- **statecode**: exibe o status da instância do processo.
+- **statecode**: exibe o status da instância de processo.
 
     |Valor|Rótulo|
     |-----|-----|
     |0    |Ativo|
     |1    |Inativo|
 
-- **statuscode**: exibe informações sobre o status da instância do processo.
+- **statuscode**: exibe informações sobre o status da instância de processo.
 
     |Valor|Rótulo|
     |-----|-----|
@@ -343,7 +343,7 @@ Cada registro de instância de fluxo de processo empresarial retornado para um r
   
  Depois de ter o estágio ativo e as informações de caminho ativo para uma instância de fluxo de processo empresarial, você pode usar as informações para mover para um estágio anterior ou seguinte no caminho ativo. A navegação progressiva dos estágios deve ser feita em sequência, ou seja, você deve apenas passar para o próximo estágio no caminho ativo.   
   
- Para a amostra completa do código que demonstra o uso desses dois métodos e a navegação de estágio usando o [serviço da organização](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata), consulte [Amostra: trabalhar com fluxos de processo empresarial](sample-work-business-process-flows.md). 
+ Para obter o exemplo completo do código que demonstra o uso desses dois métodos e a navegação de estágio usando o [serviço da organização](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata), confira [Exemplo: Trabalhar com fluxos dos processos empresariais](sample-work-business-process-flows.md). 
 
 <a name="ApplyBPF"></a>   
 ## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Aplicar o fluxo do processo empresarial durante a criação de um registro de entidade
@@ -372,7 +372,7 @@ Se você não definir um valor para o atributo **ProcessId** ao criar um novo re
 
 Os atributos herdados relacionados ao processo (como **ProcessId**, **StageId** e **TraversedPath**) em entidades habilitadas para os fluxos do processo empresarial já foram preteridos. Manipular esses atributos herdados relacionados ao processo para registros de entidade de destino não garante a consistência do estado de fluxo do processo empresarial e ***não*** é um cenário com suporte. A maneira recomendada é usar os atributos da entidade de fluxo de processo empresarial, conforme explicado anteriormente na seção [Criar, recuperar, atualizar e excluir registros de entidade do fluxo de processo empresarial (instâncias do processo)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances)
 
-A única exceção a isso é modificar por meio de programação o atributo **ProcessId** durante a criação de um registro de entidade para substituir o aplicativo padrão do fluxo de processo empresarial para o novo registro, conforme explicado na seção anterior: [Aplicar o fluxo do processo empresarial durante a criação de um registro de entidade](#ApplyBPF).
+A única exceção é modificar de forma programática o atributo **ProcessId** durante a criação de um registro de entidade para substituir o aplicativo padrão do fluxo do processo empresarial no novo registro, conforme explicado na seção anterior: [Aplicar o fluxo do processo empresarial durante a criação de um registro de entidade](#ApplyBPF).
 
 <a name="BKMK_clientSideScript"></a>   
 ## <a name="client-side-programmability-support-for-business-process-flows"></a>Suporte do lado do cliente por meio de programação para fluxos de processo empresarial  

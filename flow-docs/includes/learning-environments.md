@@ -24,7 +24,7 @@ Os ambientes podem suprir várias finalidades diferentes, dependendo das suas ne
 * Você pode optar por criar um ambiente para diferentes tipos de aplicativos e fluxos. Por exemplo, você pode criar um ambiente para teste e outro ambiente para produção.  
 * Você também pode optar por criar ambientes com base em sua estrutura organizacional ou mesmo com base na localização geográfica de suas equipes ou departamentos. Por exemplo, se você tiver equipes na Austrália, México e na Europa, é possível criar um ambiente para cada um desses locais e gerenciá-los de forma independente.  
 
-**Observação**: os ambientes não ficam visíveis para os usuários para que eles não precisem se preocupar em saber em quais ambientes eles estão. Os ambientes são uma ferramenta para administradores categorizar, gerenciar e compartilhar aplicativos e fluxos organizacionais.  
+**Observação**: os ambientes não ficam visíveis aos usuários para que eles não precisem se preocupar em saber em quais ambientes estão. Os ambientes são uma ferramenta para administradores categorizar, gerenciar e compartilhar aplicativos e fluxos organizacionais.  
 
 ## <a name="what-are-roles"></a>O que são funções?
 Uma pessoa com acesso a um ambiente deve ser atribuída à função **Administrador de Ambiente** ou a função **Criador de Ambiente**. Os administradores de ambiente podem executar todas as tarefas administrativas em um ambiente. Um criador de ambiente pode criar recursos em um ambiente existente. Uma pessoa pode ter ambas as funções simultaneamente.  

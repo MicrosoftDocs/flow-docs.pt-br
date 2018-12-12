@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 95081295bfe0fd6c904876aaf70974575a7986c1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 8baaf85ae07d2763886eb1ffda0141e4804cb630
+ms.sourcegitcommit: 8a36a3211e76b2b1a4a3154bc41e12a87dc3c288
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690895"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179807"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Entender os gateways de dados locais para o Microsoft Flow
 Use o gateway de dados local com o Microsoft Flow para estabelecer conexões seguras para as fontes de dados locais, como o Microsoft SQL Server.
@@ -123,14 +123,14 @@ Se você quiser ser abrangente, substitua os valores **ComputerName** e **Port**
 O firewall também pode bloquear conexões que o barramento de serviço do Azure faz aos data centers do Azure. Se este for o caso, você desejará listar (desbloquear) todos os [endereços IP](https://www.microsoft.com/download/details.aspx?id=41653) de sua região para os data centers.
 
 ## <a name="configure-ports"></a>Configurar portas
-O gateway cria uma conexão de saída para o barramento de serviço do Azure. Ele se comunica nas portas de saída: TCP 443 (padrão), 5671, 5672, 9350 a 9354. O gateway não exige portas de entrada.
+O gateway cria uma conexão de saída para o barramento de serviço do Azure. Ele se comunica nas portas de saída: TCP 443 (padrão), 5671, 5672, 9350 até 9354. O gateway não exige portas de entrada.
 
 Saiba mais sobre [soluções híbridas](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/).
 
 | Nomes de domínio | Portas de saída | Descrição |
 | --- | --- | --- |
 | *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
+| *.login.microsoftonline.com |443 |HTTPS |
 | *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
 | *.servicebus.windows.net |443, 9350-9354 |Ouvintes de Retransmissão do Barramento de Serviço por TCP (requer 443 para aquisição de token de controle de acesso) |
 | *.frontend.clouddatahub.net |443 |HTTPS |
@@ -154,7 +154,7 @@ No momento, não há um único local onde os administradores de locatários pode
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 ### <a name="general-questions"></a>Perguntas gerais
-**Pergunta:** a quais fontes de dados o gateway dá suporte?
+**Pergunta:** Com quais fontes de dados o gateway é compatível?
 **Resposta:**
 
 * SQL Server
@@ -164,54 +164,54 @@ No momento, não há um único local onde os administradores de locatários pode
 * Filesystem
 * DB2
 
-**Pergunta:** eu preciso de um gateway para fontes de dados na nuvem, como o SQL Azure?
-**Resposta:** não. Um gateway conecta somente a fontes de dados locais.
+**Pergunta:** Eu preciso de um gateway para fontes de dados na nuvem, como o SQL Azure?
+**Resposta:** Não. Um gateway conecta somente a fontes de dados locais.
 
-**Pergunta:** como o atual serviço Windows é chamado?
-**Resposta:** em Serviços, o gateway é chamado **Serviço de gateway corporativo do Power BI**.
+**Pergunta:** Como o serviço Windows realmente é chamado?
+**Resposta:** Nos Serviços, o gateway é chamado de **Serviço de gateway do Power BI Enterprise**.
 
-**Pergunta:** existem conexões de entrada para o gateway na nuvem?
-**Resposta:** não. O gateway usa conexões de saída para o Barramento de Serviço do Azure.
+**Pergunta:** Existem conexões de entrada para o gateway provenientes da nuvem?
+**Resposta:** Não. O gateway usa conexões de saída para o Barramento de Serviço do Azure.
 
-**Pergunta:** e se eu bloquear conexões de saída? O que é necessário abrir?
-**Resposta:** consulte as [portas](gateway-reference.md#configure-ports) e os hosts que o gateway usa.
+**Pergunta:** E se eu bloquear as conexões de saída? O que é necessário abrir?
+**Resposta:** Confira as [portas](gateway-reference.md#configure-ports) e os hosts que o gateway usa.
 
-**Pergunta:** o gateway precisa ser instalado no mesmo computador que a fonte de dados?
-**Resposta:** não. O gateway será conectado à fonte de dados usando as informações de conexão fornecidas. Considere o gateway como um aplicativo cliente nesse sentido. Ele só precisa ser capaz de se conectar ao nome do servidor fornecido.
+**Pergunta:** O gateway precisa ser instalado no mesmo computador que a fonte de dados?
+**Resposta:** Não. O gateway será conectado à fonte de dados usando as informações de conexão fornecidas. Considere o gateway como um aplicativo cliente nesse sentido. Ele só precisa ser capaz de se conectar ao nome do servidor fornecido.
 
-**Pergunta:** qual é a latência para executar consultas de uma fonte de dados do gateway? Qual é a melhor arquitetura?
-**Resposta:** para reduzir a latência de rede, instale o gateway o mais próximo possível da fonte de dados. Se você puder instalar o gateway na fonte de dados real, isso minimizará a latência apresentada. Considere também os data centers. Por exemplo, se o serviço estiver usando o data center do Oeste dos EUA o SQL Server estiver hospedado em uma VM do Azure, tenha também a VM do Azure no Oeste dos EUA. Isso minimizará a latência e evitar encargos de saída na VM do Azure.
+**Pergunta:** Qual é a latência para executar consultas provenientes do gateway em uma fonte de dados? Qual é a melhor arquitetura?
+**Resposta:**  Para reduzir a latência de rede, instale o gateway o mais próximo possível da fonte de dados. Se você puder instalar o gateway na fonte de dados real, isso minimizará a latência apresentada. Considere também os data centers. Por exemplo, se o serviço estiver usando o data center do Oeste dos EUA o SQL Server estiver hospedado em uma VM do Azure, tenha também a VM do Azure no Oeste dos EUA. Isso minimizará a latência e evitar encargos de saída na VM do Azure.
 
-**Pergunta:** há algum requisito de largura de banda de rede?
-**Resposta:** é recomendável ter boa taxa de transferência para a conexão de rede. Cada ambiente é diferente e a quantidade de dados enviada afeta os resultados. Usar o ExpressRoute pode ajudar a assegurar um nível de taxa de transferência entre o local e os data centers do Azure.
+**Pergunta:** Há algum requisito de largura de banda de rede?
+**Resposta:** É recomendado que a conexão de rede tenha uma boa taxa de transferência. Cada ambiente é diferente e a quantidade de dados enviada afeta os resultados. Usar o ExpressRoute pode ajudar a assegurar um nível de taxa de transferência entre o local e os data centers do Azure.
 
 Você pode usar o [aplicativo do Teste de Velocidade do Azure](http://azurespeedtest.azurewebsites.net/) da ferramenta de terceiros para determinar a taxa de transferência.
 
-**Pergunta:** o serviço Windows de gateway pode executar com uma conta do Azure Active Directory?
-**Resposta:** não. O serviço Windows deve ter uma conta Windows válida. Por padrão, ele será executado com a SID de serviço, *NT SERVICE\PBIEgwService*.
+**Pergunta:** O serviço Windows de gateway pode ser executado com uma conta do Azure Active Directory?
+**Resposta:** Não. O serviço Windows deve ter uma conta Windows válida. Por padrão, ele será executado com a SID de serviço, *NT SERVICE\PBIEgwService*.
 
 **Pergunta:** Como os resultados são enviados para a nuvem?
 **Resposta:** Os resultados são enviados usando o Barramento de Serviço do Azure. Para obter mais informações, consulte [como ele funciona](gateway-reference.md#how-the-gateway-works).
 
-**Pergunta:** onde minhas credenciais são armazenadas?
+**Pergunta:** Onde minhas credenciais são armazenadas?
 **Resposta:** As credenciais inseridas para uma fonte de dados são criptografadas e armazenadas no serviço de nuvem do gateway. As credenciais são descriptografadas no gateway local.
 
 ### <a name="high-availabilitydisaster-recovery"></a>Alta disponibilidade/recuperação de desastres
-**Pergunta:** há planos para habilitar cenários de alta disponibilidade com o gateway?
-**Resposta:** sim, a alta disponibilidade [agora está disponível](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
+**Pergunta:** Há planos para habilitar cenários de alta disponibilidade com o gateway?
+**Resposta:** Sim, a alta disponibilidade [agora está disponível](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
 
-**Pergunta:** quais opções estão disponíveis para recuperação de desastres?
-**Resposta:** você pode usar a chave de recuperação para restaurar ou mover um gateway.
+**Pergunta:** Quais opções estão disponíveis para recuperação de desastre?
+**Resposta:** Você pode usar a chave de recuperação para restaurar ou mover um gateway.
 
-**Pergunta:** qual é o benefício da chave de recuperação?
-**Resposta:** Fornece uma maneira de migrar ou recuperar as configurações do gateway.
+**Pergunta:** Qual é o benefício da chave de recuperação?
+**Resposta:** Ela oferece uma maneira de migrar ou recuperar as configurações do gateway.
 
 ### <a name="troubleshooting-questions"></a>Perguntas da solução de problemas
-**Pergunta:** onde estão os logs de gateway?
-**Resposta:** consulte [Ferramentas](gateway-reference.md#tools) mais adiante neste tópico.
+**Pergunta:** Onde estão os logs do gateway?
+**Resposta:** Confira [Ferramentas](gateway-reference.md#tools) mais adiante neste tópico.
 
-**Pergunta:** como ver quais consultas estão sendo enviadas à fonte de dados local?
-**Resposta:** você pode habilitar o rastreamento de consulta, que incluirá as consultas enviadas. Lembre-se de alterá-lo para o valor original após a solução de problemas. Deixar o rastreamento de consulta habilitado fará com que os logs sejam maiores.
+**Pergunta:** Como saber quais consultas estão sendo enviadas à fonte de dados local?
+**Resposta:** Você pode habilitar o rastreamento de consulta, que incluirá as consultas sendo enviadas. Lembre-se de alterá-lo para o valor original após a solução de problemas. Deixar o rastreamento de consulta habilitado fará com que os logs sejam maiores.
 
 Você também pode examinar ferramentas de sua fonte de dados para consultas de rastreamento. Por exemplo, você pode usar o Extended Events ou o SQL Profiler para SQL Server e o Analysis Services.
 
@@ -231,7 +231,7 @@ Quando um usuário interage com um elemento que está conectado a uma fonte de d
 ### <a name="update-to-the-latest-version"></a>Atualizar para a versão mais recente
 Muitos problemas podem surgir quando a versão do gateway está desatualizada. Verifique se você tem a versão mais recente.  Se você não atualizou o gateway recentemente, considere instalar a versão mais recente e ver se é possível reproduzir o problema.
 
-#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Erro: falha ao adicionar usuário ao grupo.  (-2147463168 PBIEgwService Usuários de log de desempenho)
+#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Erro: Falha ao adicionar usuário ao grupo.  (-2147463168 PBIEgwService Usuários de log de desempenho)
 Você poderá ver este erro se estiver tentando instalar o gateway em um controlador de domínio que não tem suporte. Você precisará instalar o gateway em um computador que não seja um controlador de domínio.
 
 ## <a name="tools"></a>Ferramentas

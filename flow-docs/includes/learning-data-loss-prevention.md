@@ -19,7 +19,7 @@ Uma política de DLP é simplesmente uma regra nomeada que dispõe cada serviço
 | **Somente dados de negócios** |Todos os serviços neste grupo podem compartilhar dados entre si. Eles não podem compartilhar dados com o grupo de dados **dados de negócios não permitidos**. |
 | **Dados de negócios não permitidos** |Todos os serviços neste grupo podem compartilhar dados entre si. Eles não podem compartilhar dados com o grupo de dados **somente dados de negócios**. |
 
-**Observação**: adicionar um serviço a um dos grupos de dados automaticamente removerá este serviço do outro grupo de dados. Por exemplo, se atualmente o Twitter estiver localizado no grupo de dados **somente dados de negócios** e você não quiser permitir que os dados de negócios sejam compartilhados com o Twitter, basta adicionar o serviço do Twitter ao grupo de **dados de negócios não permitidos**. Isso removerá o Twitter do grupo de dados **somente dados de negócios**.
+**Observação**: Adicionar um serviço a um grupo de dados automaticamente removerá este serviço do outro grupo de dados. Por exemplo, se atualmente o Twitter estiver localizado no grupo de dados **somente dados de negócios** e você não quiser permitir que os dados de negócios sejam compartilhados com o Twitter, basta adicionar o serviço do Twitter ao grupo de **dados de negócios não permitidos**. Isso removerá o Twitter do grupo de dados **somente dados de negócios**.
 
 ## <a name="heres-what-you-need-to-create-a-dlp"></a>Veja o que você precisa para criar uma DLP
 * Acesso ao [centro de administração](https://admin.flow.microsoft.com) do Microsoft Flow  
