@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 77ce6e368c8cb54d360ebeaa32f1f649e30aa297
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
+ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727172"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248835"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Responder às Solicitações de exclusão de entidade de dados de GDPR do Microsoft Flow
 
@@ -55,7 +55,7 @@ Para os dados e recursos que exigem revisão manual, o Microsoft Flow oferece as
 
 * **Acesso ao site:** entre no [Centro de Administração do PowerApps](https://admin.powerapps.com/) ou no [Centro de Administração do Microsoft Flow](https://admin.flow.microsoft.com/)
 
-* **Acesso do PowerShell:** [cmdlets do PowerShell de Administração do PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **Acesso ao PowerShell**:  [cmdlets do PowerShell de Administração do PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) 
 
 Confira a divisão das experiências que estão disponíveis para um administrador excluir cada tipo de dados pessoais em cada tipo de recurso:
 
@@ -175,6 +175,7 @@ $deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
 Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
 
 ```
+
 ## <a name="delete-the-users-permissions-to-shared-connections"></a>Excluir as permissões do usuário para conexões compartilhadas
 
 Cmdlets do PowerShell do PowerApps Maker
@@ -281,11 +282,12 @@ Com a introdução do Common Data Service for Apps, se um banco de dados é cria
 Para saber mais sobre como remover a permissão de um usuário em um ambiente, navegue até [Usar ambientes no Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## <a name="delete-gateway-settings"></a>Excluir configurações de gateway
+
 Para responder a solicitações de exclusão de titular dos dados de gateways de dados locais clique [aqui](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## <a name="delete-user-details"></a>Excluir detalhes do usuário
-Os detalhes do usuário fornecem uma ligação entre um usuário e um locatário específico. Antes de executar esse comando, verifique se todos os fluxos desse usuário foram atribuídos novamente e/ou excluídos. Depois que isso for concluído, o administrador poderá excluir os detalhes do usuário chamando o cmdlet **Remove-AdminFlowUserDetails** e passando a ID de objeto do usuário.
 
+Os detalhes do usuário fornecem uma ligação entre um usuário e um locatário específico. Antes de executar esse comando, verifique se todos os fluxos desse usuário foram atribuídos novamente e/ou excluídos. Depois que isso for concluído, o administrador poderá excluir os detalhes do usuário chamando o cmdlet **Remove-AdminFlowUserDetails** e passando a ID de objeto do usuário.
 
 Cmdlets do PowerShell de Administração do PowerApps
 ```PowerShell
@@ -297,14 +299,18 @@ Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 > Se o usuário ainda tiver fluxos individuais ou de equipe, esse comando retornará um erro. Para resolver, exclua todos os fluxos restantes ou os fluxos de equipe desse usuário e execute o comando novamente.
 >
 >
+
 ## <a name="delete-the-user-from-azure-active-directory"></a>Excluir o usuário do Azure Active Directory
+
 Depois de concluir as etapas acima, a etapa final será excluir a conta do usuário do Azure Active Directory seguindo as etapas descritas na documentação do RGPD de Solicitação de Titular dos Dados do Azure, que pode ser encontrada no [Portal de Confiança do Serviço do Office 365](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
 
 ## <a name="delete-the-user-from-unmanaged-tenant"></a>Excluir o usuário do locatário não gerenciado
+
 Caso você seja membro de um locatário não gerenciado, será necessário executar uma ação **Fechar conta** no [Portal de privacidade corporativo ou de estudante](https://go.microsoft.com/fwlink/?linkid=873123).
 
 Para determinar se você é um usuário de um locatário gerenciado ou não gerenciado, execute as seguintes ações:
-1. Abra a seguinte URL em um navegador, substituindo seu endereço de email na URL:[ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1 ](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
+
+1. Abra a seguinte URL em um navegador, substituindo seu endereço de email na URL:[ https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1 ](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 1. Se você for membro de um **locatário não gerenciado**, será exibido um `"IsViral": true` na resposta.
 
     {
@@ -318,4 +324,3 @@ Para determinar se você é um usuário de um locatário gerenciado ou não gere
     }
 
 1. Caso contrário, você pertencerá a um locatário gerenciado.
-
