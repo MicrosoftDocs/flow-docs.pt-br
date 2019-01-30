@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 244f3f072dd0250d4c9c4a8c62760009f54a6a45
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: db8a8c99344b93ad981a26d5174e99385d2a3f82
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727241"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905736"
 ---
 # <a name="release-notes"></a>Notas de versão
 ## <a name="top-questions"></a>Principais perguntas
@@ -37,19 +37,38 @@ ms.locfileid: "45727241"
 2. Como usar uma condição avançada ou uma expressão?
    
    * Leia sobre como [adicionar condições](add-condition.md).
-   * Se você quiser vários casos em um fluxo, clique ou toque em **Adicionar condição** de dentro de uma condição existente.
+   * Se você quiser vários casos em um fluxo, selecione **Adicionar condição** de dentro de uma condição existente.
    * Crie uma expressão avançada referenciando [uma função em Aplicativos Lógicos](https://docs.microsoft.com/rest/api/logic/definition-language).
 3. Como funciona o licenciamento com o Office 365?
    
    * Se você for um usuário do Office 365, terá acesso completo através do plano Microsoft Flow do Office 365. Para obter mais informações, confira os [planos de preços do Microsoft Flow](https://flow.microsoft.com/pricing/) .
    * Se você for um administrador, confira as informações sobre o [licenciamento do Microsoft Flow](organization-q-and-a.md), inclusive com o Office 365.
 
-## <a name="known-issues-and-resolutions"></a>Problemas comuns e resoluções
+## <a name="known-issues"></a>Problemas conhecidos
 1. Não há suporte para as listas do SharePoint em Meus Sites e que não são do tipo *Lista Personalizada*. Para solucionar esse problema, crie uma lista personalizada em um site do SharePoint padrão.
-2. Não é possível gravar fluxos nos campos Taxonomia nas listas do SharePoint. É recomendável usar um campo de cadeia de caracteres simples até que isso seja corrigido.
-3. Os gatilhos do arquivo não serão acionados para os arquivos sendo adicionados dentro das pastas aninhadas dentro da pasta selecionada.
+2. Os gatilhos do arquivo não serão acionados para os arquivos sendo adicionados dentro das pastas aninhadas dentro da pasta selecionada.
 
 ## <a name="whats-new"></a>Novidades
+
+> [!IMPORTANT]
+>
+> **Anunciamos as notas de versão**
+>
+> Gostaria de saber mais sobre os últimos recursos lançados e o que vem por aí no Microsoft Flow?
+>[Veja as notas sobre a versão de outubro de 2018](https://docs.microsoft.com/business-applications-release-notes/October18/microsoft-flow/). Reunimos todos os detalhes, de ponta a ponta, que você pode usar para o planejamento. Para mais detalhes, analise [cada versão semanal](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) com os recursos e aprimoramentos que ela contém.
+>
+> As notas sobre a versão anteriores à versão de outubro de 2018 continuarão aqui para referência no futuro; contudo, todas as novas versões só serão incluídas nos locais acima, não nesta página.
+
+### <a name="release-2018-09-24"></a>Versão de 24-09-2018
+
+- **Acesso de administrador à ajuda e suporte** – abra tíquetes de suporte para o Microsoft Flow no centro de administração da plataforma Power e forneça detalhes adicionais sobre a falha no fluxo de trabalho.
+- **Remodelagem da Comunidade do Flow** – encontrar o que você precisa ficou mais fácil na Comunidade do Flow.
+- **Aprimoramentos do conector do Microsoft Teams** – novos gatilhos do Microsoft Teams para que você possa executar um fluxo quando houver novas mensagens em um canal.
+- **Mais ações do SharePoint** – há novas ações para a movimentação de arquivos no conector do SharePoint.
+- **Novos relatórios de análise de administrador** – análises do Ambiente e do Locatário adicionadas ao Centro de administração da Plataforma de Aplicativo de Negócios.
+- **Integração com o Power Query** – uma experiência do Power Query está sendo criada e permitirá que os criadores definam mashups de dados do SQL Server.
+
+[Leia mais e faça perguntas](https://flow.microsoft.com/blog/support-tickets-teams-sharepoint/) sobre esta versão.
 
 ### <a name="release-2018-08-31"></a>Versão 2018-08-31
 
@@ -76,7 +95,7 @@ O programa de versão prévia do Microsoft Flow é a maneira de obter acesso ant
 
 ### <a name="release-2018-07-23"></a>Versão de 23-07-2018
 
-- **Criar e executar fluxos no Excel** – com o novo botão **Fluxo** (acessado na guia **Dados** na faixa de opções), você pode criar e disparar automações do Flow nos dados da tabela no Excel. Automatize o processamento de dados ou a cópia/importação dos dados.
+- **Criar e executar fluxos no Excel** – com o novo botão **Fluxo** (acessado na guia **Dados** na faixa de opções), você pode criar e disparar automações do Microsoft Flow nos dados da tabela no Excel. Automatize o processamento de dados ou a cópia/importação dos dados.
 - **Criar um fluxo do processo empresarial** – um fluxo do processo empresarial é um novo tipo de fluxo interativo humano com estado, baseado no Common Data Service for Apps. Use esses novos fluxos para definir um conjunto de estágios e etapas para as pessoas seguirem. É possível mover-se para frente e para trás, conforme necessário.
 - **Criar um fluxo para o Microsoft To-Do no Outlook Web App** – se alguém for \@mencionado no Outlook Web App, ele verá um atalho para criar um fluxo. Este fluxo cria automaticamente as tarefas para a pessoa \@mencionada no Microsoft To-Do, com base no conteúdo do email.
 - **Suporte ao modo de exibição do SharePoint** – o conector do SharePoint agora suporta a seleção de um modo de exibição específico do SharePoint em gatilhos e ações. Isso filtra as colunas para apenas os campos que estão no modo de exibição selecionado.
@@ -166,7 +185,7 @@ O programa de versão prévia do Microsoft Flow é a maneira de obter acesso ant
 - **Flow dentro do Microsoft Teams** – no Teams, você pode criar e gerenciar fluxos, examinar suas aprovações recebidas e enviadas, e iniciar fluxos diretamente dentro do aplicativo de área de trabalho do Teams ou em teams.microsoft.com – [Saiba mais aqui](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
 - **Notificações de edição compartilhadas** – sempre que um fluxo de sua propriedade for alterado por um colega de trabalho, você receberá uma notificação por email informando quem alterou o fluxo.
 - **Novas expressões** – adicionados dois novos conjuntos de expressões: um para analisar URLs e outro para trabalhar com objetos JSON.
-- **Três novos conectores** – nesta semana, há dois novos conectores Plumsail: Plumsail SP e Plumsail Forms e um novo conector para Kintone.
+- **Três novos conectores** – esta semana há dois novos conectores Plumsail: Plumsail SP e Plumsail Forms, e um novo conector para Kintone.
 
 [Leia mais e faça perguntas](https://flow.microsoft.com/blog/shared-notifications-and-expressions/) sobre esta versão.
 
@@ -233,7 +252,7 @@ Agora o Painel de Lançamento do Microsoft Flow está disponível em todas as re
 - **Aplicação aninhada em cada** – é possível adicionar aplicação a cada ação, filtrar e selecionar outras aplicações a cada ação de contêiner.
 - **Ações de data e hora** – novas ações para obtenção de horas locais, adição, subtração ou formatação de horas.
 - **Quatro novos conectores** – foram adicionados: Content Moderator, Docparser, Microsoft Kaizala e validação de dados do Pitney Bowes.
-- **Melhor experiência de conexão** – notificações no portal do Flow quando uma conexão é interrompida, além de detalhes mais avançados de conexão.
+- **Melhor experiência de conexão** – notificações no portal do Microsoft Flow quando uma conexão é interrompida, além de detalhes mais avançados de conexão.
 - **Coleção em qualquer lugar** – uma nova coleção de modelo para [trabalhadores em qualquer lugar](https://flow.microsoft.com/collections/onthego/).
 - **Entradas do botão Endereço de email** – coletar endereços de email dos usuários ao executarem botões.
 - **Entradas do botão Arquivo** – obter arquivos carregados, como fotos, dos usuários ao executarem botões.
@@ -257,7 +276,7 @@ Agora o Painel de Lançamento do Microsoft Flow está disponível em todas as re
 
 - **Integração mais profunda do SharePoint na primeira versão** – há um novo envio “na caixa” para fluxos de revisão e um painel do Flow para coletar entradas ao executar um fluxo para locatários da primeira versão.
 - **Dynamics 365 para Compromisso com o Cliente** – agora o Flow está integrado à interface de usuário do Dynamics 365 para Compromisso com o Cliente.
-- **Central de Confiabilidade da Microsoft** – o Flow está listado na Central de Confiabilidade da Microsoft, mostrando certificações como HIPAA, ISO e SOC.
+- **Central de Confiabilidade da Microsoft** – o Microsoft Flow está listado na Central de Confiabilidade da Microsoft, mostrando certificações como HIPAA, ISO e SOC.
 - **Análise de uso** – cada fluxo tem um painel inserido do Power BI com análise de uso básico.
 - **Log de auditoria na primeira versão** – todos os eventos de gerenciamento de fluxo são registrados no Centro de Conformidade e Segurança do Office 365 para locatários da primeira versão.
 - **Seis novos conectores** – foram adicionados: LinkedIn, Grupos do Office 365, Skype for Business, Adobe Sign, Bizzy e Coleta de dados Azure Log Analytics.
@@ -268,7 +287,7 @@ Agora o Painel de Lançamento do Microsoft Flow está disponível em todas as re
 
 ### <a name="release-2017-09-21"></a>Versão de 21-09-2017
 
-- **Baixar o histórico do Flow** – baixe o histórico de execução do Flow como arquivo CSV para abrir no Excel.
+- **Baixar o histórico do Flow** – baixe o histórico de execução de um fluxo como arquivo CSV para abrir no Excel.
 - **Recorrência avançada** – compile agendas recorrentes para disparar os fluxos, por exemplo: disparar somente em dias da semana.
 - **IntelliSense** – ao digitar expressões, o IntelliSense fornecerá sugestões para parâmetros.
 - **Quatro novos conectores** – foram adicionados conectores para serviços HTTP do Azure AD, Amazon Redshift, Publicação da Grade de Eventos do Azure e FlowForma.
@@ -349,7 +368,7 @@ Agora você pode exibir o status de todas as solicitações de aprovação pende
 [Leia mais e faça perguntas](https://flow.microsoft.com/blog/microsoft-forms-tables-flow-failures/) sobre esta versão.
 
 ### <a name="release-2017-05-23"></a>Versão 23-05-2017
-* **Conector do Microsoft Teams** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) é um espaço de trabalho com base no bate-papo no Office 365 que une pessoas, conversas e conteúdo – juntamente com as ferramentas que as equipes necessitam, para que eles possam facilmente colaborar para atingir mais.
+* **Conector do Microsoft Teams** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) é um workspace com base no bate-papo no Office 365 que une pessoas, conversas e conteúdo – juntamente com as ferramentas que as equipes necessitam, para que eles possam facilmente colaborar para atingir mais.
 * **Widgets em iOS e Android** -Os widgets Microsoft Flow são atalhos do botão que fornecem uma maneira mais fácil e rápida para acionar o botão diretamente da sua tela inicial.
 * **Criar etapas de "tratamento de erro"** - Definir uma ou mais etapas para executar após a falha de uma ação. Por exemplo, receber uma notificação imediatamente se seu fluxo não pode criar um registro no Dynamics 365.
 * **Variáveis de inteiro e flutuantes** - Inicializar e incrementar ou decrementar contadores dentro de uma execução de fluxo para contar quantas vezes um determinado conjunto de lógica é executado.
@@ -375,13 +394,13 @@ Agora você pode exibir o status de todas as solicitações de aprovação pende
 * **Criar webhooks de API personalizada** - Desenvolvedores de conectores personalizados agora podem adicionar gatilhos a suas APIs personalizadas com webhooks.
 * **Gerenciar proprietários de fluxo no Centro de administração** - Os administradores de ambiente podem gerenciar proprietários de fluxo no Centro de administração do Microsoft Flow.
 * **Referência de documentação do conector** -Agora temos uma [referência completa do conector em docs.microsoft.com](https://docs.microsoft.com/Connectors/).
-* **Dois serviços de parceiro** - Dois novos serviços de parceiro lançados: Nexmo e Paylocity.
+* **Dois serviços de parceiro** – Dois novos serviços de parceiro lançados: Nexmo e Paylocity.
 
 [Leia mais e faça perguntas](https://flow.microsoft.com/blog/canada-mailboxes-aad) sobre esta versão.
 
 ### <a name="release-2017-04-27"></a>Versão 27-04-2017
 * **Criar fluxos com etapas paralelas** - Criar fluxos com execução paralela: ou seja, você pode ter duas ou mais etapas que são executadas exatamente ao mesmo tempo.
-* **Cinco novos serviços com suporte** - Cinco novos serviços: Aprovações, Email de Parâmetro de Comparação, CRM de Cápsula, LiveChat e Gerenciador de Clientes do Outlook.
+* **Cinco novos serviços com suporte** – cinco novos serviços: Aprovações, Email de Parâmetro de Comparação, CRM de Cápsula, LiveChat e Gerenciador de Clientes do Outlook.
 * **Monitorar tentativas para ações** - O Microsoft Flow tentará novamente quando houver falhas com os serviços. Agora, confira os detalhes do que aconteceu e quantas tentativas automáticas ocorreram.
 
 [Leia mais e faça perguntas](https://flow.microsoft.com/blog/parallel-actions/) sobre esta versão.
@@ -404,7 +423,7 @@ Agora você pode exibir o status de todas as solicitações de aprovação pende
 ### <a name="release-2017-04-03"></a>Versão 03-04-2017
 * **Versão Beta do Windows Phone** - O programa beta do Aplicativo do Windows Phone está disponível para obter uma visualização do aplicativo em seu Windows Phone. [Leia mais](https://flow.microsoft.com/blog/windows-phone-app-beta-is-now-available/).
 * **PDF Muhimbi** - Agora você pode converter arquivos do Microsoft Word para PDF, adicionar marcas d'água, mesclar documentos e muito mais com o PDF Muhimbi. [Leia mais](https://flow.microsoft.com/blog/convert-files-using-muhimbi/).
-* **Disparar fluxos de botões físicos** - Anunciando parcerias com dois dos principais produtos no espaço de botão físico: Flic by Shortcut Labs e Bttn by The Button Corporation. [Leia mais](https://flow.microsoft.com/blog/physical-buttons/)
+* **Disparar fluxos de botões físicos** – anunciamos parcerias com dois dos principais produtos no espaço de botão físico: Flic by Shortcut Labs e Bttn by The Button Corporation. [Leia mais](https://flow.microsoft.com/blog/physical-buttons/)
 
 ### <a name="release-2017-03-22"></a>Versão 22-03-2017
 * **Faça uma cópia do seu fluxo** - Agora você pode fazer uma cópia do seu fluxo para trabalhar em versões de rascunho ou duplicar um fluxo que você criou anteriormente.
@@ -426,7 +445,7 @@ Agora você pode exibir o status de todas as solicitações de aprovação pende
 [Leia mais e faça perguntas](https://flow.microsoft.com/blog/new-updates-custom-api/) sobre esta versão.
 
 ### <a name="release-2017-02-27"></a>Versão 27-02-2017
-* **Disparar os botões de fluxo** - agora você pode disparar botões de fluxo diretamente do site do Microsoft Flow. Ao examinar sua lista de fluxos, selecione o menu "…" e escolha o comando Executar agora.
+* **Disparar os botões de fluxo** – agora você pode disparar botões de fluxo diretamente do Microsoft Flow. Ao examinar sua lista de fluxos, selecione o menu "…" e escolha o comando Executar agora.
 * **Cinco novos serviços** - suporte adicionado do Oracle Database, Intercom, FreshBooks, LeanKit e WebMerge.
 
 [Leia mais e faça perguntas](https://flow.microsoft.com/blog/trigger-flow-buttons-web/) sobre esta versão.
@@ -506,7 +525,7 @@ Agora, você pode aproveitar informações valiosas ao disparar um fluxo de bot�
 
 ### <a name="release-2016-11-15"></a>Versão 2016-11-15
 * **Programa de Parceiro do Microsoft Flow** - o Microsoft Flow agora tem um programa de parceiro certificado para fazer conexões e aproveitar os diversos talentos da empresa e a experiência com o Microsoft Flow em todo o mundo.
-* **Seis novos serviços** - essa semana também estamos lançando seis serviços: Asana, Campfire, EasyRedmine, JIRA, Redmine e Vimeo.
+* **Seis novos serviços** – também estamos lançando seis serviços esta semana: Asana, Campfire, EasyRedmine, JIRA, Redmine e Vimeo.
 
 [Leia mais e faça perguntas](https://flow.microsoft.com/blog/partner-program-six-new-services/) sobre esta versão.
 

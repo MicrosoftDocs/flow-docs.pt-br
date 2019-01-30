@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c780b3d305fbd5549f9c7ffc2a23571007dac7a7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188606"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905645"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Criar um fluxo usando o Dynamics 365 (online)
 Com um conector do Dynamics 365, crie fluxos iniciados quando ocorre um evento no Dynamics 365, ou em algum outro serviço, que, em seguida, executa uma ação no Dynamics 365, ou em algum outro serviço. 
@@ -100,7 +100,7 @@ Este passo a passo mostra como criar uma tarefa no [Wunderlist](https://www.wund
 10. Clique ou toque em **Criar fluxo**.  
 
 ## <a name="trigger-based-logic"></a>Lógica baseada em gatilho
-Gatilhos como **Quando um registro é criado**, **Quando um registro é atualizado** e **Quando um registro é excluído** iniciam o fluxo em alguns minutos depois que o evento que ocorre.  Em casos raros, o fluxo pode levar até 2 horas para ser disparado.
+Gatilhos como **Quando um registro é criado**, **Quando um registro é atualizado** e **Quando um registro é excluído** iniciam o fluxo em alguns minutos depois que o evento ocorre.  Em casos raros, o fluxo pode levar até 2 horas para ser disparado.
 
 Quando o gatilho ocorre, o fluxo recebe uma notificação, mas o fluxo é executado nos dados que existem no momento em que a ação é executada.  Por exemplo, se o fluxo é disparado quando um novo registro é criado e você atualiza o registro duas vezes antes da execução do fluxo, o fluxo é executado apenas uma vez com os dados mais recentes.
 
@@ -147,7 +147,7 @@ Esse exemplo também atribui a tarefa a um usuário específico com base na ID d
 
 Para localizar a ID de um registro, consulte [Encontrar a ID do registro](#find-the-records-id) mais adiante neste tópico.
 
-> **Importante:** os campos não devem conter um valor se tiverem uma descrição "Somente para uso interno". Esses campos incluem **Caminho percorrido**, **Parâmetros Adicionais** e **Número de versão da regra de fuso horário.**
+> **Importante:** os campos não deverão conter um valor se tiverem uma descrição "Somente para uso interno". Esses campos incluem **Caminho percorrido**, **Parâmetros Adicionais** e **Número de versão da regra de fuso horário.**
 > 
 > 
 

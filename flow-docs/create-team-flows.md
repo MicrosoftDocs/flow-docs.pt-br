@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 238ef8eac80d3259981cb11cc21e3b05eb83e0ec
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: fb9f95845a6b516bfb83ed476929d8682098601f
+ms.sourcegitcommit: 4bd9fa4a9549a1830644f68cbf9ba50ed0ef8e19
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689722"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204929"
 ---
 # <a name="create-team-flows"></a>Criar fluxos de equipe
 Crie um fluxo de equipe ao adicionar outras pessoas na sua organização como proprietários. Todos os proprietários de um fluxo de equipe podem executar essas ações:
@@ -70,11 +70,12 @@ Siga estas etapas para criar um fluxo de equipe ou adicionar mais proprietários
    
      Parabéns &mdash; seu fluxo de equipe foi criado!
 
-##<a name="add-a-list-as-a-co-owner"></a>Adicionar uma lista como um coproprietário
+## <a name="add-a-list-as-a-co-owner"></a>Adicionar uma lista como um coproprietário
 
 Você pode adicionar listas do SharePoint como coproprietários a um fluxo para que todos com acesso de edição à lista obtenham automaticamente acesso de edição ao fluxo. Depois que o fluxo for compartilhado, você poderá distribuir um link para ele.
 
 ## <a name="remove-an-owner"></a>Remover um proprietário
+
 > [!IMPORTANT]
 > Quando remove um proprietário cujas credenciais são usadas nos serviços do Microsoft Flow, deve atualizar as credenciais para essas conexões para que o fluxo continue a executar adequamente.
 > 
@@ -93,7 +94,20 @@ Você pode adicionar listas do SharePoint como coproprietários a um fluxo para 
    
     ![usuário removido](./media/create-team-flows/removeowner4.png)
 
+
+## <a name="update-connection-owner"></a>Atualizar proprietário da conexão
+
+Talvez seja preciso alterar o proprietário de uma conexão em um fluxo se você remover o proprietário existente. Siga as etapas para alterar o proprietário de um fluxo:
+
+1. Selecione o fluxo que contém a conexão que você deseja atualizar na lista **Fluxos de equipe**.
+1. Selecione **Ver todos** na lista **PROPRIETÁRIOS**.
+1. Selecione **Gerenciar conexões** da lista **Conexões em uso**.
+1. Pesquise a conexão que você deseja atualizar e selecione-a.
+1. Selecione **...** (mais comandos) e **Alternar conta**.
+1. Siga as etapas para usar uma conta diferente para a conexão.
+
 ## <a name="embedded-and-other-connections"></a>Conexões inseridas e outras
+
 Conexões usadas em um fluxo se enquadram em duas categorias:
 
 * **Incorporada** &mdash; Essas conexões são usadas no fluxo.
