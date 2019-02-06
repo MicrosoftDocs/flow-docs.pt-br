@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8baaf85ae07d2763886eb1ffda0141e4804cb630
-ms.sourcegitcommit: 8a36a3211e76b2b1a4a3154bc41e12a87dc3c288
+ms.openlocfilehash: af2e113278f480eb3c748cb1a2f9a81e34d32258
+ms.sourcegitcommit: a35abc6a2148cbfb48ca36d4af09bfd90eaffa42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179807"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55647842"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Entender os gateways de dados locais para o Microsoft Flow
 Use o gateway de dados local com o Microsoft Flow para estabelecer conexões seguras para as fontes de dados locais, como o Microsoft SQL Server.
@@ -166,6 +166,9 @@ No momento, não há um único local onde os administradores de locatários pode
 
 **Pergunta:** Eu preciso de um gateway para fontes de dados na nuvem, como o SQL Azure?
 **Resposta:** Não. Um gateway conecta somente a fontes de dados locais.
+
+**Pergunta:** Preciso instalar um gateway no ambiente padrão?
+**Resposta:** Sim. O Microsoft Flow tem suporte apenas para gateways instalados no ambiente padrão.
 
 **Pergunta:** Como o serviço Windows realmente é chamado?
 **Resposta:** Nos Serviços, o gateway é chamado de **Serviço de gateway do Power BI Enterprise**.

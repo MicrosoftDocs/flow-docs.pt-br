@@ -22,14 +22,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1e765d4c7c11354e382c3ff74ac66103345ff39f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 93d0e035ed3661bd78c55a246106e604f2866b2e
+ms.sourcegitcommit: 29045ac95102af371a358b79b345b54a130fcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691012"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55501424"
 ---
-# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Tutorial: criar um fluxo de processo empresarial para padronizar processos
+# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Tutorial: Criar um fluxo de processo empresarial para padronizar processos
 
 Este tutorial mostra como criar um fluxo de processo empresarial com o PowerApps. Para saber mais sobre por que você usa fluxos de processos empresariais, consulte [Visão geral de fluxos de processos empresariais](business-process-flows-overview.md). Para obter informações sobre como criar um fluxo de tarefas móvel, consulte [Criar um fluxo de tarefas móvel](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
@@ -40,7 +40,12 @@ Este tutorial mostra como criar um fluxo de processo empresarial com o PowerApps
  > [!TIP]
  >  Após criar uma definição de fluxo de processo empresarial, será possível fornecer controle sobre quem pode criar, ler, atualizar ou excluir a instância do fluxo de processo empresarial. Por exemplo, para processos relacionados a serviços, você pode fornecer acesso completo para repositórios de atendimento ao cliente para alterar a instância do fluxo de processo empresarial, mas fornecer acesso somente leitura à instância para os representantes de vendas para que eles possam monitorar atividades de pós-venda para seus clientes. Para definir segurança para uma definição de fluxo de processo empresarial criada, selecione **Habilitar funções de segurança** na barra de ações.  
   
-<a name="BKMK_Createbusinessprocessflows"></a>   
+<a name="BKMK_Createbusinessprocessflows"></a>
+
+## <a name="prerequisites"></a>Pré-requisitos
+
+É necessário ter o [Microsoft Flow (Plano 2)](https://preview.flow.microsoft.com/pricing/) para criar fluxos de processos empresariais. Alguns planos de licença do Dynamics 365 incluem o Microsoft Flow (Plano 2).
+
 ## <a name="create-a-business-process-flow"></a>Criar um fluxo de processo empresarial  
   
 1. Abra o [Gerenciador de Soluções](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).

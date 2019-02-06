@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
+ms.sourcegitcommit: 20a151bc5ef94c1ecde22934cbd878710ffb312c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905645"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55504497"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Criar um fluxo usando o Dynamics 365 (online)
 Com um conector do Dynamics 365, crie fluxos iniciados quando ocorre um evento no Dynamics 365, ou em algum outro serviço, que, em seguida, executa uma ação no Dynamics 365, ou em algum outro serviço. 
@@ -120,6 +120,7 @@ Ao adicionar um valor a um campo, é necessário corresponder ao tipo de campo, 
 | Campos de número inteiro |Alguns campos exigem números inteiros ou um conteúdo dinâmico que seja um campo do tipo número inteiro. Os exemplos incluem **Porcentagem Concluída** e **Duração**. |**Configurações** > **Personalizações** > **Personalizar o Sistema** > **Entidades** > **Tarefa** > **Campos** |**percentcomplete** |**Número Inteiro** |
 | Campos de data |Alguns campos exigem uma data inserida no formato dd/mm/aaaa, ou um conteúdo dinâmico que seja um campo do tipo data. Os exemplos incluem **Criado em**, **Data Inicial**, **Início Real**, **Último Suspensão**, **Término Real** e **Data de Vencimento**. |**Configurações** > **Personalizações** > **Personalizar o Sistema** > **Entidades** > **Tarefa** > **Campos** |**createdon** |**Data e Hora** |
 | Campos que exigem uma ID de registro e tipo de pesquisa |Alguns campos que fazem referência a outro registro de entidade exigem a ID do registro e o tipo de pesquisa. |**Configurações** > **Personalizações** > **Personalizar o Sistema** > **Entidades** > **Conta** > **Campos** |**accountid** |**Chave Primária** |
+|Conjunto de opções|Os campos de conjunto de opções exigem que um valor inteiro conhecido seja passado por esse tipo de campo.  Na área de personalização do Dynamics 365, é possível exibir conjuntos de opções com suporte para o campo inteiro juntamente com o respectivo rótulo.|Configurações > Personalização > Personalizar o sistema > Entidades > Conta > Campos | Método de contato preferencial| Número inteiro|
 
 ### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Mais exemplos de campos que exigem uma ID de registro e tipo de pesquisa
 Expandindo a tabela anterior, veja mais exemplos de campos que não funcionam com valores selecionados na lista de conteúdo dinâmico. Em vez disso, esses campos exigem uma ID de registro e tipo de pesquisa inseridos nos campos no PowerApps.
