@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f62bbf9e508c269c17284382b674a07221a2d568
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
+ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690550"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56885494"
 ---
 # <a name="flow-in-your-organization-qa"></a>P e R sobre o Flow em sua organização
 Este tópico descreve como os usuários em sua organização podem usar o Flow e como você pode controlar o serviço do Flow.
@@ -46,6 +46,10 @@ Para se inscrever, os usuários podem acessar [flow.microsoft.com](https://flow.
 Quando um usuário em sua organização se inscreve no Flow com a Opção 2, uma licença do Microsoft Flow Gratuito será automaticamente atribuída a ele.
 
 [Inscrever-se no Flow](sign-up-sign-in.md) inclui mais detalhes.
+
+### <a name="what-is-the-microsoft-flow-free-plan"></a>O que é o plano gratuito do Microsoft Flow?
+
+O plano gratuito do Microsoft Flow é usado somente para fins de rastreamento. Habilitá-lo ou desabilitá-lo não afeta a capacidade dos usuários de criar fluxos. Se você desabilitar o plano gratuito do Microsoft Flow, ele será habilitado novamente quando um usuário fizer logon. Esse é o comportamento esperado.
 
 ### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>Posso impedir uma pessoa de se inscrever no Flow?
 Como o Microsoft Flow é um serviço de nuvem pública, todos podem se inscrever e usá-lo para automatizar suas tarefas diárias. Para usar o Microsoft Flow, não há requisitos para que os usuários tenham ou usem uma conta do Office 365. Por isso, não há atualmente um mecanismo para impedir que uma pessoa use o Flow (como todas as pessoas no mundo podem fazer, independentemente do endereço de email).
