@@ -1,3 +1,22 @@
+---
+title: Os fluxos agora estão armazenados no Common Data Service para Aplicativos e usam a API Web avançada
+description: Os fluxos agora estão armazenados no Common Data Service para Aplicativos e usam a API Web avançada.
+author: stepsic-microsoft-com
+ms.reviewer: deonhe
+ms.date: 03/05/2019
+ms.topic: article
+ms.prod: ''
+ms.service: business-applications
+ms.technology: ''
+ms.author: stepsic
+audience: Power user
+ms.openlocfilehash: 111fb191c6963e02d7bf54b419fd7088ce7605fc
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462989"
+---
 # <a name="microsoft-flow-web-api"></a>API Web do Microsoft Flow
 
 Agora todos os fluxos serão armazenados no Common Data Service (CDS) para Aplicativos e aproveite [a API Web avançada](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
