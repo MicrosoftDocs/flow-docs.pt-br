@@ -3,7 +3,7 @@ title: Visão geral dos fluxos de processo empresarial | Microsoft Docs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: baefae21e605b0e54e32b09dfaee8f2980d73c13
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: b1e23a3ddfd4302c4a5429029ea4fb47f0ab9808
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690297"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462983"
 ---
 # <a name="business-process-flows-overview"></a>Visão geral dos fluxos de processo empresarial
 
@@ -92,7 +92,7 @@ Os fluxos de processo empresarial fornecem um guia para as pessoas realizarem o 
  Você pode definir fluxos de processo empresarial somente para as entidades que dão suporte a eles. Você também precisa estar ciente dos limites para o número de processos, estágios e etapas que podem ser adicionados.  
   
 ### <a name="business-process-flows-that-call-a-workflow"></a>Fluxos de processo empresarial que chamam um fluxo de trabalho  
- Você pode chamar fluxos de trabalho sob demanda de dentro de um fluxo de processo empresarial. Você pode configurar isso por meio do novo designer do fluxo de processo empresarial ao arrastar o componente de fluxo de trabalho a um estágio do processo ou à seção de fluxos de trabalho globais. Para obter mais informações sobre como usar fluxos de trabalho em fluxos de processo empresarial, consulte [Blog: automação de fluxo de processo empresarial no Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
+ Você pode chamar fluxos de trabalho sob demanda de dentro de um fluxo de processo empresarial. Você pode configurar isso por meio do novo designer do fluxo de processo empresarial ao arrastar o componente de fluxo de trabalho a um estágio do processo ou à seção de fluxos de trabalho globais. Para obter mais informações sobre como usar fluxos de trabalho em fluxos de processo empresarial, consulte [Blog: Automação de fluxo de processo empresarial no Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
   
  Quando você inclui um fluxo de trabalho que deseja disparar na saída do estágio de um estágio em seu fluxo de processo empresarial e esse estágio é o último estágio no fluxo, o designer fornece a impressão de que o fluxo de trabalho será disparado quando o estágio estiver concluído. No entanto, o fluxo de trabalho não será disparado porque uma transição de estágio não será realizada. Você não receberá um aviso ou erro que evitará que você inclua o fluxo de trabalho no estágio. Quando um usuário interage com o fluxo do processo empresarial, concluir ou abandonar o processo não resulta em uma transição de estágio e, portanto, o fluxo de trabalho não será disparado. Considere os exemplos a seguir:  
   
@@ -180,4 +180,4 @@ Você também pode interagir com as entidades de fluxo do processo empresarial d
  [Assista a um vídeo curto (4:49) sobre fluxos de processo empresarial](https://go.microsoft.com/fwlink/p/?linkid=842226)   
  [Criar um fluxo de processo empresarial](create-business-process-flow.md)   
  [Aperfeiçoar os fluxos de processo empresarial com ramificação](enhance-business-process-flows-branching.md) <br/>
- [White paper: habilitação de processo com o Dynamics 365](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
+ [White paper: Habilitação de processo com o Dynamics 365](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>

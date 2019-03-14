@@ -4,7 +4,7 @@ description: Saiba como configurar as etapas do fluxo de trabalho
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -18,12 +18,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8e34f8ef8847ab08e14c91ee6d7871697b0275ce
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 9ebdb1eddaea1f2fd7918c968879f5da37c287fe
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690435"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462823"
 ---
 # <a name="configure-workflow-stages-and-steps"></a>Configurar os estágios e as etapas do fluxo de trabalho
 
@@ -76,7 +76,7 @@ Quando você cria fluxos de trabalho, você tem a opção para conter a lógica 
   
 |Tipo de condição|Descrição|  
 |--------------------|-----------------|  
-|**Condição de verificação**|Uma instrução lógica "if-\<condition> then".<br /><br /> Você pode verificar os valores atuais do registro que o fluxo de trabalho executa, qualquer registro vinculado a um registro em uma relação de N:1 ou todos os registros criados pelas etapas anteriores. Com base nesses valores, é possível definir as etapas adicionais quando a condição é verdadeira.<br /><br /> Na instrução "if-\<condition> then", você pode usar os seguintes operadores: **Igual A**, **Diferente de**, **Contém Dados**, **Não Contém Dados**, **Abaixo de** e **Não Abaixo de**. **Observação:** **Abaixo de** e **Não Abaixo de** são operadores hierárquicos. Eles somente podem ser usados nas entidades que têm uma relação hierárquica definida. Se você estiver tentando usar estes operadores nas entidades que não têm a relação hierárquica definida, você verá a mensagem de erro: "Você está usando um operador hierárquico em uma entidade que não tem uma relação hierárquica definida. Torne a entidade hierárquica (marcando uma relação como hierárquica) ou use um operador diferente". Para obter mais informações sobre as relações hierárquicas, consulte [Definir e consultar dados hierarquicamente relacionados](/powerapps/maker/common-data-service/define-query-hierarchical-data). Uma captura de tela que segue a tabela é um exemplo da definição do processo de fluxo de trabalho que usa os operadores hierárquicos **Abaixo de** e **Não Abaixo de**.|  
+|**Condição de verificação**|Uma instrução lógica "if-\<condition> then".<br /><br /> Você pode verificar os valores atuais do registro que o fluxo de trabalho executa, qualquer registro vinculado a um registro em uma relação de N:1 ou todos os registros criados pelas etapas anteriores. Com base nesses valores, é possível definir as etapas adicionais quando a condição é verdadeira.<br /><br /> Na instrução "if-\<condição> then", você pode usar os seguintes operadores: **É Igual a**, **É Diferente de**, **Contém Dados**, **Não Contém Dados**, **Abaixo de** e **Não Abaixo de**. **Observação:**  **Abaixo de** e **Não Abaixo de** são operadores hierárquicos. Eles somente podem ser usados nas entidades que têm uma relação hierárquica definida. Se você estiver tentando usar esses operadores nas entidades que não tiverem a relação hierárquica definida, verá a mensagem de erro: "Você está usando um operador hierárquico em uma entidade que não tem uma relação hierárquica definida. Torne a entidade hierárquica (marcando uma relação como hierárquica) ou use um operador diferente". Para obter mais informações sobre as relações hierárquicas, consulte [Definir e consultar dados hierarquicamente relacionados](/powerapps/maker/common-data-service/define-query-hierarchical-data). Uma captura de tela que segue a tabela é um exemplo da definição do processo de fluxo de trabalho que usa os operadores hierárquicos **Abaixo de** e **Não Abaixo de**.|  
 |**Ramificação condicional**|Uma instrução lógica “else-if-then”, o editor usa o texto “Otherwise, if \<condition>, then:”<br /><br /> Selecione uma condição de verificação que você definiu anteriormente e será possível adicionar uma ramificação condicional para definir as etapas adicionais quando a condição de verificação retornar false.|  
 |**Ação padrão**|Uma instrução lógica “else”. o editor usa o texto “Otherwise:”<br /><br /> Selecione uma condição de verificação, ramificação condicional, condição de espera ou uma ramificação de espera paralelo previamente definido e será possível usar uma ação padrão para definir as etapas para todos os casos que não correspondem aos critérios definidos nos elementos de condição ou de ramificação.|  
 |**Condição de espera**|Permite que um fluxo de trabalho em segundo plano pause a si mesmo até que os critérios definidos pela condição sejam atendidos. O fluxo de trabalho é iniciado novamente automaticamente quando os critérios na condição de espera tiverem sido atendidos.<br /><br /> Fluxos de trabalho em tempo real não podem usar condições de espera.|  

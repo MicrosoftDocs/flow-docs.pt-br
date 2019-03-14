@@ -1,10 +1,10 @@
 ---
-title: Melhores práticas para processos de fluxo de trabalho no PowerApps | Microsoft Docs
+title: Melhores práticas para gerenciar processos de fluxo de trabalho | Microsoft Docs
 description: Entender as maneiras recomendadas para usar fluxos de trabalho
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bba5b203782cfa813de6ddc509a8be604e5e146b
-ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
+ms.openlocfilehash: c0a59a625f4d43d125bde6ddf6edd5da5b6f6430
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51225530"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462776"
 ---
 # <a name="best-practices-for-workflow-processes"></a>Melhores práticas para processos de fluxo de trabalho
 
@@ -61,7 +61,7 @@ Para fluxos de trabalho que não são executados em segundo plano (síncronos), 
 ![Mantenha os logs para a opção de fluxos de trabalho com falha](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Limite o número de fluxos de trabalho que atualizam a mesma entidade
-Executar mais de um fluxo de trabalho que atualiza a mesma entidade pode causar problemas de bloqueio dos recursos. Imagine vários fluxos de trabalho em execução em que cada atualização de oportunidade dispara uma atualização para a conta associada. Várias instâncias desses fluxos de trabalho executando e tentando atualizar o mesmo registro de conta ao mesmo tempo podem resultar em problemas de bloqueio do recurso. Ocorrem falhas de fluxo de trabalho e uma mensagem de erro, como **Tempo limite do SQL: não é possível obter o bloqueio no recurso _nome do recurso_**, é registrada. 
+Executar mais de um fluxo de trabalho que atualiza a mesma entidade pode causar problemas de bloqueio dos recursos. Imagine vários fluxos de trabalho em execução em que cada atualização de oportunidade dispara uma atualização para a conta associada. Várias instâncias desses fluxos de trabalho executando e tentando atualizar o mesmo registro de conta ao mesmo tempo podem resultar em problemas de bloqueio do recurso. Ocorrem falhas de fluxo de trabalho e uma mensagem de erro, tal como **Tempo limite do SQL: Não é possível obter o bloqueio no recurso _nome do recurso_**, é registrada. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   

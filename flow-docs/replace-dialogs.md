@@ -3,7 +3,7 @@ title: Substituir caixas de diálogo por fluxos de processos empresariais ou apl
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 87a12345c72fd3dd3e93c1afecd282a688e4d4d1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 498efb98a4c89ca6c2a01e345f5593beae4dbcca
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691079"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462991"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Substituir caixas de diálogo por fluxos de processos empresariais ou aplicativos de tela
 
@@ -84,7 +84,7 @@ Finalmente, configure seus estágios e etapas de fluxo de processo empresarial, 
 
 Para disponibilizar esse fluxo de processo empresarial para usuários, garanta que os usuários certos têm privilégios para o fluxo de processo empresarial e, em seguida, ative-os.
 
-Para obter mais informações sobre como criar um fluxo de processo empresarial, consulte [Tutorial: Create a business process flow to standardize processes](create-business-process-flow.md) (Tutorial: criar um fluxo de processo empresarial para padronizar processos).
+Para obter mais informações sobre como criar um fluxo de processo de negócios, consulte [Tutorial: Criar um fluxo de processo empresarial para padronizar processos](create-business-process-flow.md).
 
 ## <a name="dialog-replacement-using-canvas-app-scenario"></a>Substituição da caixa de diálogo usando o cenário de aplicativo de tela
 
@@ -125,7 +125,7 @@ Posso converter automaticamente as caixas de diálogo em fluxos de processos emp
 
 
 ## <a name="see-also"></a>Consulte também
-[Tutorial: criar um fluxo de processo empresarial para padronizar processos](create-business-process-flow.md) </br>
+[Tutorial: Criar um fluxo de processo empresarial para padronizar processos](create-business-process-flow.md) </br>
 [O que são aplicativos de tela no PowerApps?](/powerapps/maker/canvas-apps/getting-started)
 
 

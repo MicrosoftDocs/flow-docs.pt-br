@@ -14,12 +14,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 137cfd02ef3ba41cc9fffacc0aa23dc88e31fcef
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 5f3e2145741c96d20f73ff74f5fd6cc6c1cbb52e
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690964"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462891"
 ---
 # <a name="classic-common-data-service-cds-for-apps-workflows"></a>CDS (Common Data Service) Clássico para fluxos de trabalho de aplicativos 
 
@@ -103,7 +103,7 @@ Os desenvolvedores podem criar fluxos de trabalho usando as informações no [Gu
 >  Os trabalhos de fluxo de trabalho não são excluídos imediatamente após a conclusão, mas, logo depois, por meio de um processo em lote.  
   
  **Escopo**  
- Para entidades de propriedade do usuário, as opções são **Organização**, **Divisões Primária e Secundárias** , **Unidade de negócios** ou **Usuário**. Para entidades de propriedade da organização a única opção é **Organização**.  
+ Para entidades de propriedade do usuário, as opções são **Organização**, **Divisões Primária e Secundárias**, **Unidade de Negócios** ou **Usuário**. Para entidades de propriedade da organização a única opção é **Organização**.  
   
  Se o escopo for **Organização**, a lógica de fluxo de trabalho poderá ser aplicada a qualquer registro na organização. Caso contrário, o fluxo de trabalho só pode ser aplicado a um subconjunto de registros que estão dentro do escopo.  
   

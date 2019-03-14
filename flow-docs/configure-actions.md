@@ -3,7 +3,7 @@ title: Configurar ações para fluxos de trabalho no PowerApps | Microsoft Docs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,16 +21,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7bd236368e572c7204309094982b2868db0bce8f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: c1b8686000b7723f2d942f3c6c5ebe685d98429d
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690644"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462896"
 ---
 # <a name="configure-custom-actions-from-a-workflow"></a>Configurar ações personalizadas de um fluxo de trabalho
 
-Você pode habilitar uma ação personalizada de um fluxo de trabalho sem escrever o código. Obter mais informações: [Invocar ações personalizadas de um fluxo de trabalho](invoke-custom-actions-workflow-dialog.md).  
+Você pode habilitar uma ação personalizada de um fluxo de trabalho sem escrever o código. Mais informações: [Invocar ações personalizadas de um fluxo de trabalho](invoke-custom-actions-workflow-dialog.md).  
   
  Você também pode criar uma ação para que um desenvolvedor possa usá-la no código ou você pode precisar editar uma ação que foi definida anteriormente. Assim como processos de fluxo de trabalho, considere o seguinte:  
   
@@ -41,11 +41,11 @@ Você pode habilitar uma ação personalizada de um fluxo de trabalho sem escrev
  
 Ao contrário de processos de fluxo de trabalho, você não precisa definir as seguintes opções:  
   
-- **Iniciar quando**: as ações iniciam quando o código chama a mensagem gerada para elas.  
+- **Iniciar quando**: As ações iniciam quando o código chama a mensagem gerada para elas.  
   
-- **Escopo**: as ações sempre são executadas no contexto do usuário da chamada.  
+- **Escopo**: As ações sempre são executadas no contexto do usuário da chamada.  
   
-- **Executar em segundo plano**: as ações são sempre fluxos de trabalho em tempo real.  
+- **Executar em segundo plano**: As ações são sempre fluxos de trabalho em tempo real.  
   
 As ações têm algo que os processos de fluxo de trabalho não têm: argumentos de entrada e saída. Mais informações: [Definir argumentos de processo](configure-actions.md#BKMK_DefineProcessArgs)  
   

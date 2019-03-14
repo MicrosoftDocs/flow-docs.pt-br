@@ -4,7 +4,7 @@ description: Saiba mais sobre os diferentes tipos de lógica de negócios que vo
 ms.custom: ''
 ms.date: 05/01/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b6cf8c2bc5e7499e7eaf5feb367c07a3aa94b3f7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: 5e123fa2abc8955d90fad2c9b09da76e449bf4b1
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188583"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462937"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>Criar a lógica de negócios personalizada por meio de processos
 
@@ -92,8 +92,8 @@ Os PowerApps incluem vários tipos de processos, cada um desenvolvido para uma f
 |CEO Gerente de negócios|Organização|  
 |Administrador de Sistema|Organização|  
 |Personalizador do sistema|Organização|  
-|Vice-presidente de marketing|Divisões Primárias e Secundárias|  
-|Vice-presidente de vendas|Divisões Primárias e Secundárias|  
+|Vice-presidente de marketing|Divisões Primária e Secundárias|  
+|Vice-presidente de vendas|Divisões Primária e Secundárias|  
 |Service Manager|Unidade de negócios|  
 |Gerente de marketing|Unidade de negócios|  
 |Gerente de vendas|Unidade de negócios|  
@@ -117,12 +117,12 @@ Os PowerApps incluem vários tipos de processos, cada um desenvolvido para uma f
 |**Branch condicional**|Fluxo de trabalho, Ação|Uma instrução lógica “else-if-then”, o editor usa o texto “Otherwise, if \<condition>, then:”<br /><br /> Selecione uma condição de verificação que você definiu anteriormente e será possível adicionar um branch condicional para definir as etapas adicionais quando a condição de verificação retornar `false`.|  
 |**Ação padrão**|Fluxo de trabalho, Ação|Uma instrução lógica “else”. o editor usa o texto “Otherwise:”<br /><br /> Selecione uma condição de verificação, branch condicional, condição de espera ou um branch de espera paralelo previamente definido e será possível usar uma ação padrão para definir as etapas para todos os casos que não correspondem aos critérios definidos nos elementos de condição ou de branch.|  
 |**Condição de espera**|Somente fluxo de trabalho em segundo plano|Permite que um fluxo de trabalho em segundo plano pause a si mesmo até que os critérios definidos pela condição sejam atendidos. O fluxo de trabalho é iniciado novamente automaticamente quando os critérios na condição de espera tiverem sido atendidos.|  
-|**Branch de espera paralelo**|Somente fluxo de trabalho em segundo plano|Define uma condição de espera alternativa para um fluxo de trabalho em segundo plano com um conjunto correspondente de etapas adicionais que são executadas somente quando o critério inicial é atendido. Você pode usar branches de espera paralelos para criar limites de tempo na sua lógica de fluxo de trabalho. Eles ajudam a impedir que o fluxo de trabalho aguarde infinitamente até que os critérios definidos em uma condição de espera tenham sido atendidos.|  
+|**Branch de espera paralelo**|Somente fluxo de trabalho em segundo plano|Define uma condição de espera alternativa para um fluxo de trabalho em segundo plano com um conjunto correspondente de etapas adicionais que são executadas somente quando o critério inicial é atendido. Você pode usar ramificações de espera paralelos para criar limites de tempo na sua lógica de fluxo de trabalho. Eles ajudam a impedir que o fluxo de trabalho aguarde infinitamente até que os critérios definidos em uma condição de espera tenham sido atendidos.|  
 |**Atribuir valor**|Ação|Define um valor para uma variável ou parâmetro de saída no processo.|  
 |**Criar registro**|Fluxo de trabalho, Ação|Cria um novo registro para uma entidade e atribui valores aos atributos.|  
 |**Atualizar registro**|Fluxo de trabalho, Ação|É possível atualizar o registro no qual o fluxo de trabalho é executado, qualquer registro vinculado a um registro em uma relação de N:1 ou todos os registros criados pelas etapas anteriores.|  
 |**Atribuir registro**|Fluxo de trabalho, Ação|É possível atribuir o registro no qual o fluxo de trabalho é executado, qualquer registro vinculado a um registro em uma relação de N:1 ou todos os registros criados pelas etapas anteriores.|  
-|**Enviar email**|Fluxo de trabalho, Ação|Envia um email. Você pode optar por criar uma nova mensagem de email ou usar um modelo de email configurado para a entidade do registro em que o fluxo de trabalho está em execução em qualquer entidade que tenha uma relação N:1 com a entidade ou a entidade para todos os registros criados pelas etapas anteriores.|  
+|**Enviar email**|Fluxo de trabalho, Ação|Envia um email. Você pode optar por criar uma nova mensagem de email ou usar um modelo de email configurado para a entidade do registro em que o fluxo de trabalho está em execução ou qualquer entidade que tenha uma relação N:1 com a entidade ou a entidade para todos os registros criados pelas etapas anteriores.|  
 |**Iniciar fluxo de trabalho filho**|Fluxo de trabalho, Ação|Inicia um processo de fluxo de trabalho que foi configurado como um fluxo de trabalho filho.|  
 |**Alterar status**|Fluxo de trabalho, Ação|Altera o status do registro no qual o processo é executado, qualquer registro vinculado a um registro em uma relação de N:1 ou todos os registros criados pelas etapas anteriores.|  
 |**Interromper fluxo de trabalho**|Fluxo de trabalho, Ação|Interrompe o fluxo de trabalho atual ou a ação. Você pode definir um status de **Bem-sucedido** ou **Cancelado** e especificar uma mensagem de status.|  

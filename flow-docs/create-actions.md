@@ -15,12 +15,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f1b51a48d7355684d2c6883bbf0db12853f686eb
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 92db054d5e9fab7ef6077146260ce46f540697c9
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690228"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462822"
 ---
 # <a name="create-a-custom-action"></a>Criar uma ação personalizada
 
@@ -48,16 +48,16 @@ Use ações personalizadas quando desejar automatizar uma série de comandos no 
  
 Ao contrário de processos de fluxo de trabalho, você não precisa definir as seguintes opções:  
   
-- **Iniciar quando**: as ações iniciam quando o código chama a mensagem gerada para elas.  
+- **Iniciar quando**: As ações iniciam quando o código chama a mensagem gerada para elas.  
   
-- **Escopo**: as ações sempre são executadas no contexto do usuário da chamada.  
+- **Escopo**: As ações sempre são executadas no contexto do usuário da chamada.  
   
-- **Executar em segundo plano**: as ações são sempre fluxos de trabalho em tempo real.  
+- **Executar em segundo plano**: As ações são sempre fluxos de trabalho em tempo real.  
   
 As ações têm algo que os processos de fluxo de trabalho não têm: argumentos de entrada e saída.
 
 > [!NOTE]
-> Você pode habilitar uma ação personalizada de um fluxo de trabalho sem escrever o código. Obter mais informações: [Invocar ações personalizadas de um fluxo de trabalho](invoke-custom-actions-workflow-dialog.md).
+> Você pode habilitar uma ação personalizada de um fluxo de trabalho sem escrever o código. Mais informações: [Invocar ações personalizadas de um fluxo de trabalho](invoke-custom-actions-workflow-dialog.md).
  
 <a name="edit"></a>   
 ## <a name="edit-an-action"></a>Editar uma ação  

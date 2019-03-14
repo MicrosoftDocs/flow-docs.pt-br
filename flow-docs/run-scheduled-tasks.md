@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 809ea2202971df854b2351d57a09da8918d13b8b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: af18e8caae8e74bb12d274c6e5cb0d94a0e0471b
+ms.sourcegitcommit: b684b379e6007d3bd00948525156e7fbd39bf96c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690182"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57665004"
 ---
 # <a name="run-flows-on-a-schedule"></a>Execute fluxos agendados
 Crie um fluxo que execute uma ou mais tarefas (como enviar um relatório por email):
@@ -53,7 +53,7 @@ Crie um fluxo que execute uma ou mais tarefas (como enviar um relatório por ema
 ## <a name="specify-advanced-options"></a>Especificar opções avançadas
 1. Siga as etapas na seção anterior e selecione **Mostrar opções avançadas**.
    
-    **Observação**: essas opções mudam com base nos valores para os quais o **Intervalo** e a **Frequência** são definidos. Se a tela não coincidir com o gráfico a seguir, verifique se o **Intervalo** e a **Frequência** estão definidos para os mesmos valores que o gráfico mostra.
+    **Observação**: Essas opções mudam com base nos valores para os quais o **Intervalo** e a **Frequência** são definidos. Se a tela não coincidir com o gráfico a seguir, verifique se o **Intervalo** e a **Frequência** estão definidos para os mesmos valores que o gráfico mostra.
 2. Selecione um **Fuso horário** para especificar se a **Hora de início** reflete um fuso horário local, Hora Universal Coordenada (UTC) etc.
 3. Especifique uma **Hora de início** neste formato:
    <br>AAAA-MM-DDTHH:MM:SSZ
@@ -84,4 +84,8 @@ Crie um fluxo que execute uma ou mais tarefas (como enviar um relatório por ema
      ![Adicionar um atraso](./media/run-scheduled-tasks/add-delay.png)
      ![Especificar o atraso em unidades de tempo](./media/run-scheduled-tasks/delay.png)
      ![Especificar um atraso até](./media/run-scheduled-tasks/delay-until.png)
+
+## <a name="learn-more"></a>Saiba mais
+
+Saiba mais sobre as [opções avançadas](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) e como configurá-las.
 
