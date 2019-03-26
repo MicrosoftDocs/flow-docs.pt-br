@@ -69,9 +69,9 @@ items:
     href: edit-solution-aware-flow.md
   - name: Remover um fluxo com reconhecimento de solução
     href: remove-solution-aware-flow.md
-- name: CDS (Common Data Service) para aplicativos
+- name: Common Data Service
   items:
-  - name: CDS clássico para fluxos de trabalho de aplicativos
+  - name: Fluxos de trabalho do Common Data Service clássico
     href: workflow-processes.md
     items:
     - name: Configurar os estágios e as etapas do fluxo de trabalho
@@ -80,7 +80,7 @@ items:
       href: monitor-manage-processes.md
     - name: Melhores práticas para processos de fluxo de trabalho
       href: best-practices-workflow-processes.md
-  - name: CDS clássico para ações de aplicativos
+  - name: Ações do Common Data Service clássico
     items:
     - name: Usar ações
       href: actions.md
@@ -90,15 +90,15 @@ items:
       href: configure-actions.md
     - name: Invocar ações personalizadas de um fluxo de trabalho
       href: invoke-custom-actions-workflow-dialog.md
-  - name: CDS clássico para fluxos de tarefas de aplicativos
+  - name: Fluxos de tarefas do Common Data Service clássico
     items:
     - name: Criar fluxos de tarefas móveis
       href: create-mobile-task-flow.md
-  - name: CDS clássico para caixas de diálogo de aplicativos
+  - name: Caixas de diálogo do Common Data Service clássico
     items:
-    - name: Usar o CDS clássico para caixas de diálogo de aplicativos
+    - name: Usar caixas de diálogo do Common Data Service clássico
       href: use-cds-for-apps-dialogs.md
-    - name: Substituir o CDS clássico para caixas de diálogo de aplicativos
+    - name: Substituir caixas de diálogo do Common Data Service clássico
       href: replace-dialogs.md
 - name: Como
   items:
@@ -161,7 +161,7 @@ items:
     items:
     - name: 'Exemplo: Trabalhar com fluxos dos processos empresariais'
       href: ./developer/sample-work-business-process-flows.md
-  - name: CDS personalizado para atividades de fluxo de trabalho de aplicativos
+  - name: Personalizar atividades de fluxo de trabalho do Common Data Service
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administração
   items:
@@ -221,9 +221,9 @@ items:
     href: https://flow.microsoft.com/blog/
   - name: Fóruns
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-ms.openlocfilehash: e5b09261b0c46b8019fbb58e058c3a11720c2028
-ms.sourcegitcommit: 3c7822c7207cfa51d0274e9647ef02e5ea1d999f
+ms.openlocfilehash: 160466a0a616661993237e70007072efded33c9c
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58321354"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352724"
