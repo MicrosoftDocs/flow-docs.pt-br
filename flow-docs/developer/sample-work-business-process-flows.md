@@ -1,5 +1,5 @@
 ---
-title: 'Amostra: trabalhar com fluxos de processo empresarial (Guia do desenvolvedor para participação do cliente do Dynamics 365) | Microsoft Docs'
+title: 'Exemplo: Trabalhar com fluxos do processo empresarial (Guia do Desenvolvedor do Dynamics 365 Customer Engagement) | MicrosoftDocs'
 description: A amostra demonstra como trabalhar programaticamente com fluxos de processo empresarial, como recuperar as instâncias de fluxo do processo empresarial para um registro de entidade, recuperando o caminho ativo para uma instância de fluxo de processo empresarial e seus estágios de processo e alterando o estágio ativo.
 ms.custom: ''
 ms.date: 04/05/2018
@@ -18,24 +18,24 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 6fe2b6d600d86dfd807dbb1ef794a1f428f26fbf
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6f3543b666e471d1f7fa0fe24fc718e50d35aec8
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690032"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352954"
 ---
-# <a name="sample-work-with-business-process-flows"></a>Amostra: trabalhar com fluxos de processo empresarial
+# <a name="sample-work-with-business-process-flows"></a>Exemplo: Trabalhar com fluxos dos processos empresariais
 
 Essa amostra demonstra como trabalhar programaticamente com fluxos de processo empresarial, como recuperar as instâncias de fluxo do processo empresarial para um registro de entidade, recuperando o caminho ativo para uma instância de fluxo de processo empresarial e seus estágios de processo e alterando o estágio ativo. Para obter informações sobre esses conceitos, consulte [Trabalhar fluxos de trabalho de processo empresarial usando código](business-process-flows-code.md)  
 
- Essa amostra está disponível para download em [Exemplo: trabalhar com fluxos de processo empresarial](https://go.microsoft.com/fwlink/p/?LinkId=846108).  
+ Este exemplo está disponível para download no [Exemplo: Trabalhar com fluxos dos processos empresariais](https://go.microsoft.com/fwlink/p/?LinkId=846108).  
 
 <a name="BKMK_Prerequisites"></a>   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Antes de executar a amostra:  
 
-1. Tenha acesso a um Common Data Service para o ambiente de aplicativos.  
+1. Tenha acesso a um ambiente do Common Data Service.  
 
 2. Tenha privilégios apropriados nas entidades de Cliente potencial, Oportunidade e Fluxo de trabalho e os registros de entidade de definição do processo empresarial usados nesta amostra.  
 
@@ -70,7 +70,7 @@ Essa amostra demonstra como trabalhar programaticamente com fluxos de processo e
 
 2. Localize o arquivo `WorkWithBPF.sln` na pasta extraída e abra-o no Visual Studio.  
 
-3. O projeto de amostra usa pacotes do NuGet que devem ser restaurados antes de executar a amostra. Certifique-se de que a restauração automática dos pacotes do NuGet esteja habilitada no Visual Studio. Mais informações: [Habilitando e desabilitando a restauração de pacote do NuGet](https://go.microsoft.com/fwlink/?linkid=846106)  
+3. O projeto de amostra usa pacotes do NuGet que devem ser restaurados antes de executar a amostra. Certifique-se de que a restauração automática dos pacotes do NuGet esteja habilitada no Visual Studio. Mais informações: [Habilitando e desabilitando a restauração de pacotes NuGet](https://go.microsoft.com/fwlink/?linkid=846106)  
 
     Como alternativa, selecione **Projeto** > **Gerenciar pacotes do NuGet**e selecione **Restaurar** para restaurar manualmente os pacotes usados na amostra.  
 

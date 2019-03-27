@@ -17,12 +17,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7d75332f8902d5889881d122f2d42e3c203e34ad
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.openlocfilehash: cf5c0e488f1d01c514f509b9d2a8afae265cf487
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462730"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352862"
 ---
 # <a name="use-actions"></a>Usar ações
 
@@ -39,7 +39,7 @@ As ações fornecem a capacidade de definir um único verbo (ou mensagem) que co
 <a name="BKMK_GlobalMessages"></a>   
 ## <a name="global-messages"></a>Mensagens globais 
  
- Ao contrário do CDS para fluxos de trabalho de aplicativos ou [plug-ins](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in), uma ação não precisa ser associada a uma entidade específica. Você pode definir as ações "globais" que podem ser chamadas por si próprias.
+ Ao contrário dos fluxos de trabalho ou dos [plug-ins](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in) do Common Data Service, uma ação não precisa estar associada a uma entidade específica. Você pode definir as ações "globais" que podem ser chamadas por si próprias.
 
 ## <a name="next-steps"></a>Próximas etapas
 

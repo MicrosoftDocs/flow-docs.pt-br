@@ -1,5 +1,5 @@
 ---
-title: Usar CDS para caixas de diálogo de aplicativos para processos guiados (preterido) | Microsoft Docs
+title: Usar as caixas de diálogo do Common Data Service para processos guiados (preterido) | MicrosoftDocs
 description: As caixas de diálogo são os processos síncronos ou interativos que coletam e processam informações usando scripts passo a passo para direcionar os usuários por meio de um processo
 ms.custom: ''
 ms.date: 10/31/2017
@@ -15,22 +15,22 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f8b2e87bdb9aed63e9f180d446349779cd37c25c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 90bdbc0ecf9b778ec6da3e4cac2b32b44e361fb0
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689653"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352908"
 ---
-# <a name="use-cds-for-apps-dialogs-for-guided-processes-deprecated"></a>Usar CDS para caixas de diálogo de aplicativos para processos guiados (preterido)
+# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Usar as caixas de diálogo do Common Data Service para processos guiados (preterido)
 
 [As caixas de diálogo estão preteridas](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). Você deve substituir caixas de diálogo por fluxos de processo empresarial ou aplicativos de tela. Mais informações: [Substituir caixas de diálogo por fluxos de processo empresarial ou aplicativos de tela](replace-dialogs.md) 
 
-As caixas de diálogo são os processos síncronos ou interativos no CDS (Common Data Service) para aplicativos que coletam e processam informações usando scripts passo a passo para direcionar os usuários por meio de um processo. Por exemplo, você pode criar caixas de diálogo para atuar como um guia para os representantes de serviço para resolução do caso e escalonamento de caso. Da mesma forma, você pode criar caixas de diálogo para padronizar processos de vendas, como qualificação de oportunidades e pontuações de clientes potenciais. Para obter mais informações, consulte [Usar caixas de diálogo para processos guiados](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) no Guia do desenvolvedor de participação do cliente do Dynamics 365.
+As caixas de diálogo são os processos síncronos ou interativos no Common Data Service que coletam e processam informações usando scripts passo a passo para direcionar os usuários ao longo de um processo. Por exemplo, você pode criar caixas de diálogo para atuar como um guia para os representantes de serviço para resolução do caso e escalonamento de caso. Da mesma forma, você pode criar caixas de diálogo para padronizar processos de vendas, como qualificação de oportunidades e pontuações de clientes potenciais. Para obter mais informações, consulte [Usar caixas de diálogo para processos guiados](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) no Guia do desenvolvedor de participação do cliente do Dynamics 365.
 
 ## <a name="differences-between-workflows-and-dialogs"></a>Diferenças entre os fluxos de trabalho e as caixas de diálogo
 
-A tabela a seguir fornece informações sobre as diferenças entre caixas de diálogo e fluxos de trabalho do CDS para aplicativos.  
+A tabela a seguir fornece informações sobre as diferenças entre os fluxos de trabalho e as caixas de diálogo do Common Data Service.  
 
 
 | Fluxos de trabalho     |    Caixas de diálogo      |

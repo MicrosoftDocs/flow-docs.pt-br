@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: db8a8c99344b93ad981a26d5174e99385d2a3f82
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 392a869d6b25bb16ee02a6bb3373d6edcf81621b
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905736"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353138"
 ---
 # <a name="release-notes"></a>Notas de versão
 ## <a name="top-questions"></a>Principais perguntas
@@ -96,7 +96,7 @@ O programa de versão prévia do Microsoft Flow é a maneira de obter acesso ant
 ### <a name="release-2018-07-23"></a>Versão de 23-07-2018
 
 - **Criar e executar fluxos no Excel** – com o novo botão **Fluxo** (acessado na guia **Dados** na faixa de opções), você pode criar e disparar automações do Microsoft Flow nos dados da tabela no Excel. Automatize o processamento de dados ou a cópia/importação dos dados.
-- **Criar um fluxo do processo empresarial** – um fluxo do processo empresarial é um novo tipo de fluxo interativo humano com estado, baseado no Common Data Service for Apps. Use esses novos fluxos para definir um conjunto de estágios e etapas para as pessoas seguirem. É possível mover-se para frente e para trás, conforme necessário.
+- **Criar um fluxo do processo empresarial** – um fluxo do processo empresarial é um novo tipo de fluxo interativo para pessoas, com estado, baseado no Common Data Service. Use esses novos fluxos para definir um conjunto de estágios e etapas para as pessoas seguirem. É possível mover-se para frente e para trás, conforme necessário.
 - **Criar um fluxo para o Microsoft To-Do no Outlook Web App** – se alguém for \@mencionado no Outlook Web App, ele verá um atalho para criar um fluxo. Este fluxo cria automaticamente as tarefas para a pessoa \@mencionada no Microsoft To-Do, com base no conteúdo do email.
 - **Suporte ao modo de exibição do SharePoint** – o conector do SharePoint agora suporta a seleção de um modo de exibição específico do SharePoint em gatilhos e ações. Isso filtra as colunas para apenas os campos que estão no modo de exibição selecionado.
 - **Quatro novos conectores** – adicionado o Azure IoT Central – uma solução de software como serviço (SaaS) de IoT altamente escalonável – Survey 123, LMS365 e ProjectWise Design Integration.
@@ -151,7 +151,7 @@ O programa de versão prévia do Microsoft Flow é a maneira de obter acesso ant
 
 ### <a name="release-2018-04-04"></a>Versão 2018-04-04
 
-- **Aprovações no Common Data Service** – Aprovações modernas são criadas na versão mais recente do Common Data Service for Apps. Isso significa que você pode criar fluxos que leem o status das aprovações enviadas ou recebidas com o conector CDS.
+- **Aprovações no Common Data Service** – as aprovações modernas são criadas na versão mais recente do Common Data Service. Isso significa que você pode criar fluxos que leem o status das aprovações enviadas ou recebidas com o conector do Common Data Service.
 - **Localizar erros em aplicar a cada** – Saltar diretamente para erros em loops na exibição de execução de fluxo, mesmo quando houver centenas de itens no loop.
 - **Reatribuir aprovações** – Você pode atribuir qualquer aprovação recebida a outra pessoa em sua organização para delegar a aprovação para essa pessoa. 
 - **Listas de salas** – O conector do Outlook do Office 365 adicionou ações para obter dados de sala em sua organização.

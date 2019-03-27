@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
-ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
+ms.openlocfilehash: 6e05c24aa00c29dff4ca07432277ca7b907ebbb0
+ms.sourcegitcommit: e17963065b72ddaba7b2605908c62768acb8c16c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56885494"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58327080"
 ---
 # <a name="flow-in-your-organization-qa"></a>P e R sobre o Flow em sua organização
 Este tópico descreve como os usuários em sua organização podem usar o Flow e como você pode controlar o serviço do Flow.
@@ -38,7 +38,7 @@ O Microsoft Flow é um serviço de nuvem pública que ajuda pessoas e equipes a 
 Há duas maneiras possíveis para as pessoas se inscreverem no Flow por meio do portal da Web:
 
 #### <a name="option-1"></a>Opção 1
-Para se inscrever, os usuários podem acessar [flow.microsoft.com](https://flow.microsoft.com), escolher **Inscrever-se gratuitamente** e concluir o processo de inscrição para o Flow em [portal.office.com](https://portal.office.com/Start?sku=flow_free) ou em [signup.live.com](https://signup.live.com).
+Qualquer pessoa pode se inscrever acessando [flow.microsoft.com](https://flow.microsoft.com), selecionando **Inscrever-se gratuitamente** e, em seguida, concluindo o processo de inscrição no Flow por meio de [admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) ou [signup.live.com](https://signup.live.com).
 
 #### <a name="option-2"></a>Opção 2
 Para se inscrever, os usuários podem acessar [flow.microsoft.com](https://flow.microsoft.com), escolher **Entrar**, entrar com a conta corporativa, de estudante ou pessoal e aceitar os termos de uso do Flow.    
@@ -147,7 +147,7 @@ Se um novo locatário tiver sido criado pelo Microsoft Flow, você poderá solic
 1. Ingresse no locatário inscrevendo-se no Flow com um domínio de endereço de email que corresponda ao domínio de locatário que você deseja gerenciar. Por exemplo, se a Microsoft tiver criado o locatário contoso.com, ingresse com um endereço de email que termine com @contoso.com.
 2. Solicite o controle de administração verificando a propriedade do domínio: quando estiver no locatário, você poderá se autopromover à função de administrador verificando a propriedade do domínio. Para fazer isso, siga estas etapas:    
    
-   1. Acesse [https://portal.office.com](https://portal.office.com/Start?sku=flow_free).
+   1. Acesse [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
    2. Selecione o ícone do iniciador de aplicativos no canto superior esquerdo e escolha Administrador.
    3. Leia as instruções na página **Tornar-se o administrador** e escolha **Sim, quero ser o administrador**.  
       

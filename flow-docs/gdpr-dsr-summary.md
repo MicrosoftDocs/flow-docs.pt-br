@@ -20,16 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6e4763fd3851276d647a302747342a6980293c33
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 1eaa98b674e78f46988d253e2be76a5d92283a76
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690771"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353115"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Responder às Solicitações de entidade de dados de GDPR do Microsoft Flow
 
-Este artigo prepara você, e a sua organização, para o GDPR (Regulamento Geral sobre a Proteção de Dados). Este artigo descreve o que a Microsoft está fazendo para se preparar para o GDPR, e também compartilha exemplos de etapas que você pode executar hoje para estar em conformidade com o GDPR ao usar PowerApps, Microsoft Flow e Common Data Service for Apps.
+Este artigo prepara você, e a sua organização, para o GDPR (Regulamento Geral sobre a Proteção de Dados). Este artigo descreve o que a Microsoft está fazendo para preparar-se para o RGPD e também compartilha exemplos de etapas que você pode executar hoje mesmo para estar em conformidade com o RGPD ao usar o PowerApps, o Microsoft Flow e o Common Data Service.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -58,23 +58,23 @@ O GDPR concede direitos às pessoas (conhecidas no GDPR como entidades de dados)
 
 Este artigo descreve como usar os produtos, serviços e ferramentas administrativas da Microsoft para ajudar os controladores a localizar e agir sobre dados pessoais ao responder aos DSRs. Especificamente, este artigo inclui como localizar, acessar e agir sobre dados pessoais que residem na nuvem da Microsoft. Aqui está uma rápida visão geral dos processos descritos neste guia:
 
-1. Descobrir: use as ferramentas de pesquisa e de descoberta para localizar mais facilmente os dados do cliente que possam ser o assunto de um DSR. Após a coleta de documentos potencialmente responsivos, você pode executar uma ou mais ações de DSR descritas nas etapas a seguir para responder à solicitação. Como alternativa, você pode determinar que a solicitação não atende às diretrizes da sua organização por respostas aos DSRs. [Documentação de descoberta de DSR do Microsoft Flow](gdpr-dsr-discovery.md)
+1. Descobrir: use as ferramentas de pesquisa e de descoberta para localizar com mais facilidade os dados do cliente que possam ser o assunto de um DSR. Após a coleta de documentos potencialmente responsivos, você pode executar uma ou mais ações de DSR descritas nas etapas a seguir para responder à solicitação. Como alternativa, você pode determinar que a solicitação não atende às diretrizes da sua organização por respostas aos DSRs. [Documentação de descoberta de DSR do Microsoft Flow](gdpr-dsr-discovery.md)
 
-1. Acesso: recupere dados pessoais que residem na nuvem da Microsoft e, se for solicitado, faça uma cópia que possa ser disponibilizada para a entidade de dados.
+1. Acessar: recupere os dados pessoais que residem na nuvem da Microsoft e, se solicitado, faça uma cópia que possa ser disponibilizada para o titular dos dados.
 
-1. Corrigir: faça alterações ou implemente outras ações solicitadas nos dados pessoais, quando aplicável.
+1. Corrigir: faça alterações ou implemente outras ações solicitadas nos dados pessoais, conforme o necessário.
 
     Se uma entidade de dados solicitar a correção dos dados pessoais dela que residem em sua organização, você e sua organização deverão determinar se é apropriado aceitar a solicitação.  A correção dos dados pode incluir a execução de ações como edição, redação ou remoção de dados pessoais.
 
     Você pode usar o Azure Active Directory para gerenciar identidades de usuários do Microsoft Flow. Os clientes empresariais podem gerenciar solicitações de correção de DSR, incluindo recursos de edição limitada, de acordo com a natureza de um determinado serviço da Microsoft.  Como processador de dados, a Microsoft não oferece a capacidade de corrigir os logs gerados pelo sistema, pois esses logs refletem atividades reais e constituem um registro histórico de eventos nos serviços da Microsoft.  [Saiba mais sobre DSR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
 
-1. Restringir: restrinja o processamento de dados pessoais por meio da remoção de licenças de vários serviços online ou desativação dos serviços desejados, sempre que possível. Você também pode remover dados da nuvem da Microsoft e retê-los no local ou em outro lugar.
+1. Restringir: restrinja o processamento de dados pessoais, removendo licenças de vários serviços online ou desabilitando os serviços desejados sempre que possível. Você também pode remover dados da nuvem da Microsoft e retê-los no local ou em outro lugar.
 
     As entidades de dados podem solicitar a restrição do processamento de seus dados pessoais.  A Microsoft fornece APIs (interfaces de programação de aplicativo) e UIs (interfaces de usuário) para essa finalidade.  Essas interfaces permitem que o administrador de locatário do cliente corporativo gerencie esses DSRs por meio de uma combinação de exportação e exclusão de dados. Um cliente pode (1) exportar uma cópia eletrônica dos dados pessoais do usuário, incluindo contas, logs gerados pelo sistema e logs associados, e logo depois (2) excluir a conta e os dados associados que residem nos sistemas da Microsoft.
 
 1. Excluir: remova permanentemente os dados pessoais que residem na nuvem da Microsoft. [Saiba mais sobre como excluir dados pessoais](gdpr-dsr-delete.md).
 
-1. Exportar: forneça uma cópia eletrônica (em um formato legível por máquina) dos dados pessoais à entidade de dados. Cada seção deste artigo descreve os procedimentos técnicos que uma organização controladora de dados pode seguir para responder a um DSR de dados pessoais na nuvem da Microsoft. [Saiba mais sobre como exportar dados pessoais](gdpr-dsr-export.md).
+1. Exportar: forneça uma cópia eletrônica (em um formato legível por computador) dos dados pessoais ao titular dos dados. Cada seção deste artigo descreve os procedimentos técnicos que uma organização controladora de dados pode seguir para responder a um DSR de dados pessoais na nuvem da Microsoft. [Saiba mais sobre como exportar dados pessoais](gdpr-dsr-export.md).
 
 ## <a name="system-generated-logs"></a>Logs gerados pelo sistema
 

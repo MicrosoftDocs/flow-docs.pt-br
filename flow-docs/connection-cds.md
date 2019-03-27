@@ -1,6 +1,6 @@
 ---
-title: Criar um fluxo automatizado com o Common Data Service para Aplicativos | Microsoft Docs
-description: Criar fluxos de trabalho usando uma conexão do Common Data Service para Aplicativos e o Microsoft Flow
+title: Criar um fluxo automatizado com o Common Data Service | Microsoft Docs
+description: Criar fluxos de trabalho usando uma conexão do Common Data Service e o Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f9a417f99b6ea4105a451b65f7ccabbf36922d78
-ms.sourcegitcommit: 61f0eb1fdc54da02eb57dadf09899fa6f308b00d
+ms.openlocfilehash: 6dba013481983d0b8c43c82c7bc6eed800fccc2e
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524487"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352885"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service-for-apps"></a>Criar um fluxo automatizado usando o Common Data Service para Aplicativos
+# <a name="create-an-automated-flow-by-using-common-data-service"></a>Criar um fluxo automatizado usando o Common Data Service
 
-Com o conector do Common Data Service para Aplicativos, você pode criar fluxos que são iniciados por criar e atualizar eventos dentro de seu banco de dados do Common Data Service. Além disso, você pode executar criar, atualizar, recuperar e excluir ações em registros de dentro do banco de dados do Common Data Service para Aplicativos.
+Com o conector do Common Data Service, você pode criar fluxos que sejam iniciados por eventos de criação e atualização no banco de dados do Common Data Service. Além disso, você pode executar ações de criação, atualização, recuperação e exclusão nos registros do banco de dados do Common Data Service.
 
-## <a name="initiate-a-flow-from-common-data-service-for-apps"></a>Iniciar um fluxo do Common Data Service para Aplicativos
+## <a name="initiate-a-flow-from-common-data-service"></a>Iniciar um fluxo do Common Data Service
 
 Você pode usar qualquer um dos seguintes gatilhos para iniciar seu fluxo:
 
@@ -75,9 +75,9 @@ Esse fluxo dispara sempre que o nome ou sobrenome do contato pertencente ao usu�
 
 Para criar um fluxo que gatilhos com base em criar, atualizar ou excluir em um registro, o usuário precisa ter permissões de nível de usuário para criação, leitura, gravação e exclusão na entidade de Registro de Retorno de Chamada. Além disso, dependendo dos escopos definidos, o usuário talvez precise pelo menos desse nível de leitura na mesma entidade.  [Saiba mais](https://docs.microsoft.com/power-platform/admin/database-security) sobre a segurança do ambiente.
 
-## <a name="write-data-into-common-data-service-for-apps"></a>Gravar dados no Common Data Service para Aplicativos
+## <a name="write-data-into-common-data-service"></a>Gravar dados no Common Data Service
 
-Use qualquer uma das seguintes ações para gravar dados no Common Data Service para Aplicativos:
+Use uma das seguintes ações para gravar dados no Common Data Service:
 
 - Criar um registro
 - Atualizar um registro

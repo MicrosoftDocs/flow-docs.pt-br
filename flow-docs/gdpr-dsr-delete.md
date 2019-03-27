@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
-ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
+ms.openlocfilehash: 523e46269522d50eebe34fc559d69f4c146a2c3f
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248835"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353069"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Responder às Solicitações de exclusão de entidade de dados de GDPR do Microsoft Flow
 
@@ -49,7 +49,7 @@ A tabela a seguir mostra quais dados pessoais são excluídos automaticamente e 
 
 *Cada um desses recursos contém os registros "Criado por" e "Modificado por" que incluem dados pessoais. Por motivos de segurança, esses registros ficam retidos até que o recurso seja excluído.
 
-**Para ambientes que incluem um banco de dados do Common Data Service para Aplicativos, as permissões de ambiente (por exemplo, quais usuários são atribuídos às funções de administrador e criador de ambiente) são armazenadas como registros no banco de dados do Common Data Service. Veja [Executar DSRs em dados de cliente de Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251), para obter diretrizes sobre como responder a DSRs para usuários que usam o Common Data Service.
+**Para ambientes que incluem um banco de dados do Common Data Service, as permissões do ambiente (por exemplo, quais usuários são atribuídos às funções de Administrador e Criador de Ambiente) são armazenadas como registros no banco de dados do Common Data Service. Veja [Executar DSRs em dados de cliente de Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251), para obter diretrizes sobre como responder a DSRs para usuários que usam o Common Data Service.
 
 Para os dados e recursos que exigem revisão manual, o Microsoft Flow oferece as seguintes experiências para localizar ou alterar os dados pessoais de um usuário específico:
 
@@ -76,7 +76,7 @@ Confira a divisão das experiências que estão disponíveis para um administrad
 |Permissões do conector personalizado|Microsoft Flow Maker Portal| ||
 |Histórico de aprovações|Microsoft PowerApps Maker Portal*|||
 
-*Com a introdução do Common Data Service for Apps, se um banco de dados é criado dentro do ambiente, as permissões de ambiente e permissões de aplicativos controladas por modelos são armazenadas como registros dentro da instância de banco de dados do Common Data Service for Apps. Veja [Executar DSRs em dados de cliente de Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251), para obter diretrizes sobre como responder a DSRs para usuários que usam o Common Data Service.
+*Com a introdução do Common Data Service, se um banco de dados é criado dentro do ambiente, as permissões do ambiente e as permissões dos aplicativos controlados por modelo são armazenadas como registros na instância de banco de dados do Common Data Service. Veja [Executar DSRs em dados de cliente de Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251), para obter diretrizes sobre como responder a DSRs para usuários que usam o Common Data Service.
 
 \*\* O administrador só poderá acessar esses recursos no Microsoft Flow Maker Portal se tiver recebido acesso do Centro de Administração do Microsoft Flow.
 
@@ -137,7 +137,7 @@ Estas etapas copiam os fluxos existentes de um usuário que está saindo. Se voc
 
 ## <a name="delete-approval-history-from-microsoft-flow"></a>Excluir histórico de aprovação do Microsoft Flow
 
- Os dados de aprovação do Microsoft Flow são armazenados na versão atual ou anterior do Common Data Service for Apps. Dentro de uma aprovação, há informações pessoais na forma de atribuições de aprovação e comentários incluídos na resposta de uma aprovação. Os administradores podem acessar esses dados executando estas etapas:
+ Os dados de aprovação do Microsoft Flow são armazenados na versão atual ou anterior do Common Data Service. Dentro de uma aprovação, há informações pessoais na forma de atribuições de aprovação e comentários incluídos na resposta de uma aprovação. Os administradores podem acessar esses dados executando estas etapas:
 
 1. Entre no [PowerApps](https://web.powerapps.com/).
 
@@ -277,7 +277,7 @@ Um administrador pode conceder acesso de Administrador a um ambiente criado por 
 
 Os usuários podem receber permissões (como Administrador de Ambiente, Criador de Ambiente etc.) em um ambiente, as quais são armazenadas no serviço Microsoft Flow como uma "atribuição de função".
 
-Com a introdução do Common Data Service for Apps, se um banco de dados é criado dentro do ambiente, essas "atribuições de função" são armazenadas como registros dentro da instância de banco de dados do Common Data Service for Apps.
+Com a introdução do Common Data Service, se um banco de dados é criado dentro do ambiente, essas "atribuições de função" são armazenadas como registros na instância de banco de dados do Common Data Service.
 
 Para saber mais sobre como remover a permissão de um usuário em um ambiente, navegue até [Usar ambientes no Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 

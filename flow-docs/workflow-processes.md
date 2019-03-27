@@ -1,5 +1,5 @@
 ---
-title: CDS (Common Data Service) Clássico para fluxos de trabalho de aplicativos | Microsoft Docs
+title: Fluxos de trabalho clássicos do Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/06/2018
 ms.reviewer: matp
@@ -14,14 +14,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5f3e2145741c96d20f73ff74f5fd6cc6c1cbb52e
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.openlocfilehash: b48fd51fcdf5ea85b564f7e422f72afa3f318060
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462891"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352839"
 ---
-# <a name="classic-common-data-service-cds-for-apps-workflows"></a>CDS (Common Data Service) Clássico para fluxos de trabalho de aplicativos 
+# <a name="classic-common-data-service-workflows"></a>Fluxos de trabalho clássicos do Common Data Service 
 
 Os fluxos de trabalho automatizam processos empresariais sem uma interface do usuário. As pessoas geralmente usam processos de fluxo de trabalho para iniciar a automação que não requer nenhuma interação do usuário.  
   
