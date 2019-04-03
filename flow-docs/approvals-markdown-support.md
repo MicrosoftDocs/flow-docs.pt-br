@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a6c06fc564334eeacd01e54ab3b71046d229d033
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
+ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690004"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58656121"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Usar markdown em solicitações de aprovação do Microsoft Flow
 
@@ -57,10 +57,8 @@ Facilite a leitura do texto dividindo-o com parágrafos ou quebras de linha. Ins
    
 **Exemplo**
 
-<pre>
-Add lines between your text with the Enter key.
-This spaces your text better and makes it easier to read.
-</pre>
+Adicione linhas entre o texto com a tecla Enter.
+Esse causa um espaçamento melhor do seu texto e facilita a leitura.
 
 **Resultado:**   
 Adicione linhas entre o texto com a tecla Enter.      
@@ -69,10 +67,8 @@ Esse causa um espaçamento melhor do seu texto e facilita a leitura.
 
 **Exemplo 2**
 
-<pre>
-Add two spaces prior to the end of the line.(space, space)     
-This adds space in between paragraphs.
-</pre>
+Adicione dois espaços antes do final da linha (espaço, espaço).     
+Isso adiciona um espaço entre parágrafos.
 
 **Resultado:**  
 Adicione dois espaços antes do término da linha.   
