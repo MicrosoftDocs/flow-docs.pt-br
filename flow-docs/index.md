@@ -2,25 +2,31 @@
 layout: HubPage
 hide_bc: true
 title: Documentação do Microsoft Flow | Microsoft Docs
-description: 'O Microsoft Flow é um serviço com o qual você pode criar fluxos de trabalho automatizados entre seus aplicativos e serviços favoritos para sincronizar arquivos, obter notificações, coletar dados e muito mais.'
+description: O Microsoft Flow é um serviço com o qual você pode criar fluxos de trabalho automatizados entre seus aplicativos e serviços favoritos para sincronizar arquivos, obter notificações, coletar dados e muito mais.
 keywords:
-  - Microsoft Flow
-  - fluxo de trabalho
-  - fluxo
-  - fluxo de trabalho de aprovação
-  - fluxo de trabalho do SharePoint
+- Microsoft Flow
+- fluxo de trabalho
+- fluxo
+- fluxo de trabalho de aprovação
+- fluxo de trabalho do SharePoint
 author: msftman
 ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
 ms.reviewer:
-  - karann-msft
+- karann-msft
 search.app:
-  - Flow
+- Flow
 search.audienceType:
-  - flowmaker
-  - enduser
+- flowmaker
+- enduser
+ms.openlocfilehash: 6032b608719e01407395113cec40b554e7a945c8
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353023"
 ---
 <div id="main" class="v2">
     <div class="container">
