@@ -57,23 +57,23 @@ Facilite a leitura do texto dividindo-o com parágrafos ou quebras de linha. Ins
    
 **Exemplo**
 
-Adicione linhas entre o texto com a tecla Enter.
-Esse causa um espaçamento melhor do seu texto e facilita a leitura.
+Add lines between your text with the Enter key.
+This spaces your text better and makes it easier to read.
 
 **Resultado:**   
-Adicione linhas entre o texto com a tecla Enter.      
-Esse causa um espaçamento melhor do seu texto e facilita a leitura.
+Add lines between your text with the Enter key.      
+This spaces your text better and makes it easier to read.
 
 
 **Exemplo 2**
 
-Adicione dois espaços antes do final da linha (espaço, espaço).     
-Isso adiciona um espaço entre parágrafos.
+Add two spaces prior to the end of the line.(space, space)     
+This adds space in between paragraphs.
 
 **Resultado:**  
-Adicione dois espaços antes do término da linha.   
+Add two spaces prior to the end of the line.   
 
-Isso adiciona um espaço entre parágrafos.
+This adds space in between paragraphs.
   
 
 ## <a name="lists"></a>Listas
@@ -94,9 +94,9 @@ As listas ordenada começam com um número seguido por um ponto para cada item d
 
 **Resultado:**
 
-1. Primeiro item.
-2. Segundo item.
-3. Terceiro item.
+1. First item.
+2. Second item.
+3. Third item.
 
 ### <a name="bullet-lists"></a>Listas com marcador
 
@@ -134,15 +134,15 @@ As listas ordenada começam com um número seguido por um ponto para cada item d
 
 **Resultado:**  
 
-1. Primeiro item.
+1. First item.
 
     - Item 1
     - Item 2
     - Item 3
-2. Segundo item.
-    - Item aninhado 1
-    - Item aninhado 2
-    - Item aninhado 3
+2. Second item.
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 
 ## <a name="links"></a>Links
@@ -212,10 +212,10 @@ Organize dados estruturados com tabelas.
 
 **Resultado:**  
 
-| Cabeçalho 1 | Cabeçalho 2 | Cabeçalho 3 |  
+| Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:---------:|-----------:|  
-| Célula A1 | Célula A2 | Célula A3 |  
-| Célula B1 | Célula B2 | Célula B3<br/>segunda linha de texto |  
+| Cell A1 | Cell A2 | Cell A3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Ênfase (negrito, itálico, tachado)  
@@ -239,9 +239,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Resultado:**
 
-Use _ênfase_ em comentários para expressar opiniões **fortes** e indicar <s>correções</s>   
-**_Texto em negrito e itálico_**   
-**~~Texto em negrito e tachado~~**  
+Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
+**_Bold, italicized text_**   
+**~~Bold, strike-through text~~**  
 
 
 ## <a name="special-characters"></a>Caracteres especiais
