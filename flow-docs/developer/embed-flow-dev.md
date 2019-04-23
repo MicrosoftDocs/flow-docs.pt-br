@@ -459,7 +459,7 @@ Se a localidade inicializada não estiver listada, o padrão do fluxo será a lo
 | Localidade     | Idioma                   | 
 |------------|----------------------------| 
 | bg-bg      | Búlgaro (Bulgária)       | 
-| ca-es      | Catalão (Espanha)            | 
+| ca-es      | Catalão (Catalan)            | 
 | cs-cz      | Tcheco (República Tcheca)     | 
 | da-dk      | Dinamarquês (Dinamarca)           | 
 | de-de      | Alemão (Alemanha)           | 
@@ -467,7 +467,7 @@ Se a localidade inicializada não estiver listada, o padrão do fluxo será a lo
 | en-Us      | Inglês (Estados Unidos)    | 
 | es-es      | Espanhol (Castelhano)        | 
 | et-ee      | Estoniano (Estônia)         | 
-| eu-es      | Basco (Espanha)             | 
+| eu-es      | Basco (Basque)             | 
 | fi-fi      | Finlandês (Finlândia)          | 
 | fr-fr      | Francês (França)            | 
 | gl-es      | Galego (Espanha)           | 
