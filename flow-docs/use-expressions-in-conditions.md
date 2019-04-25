@@ -6,26 +6,24 @@ suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/01/2017
+ms.date: 04/15/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
-ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
+ms.openlocfilehash: d6ad21cace7643abeb19de185c247f17ec9a2b35
+ms.sourcegitcommit: dfd9b4994aa9cb877ac4136460e011a344e27cb2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874427"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59614524"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Usar funções nas condições para verificar diversos valores
 Neste passo a passo, você aprenderá a usar expressões e **Condições** para comparar diversos valores no **modo Avançado**.
@@ -36,13 +34,13 @@ Ao criar um fluxo, use o cartão [ **Condição**](add-condition.md#add-a-condit
 
 Expressão|Descrição|Exemplo
 --------|-----------|-------
-|[and](#use-the-and-expression)|Obtém dois argumentos e retorna true se ambos os valores são verdadeiros.<br><b>Observação</b>: ambos os argumentos devem ser boolianos.|Essa expressão retorna false: <br>and(greater(1,10),equals(0,0))
-|[or](#use-the-or-expression)|Obtém dois argumentos e retorna true se qualquer um dos valores é verdadeiro. <br><b>Observação</b>: ambos os argumentos devem ser boolianos.|Essa expressão retorna true:<br>or(greater(1,10),equals(0,0))
+|[and](#use-the-and-expression)|Obtém dois argumentos e retorna true se ambos os valores são verdadeiros.<br><b>Observação</b>: Ambos os argumentos precisam ser boolianos.|Essa expressão retorna false: <br>and(greater(1,10),equals(0,0))
+|[or](#use-the-or-expression)|Obtém dois argumentos e retorna true se qualquer um dos valores é verdadeiro. <br><b>Observação</b>: Ambos os argumentos precisam ser boolianos.|Essa expressão retorna true:<br>or(greater(1,10),equals(0,0))
 |equals|Retorna true se os dois valores são iguais.|Por exemplo, se o parameter1 for algumValor, a função retornará true:<br>equals(parameters('parameter1'), 'someValue')
-|[less](#use-the-less-expression)|Obtém dois argumentos e retorna true se o primeiro argumento é menor que o segundo argumento. <br><b>Observação</b>: os tipos suportados são: inteiro, flutuante e cadeia de caracteres.|Essa expressão retorna true:<br>less(10,100)
-|lessOrEquals|Obtém dois argumentos e retorna true se o primeiro argumento é menor que ou igual ao segundo argumento. <br><b>Observação</b>: os tipos suportados são: inteiro, flutuante e cadeia de caracteres.|Essa expressão retorna true:<br>lessOrEquals(10,10)
-|[greater](#use-the-greater-expression)|Obtém dois argumentos e retorna true se o primeiro argumento é maior que o segundo. <br><b>Observação</b>: os tipos suportados são: inteiro, flutuante e cadeia de caracteres.|Essa expressão retorna false:<br>greater(10,10)
-|greaterOrEquals|Obtém dois argumentos e retorna true se o primeiro argumento é maior que ou igual ao segundo argumento. <br><b>Observação</b>: os tipos suportados são: inteiro, flutuante e cadeia de caracteres.|Essa expressão retorna false:<br>greaterOrEquals(10,100)
+|[less](#use-the-less-expression)|Obtém dois argumentos e retorna true se o primeiro argumento é menor que o segundo argumento. <br><b>Observação</b>: Os tipos compatíveis são: inteiro, flutuante e cadeia de caracteres.|Essa expressão retorna true:<br>less(10,100)
+|lessOrEquals|Obtém dois argumentos e retorna true se o primeiro argumento é menor que ou igual ao segundo argumento. <br><b>Observação</b>: Os tipos compatíveis são: inteiro, flutuante e cadeia de caracteres.|Essa expressão retorna true:<br>lessOrEquals(10,10)
+|[greater](#use-the-greater-expression)|Obtém dois argumentos e retorna true se o primeiro argumento é maior que o segundo. <br><b>Observação</b>: Os tipos compatíveis são: inteiro, flutuante e cadeia de caracteres.|Essa expressão retorna false:<br>greater(10,10)
+|greaterOrEquals|Obtém dois argumentos e retorna true se o primeiro argumento é maior que ou igual ao segundo argumento. <br><b>Observação</b>: Os tipos compatíveis são: inteiro, flutuante e cadeia de caracteres.|Essa expressão retorna false:<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Retorna true se a matriz, cadeia de caracteres ou objeto estiver vazio.|Essa expressão retorna true:<br>empty('')
 |not|Retorna o oposto de um valor booliano. |Essa expressão retorna true:<br>not(contains('200 Success','Fail'))
 |if|Retorna um valor específico se a expressão resulta em true ou false.|Essa expressão retorna "yes":<br>if(equals(1, 1), 'yes', 'no')
@@ -93,7 +91,7 @@ Vamos criar o fluxo.
     ![nova etapa](includes/media/new-step/action.png)
 2. Procure as **linhas** e, em seguida, selecione **Excel - Obter linhas**.
 
-    Observação: selecione a ação "obter linhas" que corresponde à planilha que você está usando. Por exemplo, se você estiver usando as Planilhas do Google, selecione **Planilhas do Google - Obter linhas**.
+    Observação: Selecione a ação "obter linhas" que corresponde à planilha que você está usando. Por exemplo, se você estiver usando as Planilhas do Google, selecione **Planilhas do Google - Obter linhas**.
 
     ![obter Linhas](includes/media/new-step/get-excel-rows.png)
 3. Selecione o ícone de pasta na caixa **Nome do arquivo**, navegue e escolha a planilha que contém seus dados.
@@ -214,6 +212,6 @@ Veja a implementação da expressão **and** que identifica todas as pessoas que
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
-## <a name="learn-more"></a>Saiba mais
-Saiba mais sobre outras [expressões](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language#functions)
+## <a name="use-functions-in-expressions"></a>Usar funções em expressões
 
+Algumas expressões obtêm seus valores de ações de tempo de execução que talvez ainda não existam quando um fluxo começa a ser executado. Para fazer referência a esses valores ou trabalhar com eles em expressões, você pode usar funções fornecidas pela Linguagem de Definição do Fluxo de Trabalho. Mais informações: [Referência de funções para a Linguagem de Definição de Fluxo de Trabalho no Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
