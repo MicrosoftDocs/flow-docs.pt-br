@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b25f63a3980d21e60b26a0783ac4bf5eb6030cd3
-ms.sourcegitcommit: 282059c82bfcf5896d06043476c34641906e20e3
+ms.openlocfilehash: b8b14f720736a60b04cbd9ae23dec5c0524ff03c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49087898"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65054061"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Gerenciar um gateway de dados locais no Microsoft Flow
 
@@ -55,12 +55,18 @@ Com um gateway, você pode conectar aos dados locais através dessas conexões:
 * Permissões administrativas em um gateway.
 
   Você tem essas permissões por padrão para cada gateway que instalar. Além disso, um administrador de outro gateway pode conceder essas permissões para esse gateway.
-* Uma licença que oferece suporte a gateways. Para obter mais informações, confira a seção “Conectividade” da [página de preços](https://flow.microsoft.com/pricing/).
+* Uma licença que dá suporte a gateways. Para obter mais informações, confira a seção “Conectividade” da [página de preços](https://flow.microsoft.com/pricing/).
 
 > [!NOTE]
 > Crie um gateway e uma conexão local em seu [ambiente padrão](environments-overview-maker.md).
 
+## <a name="install-a-gateway"></a>Instalar um gateway
 
+1. Faça download do [assistente de instalação do gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+
+1. Execute o assistente e forneça as mesmas credenciais com as quais você entrou no Microsoft Flow.
+
+    Depois de registrar e configurar o gateway com êxito, ele aparecerá na lista **Gateways** no Microsoft Flow.
 
 ## <a name="view-your-gateways"></a>Exibir seus gateways
 
@@ -72,14 +78,22 @@ No canto superior direito do [site do Microsoft Flow](https://flow.microsoft.com
 > Se você criou ou recebeu acesso a um gateway no PowerApps, esse gateway aparecerá na lista **Meus gateways** no Microsoft Flow.
 
 
+## <a name="cluster-your-gateways"></a>Agrupar os gateways
 
-## <a name="install-a-gateway"></a>Instalar um gateway
+Você pode criar *clusters de alta disponibilidade de instalações do gateway de dados local* para evitar pontos únicos de falha, ao acessar recursos de dados locais. 
 
-1. Faça download do [assistente de instalação do gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+Por padrão, o Microsoft Flow usa o gateway principal do cluster. Se o gateway principal não estiver disponível, o serviço alternará para o gateway seguinte do cluster, e assim por diante.
 
-1. Execute o assistente e forneça as mesmas credenciais com as quais você entrou no Microsoft Flow.
+Depois de configurar um cluster de gateway, você pode permitir que o tráfego seja distribuído por todos os gateways do cluster. 
 
-    Depois de registrar e configurar o gateway com êxito, ele aparecerá na lista **Gateways** no Microsoft Flow.
+Para distribuir o tráfego entre os gateways, faça o seguinte:
+
+1. Selecione **Dados** na barra de navegação à esquerda.
+1. Selecione **Gateways**.
+1. Selecione o gateway desejado.
+1. Selecione **Distribua solicitações em todos os gateways ativos neste cluster**.
+1. Selecione **Aplicar** para salvar as alterações.
+
 
 Para saber mais, consulte [Entender os gateways](gateway-reference.md).
 

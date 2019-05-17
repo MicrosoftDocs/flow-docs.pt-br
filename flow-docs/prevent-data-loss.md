@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2018
+ms.date: 04/30/2019
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 8a6ece8d2233703da2cd6eb6ed48d2334d076c39
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: f019a6ca5856c0fb3c5360642b4f3fcb23594b16
+ms.sourcegitcommit: 3f17d8a0765d66740bb181885a79fa9127fc2aab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690113"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "64950497"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Políticas de DLP (prevenção de perda de dados)
 
@@ -182,6 +182,36 @@ Se você não tem permissões de administrador e deseja saber mais sobre as pol�
 ## <a name="dlp-policy-permissions"></a>Permissões de política de DLP
 
 Apenas os administradores de locatários e de ambiente podem criar e modificar políticas de DLP. Saiba mais sobre permissões no artigo [ambientes](environments-overview-admin.md).
+
+
+## <a name="custom-and-http-connectors"></a>Conectores personalizados e conectores HTTP
+
+Conectores personalizados e conectores HTTP devem ser adicionados às políticas DLP por meio do PowerShell ou de um modelo do Microsoft Flow.
+
+> [!TIP]
+> Não é possível fazer downgrade da versão do esquema 2018-11-01. Não é possível remover o suporte a HTTP de uma política. Se você tentar remover o suporte a HTTP, a política DLP poderá ser corrompida. Além disso, quando uma política DLP é atualizada para dar suporte a conectores HTTP, os fluxos atuais que usam essas funcionalidades HTTP podem ser desativados.
+
+Aqui estão os conectores HTTP que podem ser adicionados a uma política:
+
+- HTTP (e HTTP + Swagger)
+- HTTP Webhook
+- Solicitação HTTP
+
+## <a name="add-connectors-custom-and-http-connectors-with-templates"></a>Adicionar conectores personalizados e conectores HTTP com modelos
+
+Para adicionar um conector personalizado a uma política usando uma [modelo](https://flow.microsoft.com/galleries/public/templates/ae9683086770420e902c043e5ed4b363/), insira o nome da política, o grupo ao qual adicionará o conector, mais o nome, a ID e o tipo do conector. Execute o fluxo uma vez para adicionar o conector personalizado à política e ao grupo fornecidos.
+
+Para adicionar os conectores HTTP a uma política existente por meio do [modelo](https://flow.microsoft.com/galleries/public/templates/834eb1366aa54335a5f979014a9e0477/), insira o nome da política à qual você deseja adicioná-los e, em seguida, execute o fluxo.
+
+## <a name="add-custom-and-http-connectors-with-powershell"></a>Adicionar conectores personalizados e conectores HTTP com o PowerShell
+
+Para adicionar suporte para conectores personalizados e/ou conectores HTTP a uma política usando o PowerShell, [baixe](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) e importe os scripts mais recentes do PowerShell do PowerApps e, em seguida, use os seguintes cmdlets:  ‘New-AdminDlpPolicy’, ‘Set-AdminDlpPolicy’, ‘Add-CustomConnectorToPolicy’ e ‘Remove-CustomConnectorFromPolicy’ para modificar a política. Use o cmdlet ‘Get-Help -detailed’ como referência.
+
+
+> [!IMPORTANT]
+> Use a versão do esquema 2018-11-01 ao criar ou atualizar uma política DLP a fim de incluir os conectores HTTP. A adição de suporte a HTTP usando o modelo ou o PowerShell afetará apenas a política especificada. Novas políticas criadas no Centro de administração não incluem os conectores HTTP.
+
+
 
 ## <a name="next-steps"></a>Próximas etapas
 

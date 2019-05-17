@@ -20,16 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: be12491490cac51a0b91906b1a663522c2a7658f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6480fe6a7e6ca26a7dbad3952b6608a9e0a880ae
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688756"
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035082"
 ---
 # <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Respondendo às solicitações de encerramento de conta do titular dos dados do RGPD do Microsoft Flow
 
-O **direito de apagar** dados pessoais é uma proteção importante no RGPD. Esse direito inclui a remoção de todos os dados pessoais, com exceção das informações de log de auditoria. Quando um usuário decide encerrar sua conta da Microsoft (MSA), os dados subjacentes do usuário também são excluídos.
+O **direito de apagar** dados pessoais é uma proteção importante no RGPD. Esse direito inclui a remoção de todos os dados pessoais, com exceção das informações de log de auditoria. Quando um usuário decide encerrar a respectiva conta Microsoft, os dados subjacentes desse usuário também são excluídos.
 
 Esses recursos contêm dados pessoais que são excluídos automaticamente quando um usuário encerra uma MSA:
 

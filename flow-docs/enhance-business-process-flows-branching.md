@@ -17,14 +17,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a7e1dc8d366ac9f23682362c8a673eb67df65975
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: f8911c828b216d8f65210b4c54603fd8838e848b
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690504"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65054097"
 ---
-# <a name="tutorial-enhance-business-process-flows-with-branching"></a>Tutorial: Aperfeiçoar os fluxos de processo empresarial com ramificação
+# <a name="tutorial-enhance-business-process-flows-with-branching"></a>Tutorial: Aprimorar os fluxos de processos empresariais com ramificação
 
 Os fluxos de processo empresarial guiam você por vários estágios de vendas, marketing ou processos de serviço em direção à conclusão. Em casos simples, um fluxo de processo empresarial linear é uma boa opção. No entanto, em cenários mais complexos, você pode aprimorar um fluxo de processo empresarial com a ramificação. Se tiver as permissões de criação em fluxos de processo empresarial, você será capaz de criar um fluxo de processo empresarial com várias ramificações usando a lógica `If-Else`. A condição de ramificação pode ser formada por diversas expressões lógicas que usam uma combinação de operadores `AND` ou `OR`. A seleção de ramificação é feita automaticamente, em tempo real, com base nas regras definidas durante a definição de processo. Por exemplo, na venda de carros, você pode configurar um fluxo de processo empresarial único, que, após um estágio de qualificação comum, é dividido em duas ramificações separadas com base em uma regra (o cliente prefere um carro novo ou um carro usado, o orçamento está acima ou abaixo de US$ 20.000, e assim por diante ), uma ramificação para venda de novos carros e outra para venda de carros usados. Para mais informações sobre os fluxos de processo empresarial, consulte [Visão geral de fluxos de processo empresarial](business-process-flows-overview.md).  
   
@@ -58,10 +58,10 @@ Os fluxos de processo empresarial guiam você por vários estágios de vendas, m
 > - Uma entidade usada no processo pode ser revisitada várias vezes (vários loops de entidade fechados).  
 > - Um processo pode voltar para o estágio anterior, independentemente de um tipo de entidade. Por exemplo, se o estágio ativo for **Entregar cotação** em um registro de cotação, os usuários do processo poderão mover o estágio ativo para o estágio **Propor** em um registro de oportunidade.  
 >   
->   Em outro exemplo, suponha que um processo está atualmente no estágio **Apresentar proposta** no seu fluxo de processo: **Qualificar cliente potencial** > **Identificar necessidades** > **Criar proposta** > **Apresentar proposta** > **Fechar**. Se a proposta apresentada para o cliente exigir mais pesquisa para identificar as necessidades do cliente, os usuários poderão selecionar apenas o estágio **Identificar necessidades** do seu processo e escolher **Definir ativo**.  
+>   Em outro exemplo, suponha que um processo esteja atualmente no estágio **Apresentar Proposta** no fluxo do processo: **Qualificar Cliente Potencial** > **Identificar Necessidades** > **Criar Proposta** > **Apresentar Proposta** > **Fechar**. Se a proposta apresentada para o cliente exigir mais pesquisa para identificar as necessidades do cliente, os usuários poderão selecionar apenas o estágio **Identificar necessidades** do seu processo e escolher **Definir ativo**.  
   
 <a name="CarSelling365"></a>   
-## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Exemplo de participação do cliente do Dynamics 365: fluxo de processo de venda de carro com duas ramificações
+## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Exemplo do Dynamics 365 Customer Engagement: Fluxo de processo de venda de carro com duas ramificações
  
 Vamos ver um exemplo de fluxo do processo empresarial com duas ramificações, para venda de carros novos e usados.  
   
@@ -108,7 +108,7 @@ Vamos ver um exemplo de fluxo do processo empresarial com duas ramificações, p
   
  Digamos que um cliente coloca na solicitação de empréstimo mais de US$ 60.000 para o banco. A responsável pelo empréstimo examina a solicitação no primeiro estágio. Se a regra de ramificação que verifica se o valor devido ao banco excederá US$ 50.000 for atendida, o próximo estágio do processo será investigar se a solicitação é fraudulenta. Se for determinado de que é realmente um caso de fraude, o processo prosseguirá para ações legais contra o solicitante. A responsável pelo empréstimo não deve ter visibilidade sobre os dois estágios investigativos porque ela não tem acesso à entidade de investigação.  
   
- No entanto, se a responsável pelo empréstimo abrir o registro de solicitação, ela poderá ver todo o processo de ponta a ponta. Não apenas ela será capaz de ver o estágio de investigação de fraude, mas ela também será capaz de identificar o resultado da investigação por ter sido capaz de ver o estágio de ações legais no processo. Além disso, ela poderá visualizar as etapas nos estágios de investigação ao escolher o estágio. Ela não será capaz de ver os dados ou o status de conclusão da etapa, mas será capaz de identificar as possíveis ações que foram executadas contra o emissor da solicitação durante a investigação e os estágios de ação legal.  
+ No entanto, se a responsável pelo empréstimo abrir o registro de solicitação, qualquer pessoa poderá ver todo o processo de ponta a ponta. Ela terá a capacidade de ver o estágio de investigação de fraude e também de identificar o resultado da investigação por ter sido capaz de ver o estágio de ações legais no processo. Além disso, ela poderá visualizar as etapas nos estágios de investigação escolhendo o estágio. Ela não terá permissão para ver os dados ou o status de conclusão da etapa, mas poderá identificar as possíveis ações que foram executadas em relação ao emissor da solicitação, durante os estágios de investigação e ação legal.  
   
  Nesse fluxo de processo, a responsável pelo empréstimo será capaz de ver os estágios de investigação de fraude e ações legais, que constitui uma divulgação imprópria de informações confidenciais. É recomendável prestar atenção especial às informações que podem ser divulgadas devido à ramificação. Em nosso exemplo, divida o processo em dois processos separados, um para o processamento da solicitação e outro para a investigação de fraudes, para evitar a divulgação de informações confidenciais. O processo para a responsável pelo empréstimo terá esta aparência:  
   

@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 705051668c4e25d5bddc3e6f92e445f3474baad1
-ms.sourcegitcommit: 3d0aecc89ed12b58f4b424c1c5a0654350f07d08
+ms.openlocfilehash: a32b80ce9dba28f0c94c13989e4892fe6533813f
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58059789"
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035192"
 ---
 # <a name="microsoft-flow-us-government"></a>Microsoft Flow para o Governo dos EUA
 
@@ -109,7 +109,7 @@ A equipe de engenharia de serviço e suporte do Microsoft Flow não tem acesso p
 
 ## <a name="certifications-and-accreditations"></a>Certificações e referências
 
-O Microsoft Flow para o Governo dos EUA foi projetado para oferecer suporte ao credenciamento do Programa Federal de Gerenciamento de Risco e Autorização (FedRAMP) em um nível de Alto Impacto. Este programa infere o alinhamento ao DoD DISA IL2. Os artefatos do FedRAMP estão disponíveis para revisão por clientes federais que precisam estar em conformidade com o FedRAMP. As agências federais podem examinar esses artefatos em suporte à sua revisão para conceder uma Autoridade para Operar (ATO).
+O Microsoft Flow para o Governo dos EUA foi projetado para dá suporte ao credenciamento do Programa Federal de Gerenciamento de Risco e Autorização (FedRAMP) em um nível de Alto Impacto. Este programa infere o alinhamento ao DoD DISA IL2. Os artefatos do FedRAMP estão disponíveis para revisão por clientes federais que precisam estar em conformidade com o FedRAMP. As agências federais podem examinar esses artefatos em suporte à sua revisão para conceder uma Autoridade para Operar (ATO).
 
 > [!NOTE]
 > Atualmente, os serviços do Microsoft Flow para o Governo dos EUA estão sob revisão com o FedRAMP, mas receberam um Relatório de Avaliação de Segurança (SAR) por um [3PAO](https://www.fedramp.gov/3pao-requirements-update/) qualificado.
@@ -143,7 +143,7 @@ Os serviços do Microsoft Flow para o Governo dos EUA são implantados no Micros
 
 Quando um usuário de uma organização que emprega o ADFS tenta acessar o Microsoft Flow para o Governo dos EUA, o usuário é redirecionado para uma página de logon hospedada no servidor ADFS da organização.
 
-O usuário fornece suas credenciais para o servidor ADFS da organização. O servidor ADFS da organização tenta autenticar as credenciais usando a infraestrutura do Active Directory da organização.
+O usuário fornece as credenciais para o servidor ADFS da organização. O servidor ADFS da organização tenta autenticar as credenciais usando a infraestrutura do Active Directory da organização.
 
 Se a autenticação for bem-sucedida, o servidor ADFS da organização emitirá um tíquete SAML (Security Assertion Markup Language) que contém informações sobre a identidade do usuário e a associação ao grupo.
 

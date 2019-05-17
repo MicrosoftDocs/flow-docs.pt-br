@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8a8a6561840f91ab61b8d7440f1620c2e7cd0076
-ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
+ms.openlocfilehash: 615d13adaee8b5db302065b3c21a488504f39398
+ms.sourcegitcommit: f1f1b8e24f30fcf6c2e3bb01a0223e382a10bed7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "53006945"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64906409"
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limites e configuração no Microsoft Flow
 Este tópico contém informações sobre os limites atuais e detalhes da configuração para os fluxos.
@@ -65,18 +65,37 @@ Estes são os limites para executar um único fluxo.
 | Intervalo de recorrência mín. |1 minuto | |
 | Intervalo de recorrência máx. |500 dias | |
 | Retenção máxima de histórico de execução |28 dias, de acordo com as regras do RGPD. | |
+|Intervalo mínimo de adiamento – licença gratuita e licença do Plano 1|5 segundos||
+|Intervalo mínimo de adiamento – licença do Plano 2|Um segundo||
 
 ## <a name="looping-and-debatching-limits"></a>Limites de loop e debatching
 Estes são os limites para executar um único fluxo.
 
 | Nome | Limite | Anotações |
 | --- | --- | --- |
-| Aplicar a cada item |100.000 |100.000 só está disponível para os planos premium. Caso contrário, você está limitado a 5.000. Você pode usar a ação de filtro para filtrar as matrizes maiores quando necessário. |
+| Aplicar a cada item – licença gratuita|5,000 |Você pode usar a ação de filtro para filtrar as matrizes maiores quando necessário. |
+| Aplicar a cada item – licença do Plano 1 e do Plano 2|100.000 |Você pode usar a ação de filtro para filtrar as matrizes maiores quando necessário. |
 | Até iterações |5,000 | |
-| Itens SplitOn |100.000 |Como se aplica a cada um, o limite é de 5.000, a menos que você esteja em um plano premium. |
+| Itens SplitOn – licença gratuita |5,000 ||
+| Itens SplitOn – licença do Plano 1 e do Plano 2 |100.000 ||
 | Aplicar a cada paralelismo |50 |Por padrão, os loops são executados em sequência (basicamente, o paralelismo é 1). Você pode configurar até 50 em paralelo. |
-| Execuções de ações por 5 minutos | 100.000 | Além disso, você pode distribuir uma carga de trabalho entre mais de um fluxo, conforme necessário. |
-| Chamadas de saída simultâneas de ações | Aproximadamente 2.500 | Reduza o número de solicitações simultâneas ou reduza a duração, conforme necessário. | 
+| Execuções de ações por cinco minutos – licença gratuita e licença do Plano 1 | 2.000 | Além disso, você pode distribuir uma carga de trabalho entre mais de um fluxo, conforme necessário. |
+|Execuções de ações por cinco minutos – licença do Plano 2|100.000|Além disso, você pode distribuir uma carga de trabalho entre mais de um fluxo, conforme necessário.|
+| Chamadas de saída simultâneas de ações – licença gratuita e licença do Plano 1 | Aproximadamente 500 | Reduza o número de solicitações simultâneas ou reduza a duração, conforme necessário. |
+| Chamadas de saída simultâneas de ações – licença gratuita e licença do Plano 1 | Aproximadamente 2.500 | Reduza o número de solicitações simultâneas ou reduza a duração, conforme necessário. | 
+
+## <a name="throughput-limits"></a>Limites de taxa de transferência
+
+|Nome|Limite|Anotações|
+|---|---|---|
+|Ponto de extremidade do tempo de execução – Número de chamadas de leitura permitidas por cinco minutos – licença gratuita e licença do Plano 1|6.000||
+|Ponto de extremidade do tempo de execução – Número de chamadas de leitura permitidas por cinco minutos – licença do Plano 2|60.000||
+|Ponto de extremidade do tempo de execução: chamadas de invocação por cinco minutos – licença gratuita e licença do Plano 1|4.500||
+|Ponto de extremidade do tempo de execução: Número de chamadas de invocação por cinco minutos – licença do Plano 2|45.000||
+|Quantidade de taxa de transferência permitida por cinco minutos – licença gratuita e licença do Plano 1|600 MB||
+|Quantidade de taxa de transferência permitida por cinco minutos – licença do Plano 2|6 GB||
+|Quantidade de fluxos de conteúdo permitidos para produção (entradas/saídas de ações) por hora – licença gratuita, licença do Plano 1 e licença do Plano 2|200 GB||
+
 
 ## <a name="definition-limits"></a>Limites de definição
 Estes são os limites para um único fluxo.
@@ -95,6 +114,9 @@ Há [limitações](https://powerapps.microsoft.com/tutorials/connection-sharepoi
 ## <a name="ip-address-configuration"></a>Configuração de endereço IP
 O endereço IP do qual as solicitações do Microsoft Flow são enviadas depende da [região](regions-overview.md) onde o [ambiente](environments-overview-admin.md) que contém o fluxo está localizado. Atualmente, não publicamos FQDNs disponíveis para cenários de fluxo.
 
+>[!IMPORTANT]
+> Algumas chamadas feitas por um fluxo podem ser provenientes de endereços IP que estão relacionados na documentação [Aplicativos lógicos](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses). Alguns exemplos dessas chamadas incluem HTTP ou HTTP + OpenAPI.
+
 ### <a name="logic-apps"></a>Aplicativos Lógicos
 As chamadas feitas a partir de um fluxo percorrem diretamente o serviço de Aplicativo Lógico do Azure. Alguns exemplos dessas chamadas incluem HTTP ou HTTP + OpenAPI. Confira [a documentação dos Aplicativos Lógicos](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses) para obter os endereços IP que são usados por esse serviço.
 
@@ -103,16 +125,16 @@ As chamadas feitas de um conector em um fluxo (por exemplo, a API do SQL ou a AP
 
 | Região | IP de saída |
 | --- | --- |
-| Pacífico Asiático | 13.75.36.64 – 13.75.36.79, 13.67.8.240 – 13.67.8.255, 52.175.23.169, 52.187.68.19, 52.163.91.227, 52.163.89.40, 52.163.89.65, 52.163.95.29, 52.187.53.78, 13.75.89.9, 13.75.91.198, 13.75.92.202, 13.75.92.124, 23.97.72.250  |
-| Austrália  | 13.70.72.192 – 13.70.72.207, 13.72.243.10, 13.77.50.240 – 13.77.50.255, 13.70.136.174, 13.77.7.172, 13.70.191.49, 13.70.189.7, 13.70.187.251, 13.70.188.38, 13.70.82.210, 13.73.203.158, 13.73.207.42, 13.73.205.35, 13.70.88.23 |
-| Canadá | 13.71.170.208 – 13.71.170.223, 13.71.170.224 – 13.71.170.239, 52.237.24.126, 40.69.106.240 – 40.69.106.255, 52.242.35.152, 52.233.30.222, 52.233.30.148, 52.233.30.199, 52.233.29.254, 52.232.130.205, 52.229.126.118, 52.229.126.28, 52.229.123.56, 52.229.123.161, 52.233.27.68 |
-| Europa | 13.69.227.208 – 13.69.227.223, 52.178.150.68, 13.69.64.208 – 13.69.64.223, 52.174.88.118, 52.166.241.149, 52.166.244.232, 52.166.245.173, 52.166.243.169, 52.178.37.42, 40.69.45.126, 40.69.45.11, 40.69.45.93, 40.69.42.254, 52.164.249.26, 137.117.161.181 |
-| Índia  | 104.211.81.192 – 104.211.81.207, 52.172.211.12, 40.78.194.240 – 40.78.194.255, 13.71.125.22, 104.211.146.224 – 104.211.146.239, 104.211.189.218, 52.172.54.172, 52.172.55.107, 52.172.55.84, 52.172.51.70, 52.172.49.180, 52.172.158.185, 52.172.159.100, 52.172.158.2, 52.172.155.245, 52.172.153.107 |
-| Japão | 13.78.108.0 – 13.78.108.15, 13.71.153.19, 40.74.100.224 – 40.74.100.239, 104.215.61.248, 104.214.137.186, 104.214.139.29, 104.214.140.23, 104.214.138.174, 104.214.151.229, 13.78.85.193, 13.78.84.73, 13.78.85.200, 13.78.86.229, 13.78.121.151 |
+| Pacífico Asiático | 13.75.36.64 - 13.75.36.79, 13.67.8.240 - 13.67.8.255, 52.175.23.169, 52.187.68.19 |
+| Austrália  | 13.70.72.192 – 13.70.72.207, 13.72.243.10, 13.77.50.240 – 13.77.50.255, 13.70.136.174 |
+| Canadá | 13.71.170.208 – 13.71.170.223, 13.71.170.224 – 13.71.170.239, 52.237.24.126, 40.69.106.240 – 40.69.106.255, 52.242.35.152|
+| Europa | 13.69.227.208 – 13.69.227.223, 52.178.150.68, 13.69.64.208 – 13.69.64.223, 52.174.88.118, 137.117.161.181 |
+| Índia  | 104.211.81.192 – 104.211.81.207, 52.172.211.12, 40.78.194.240 – 40.78.194.255, 13.71.125.22, 104.211.146.224 – 104.211.146.239, 104.211.189.218 |
+| Japão | 13.78.108.0 – 13.78.108.15, 13.71.153.19, 40.74.100.224 – 40.74.100.239, 104.215.61.248 |
 | América do Sul | 191.233.203.192 – 191.233.203.207, 104.214.19.48 – 104.214.19.63, 13.65.86.57, 104.41.59.51 |
 | Reino Unido | 51.140.148.0 – 51.140.148.15, 51.140.80.51, 51.140.211.0 – 51.140.211.15, 51.141.47.105 |
-| Estados Unidos | 13.89.171.80 – 13.89.171.95, 52.173.245.164, 40.71.11.80 – 40.71.11.95, 40.71.249.205, 40.70.146.208 – 40.70.146.223, 52.232.188.154, 52.162.107.160 – 52.162.107.175, 52.162.242.161, 40.112.243.160 – 40.112.243.175, 104.42.122.49, 104.43.232.28, 104.43.232.242, 104.43.235.249, 104.43.234.211, 52.160.93.247, 52.160.91.66, 52.160.92.131, 52.160.95.100, 40.117.101.91, 40.117.98.246, 40.117.101.120, 40.117.100.191 |
-| Versão prévia (Estados Unidos)  | 13.71.195.32 – 13.71.195.47, 52.161.102.22, 13.66.140.128 – 13.66.140.143, 52.183.78.157, 52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 52.161.31.35, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29, 13.66.208.24 |
+| Estados Unidos | 13.89.171.80 – 13.89.171.95, 52.173.245.164, 40.71.11.80 – 40.71.11.95, 40.71.249.205, 40.70.146.208 – 40.70.146.223, 52.232.188.154, 52.162.107.160 – 52.162.107.175, 52.162.242.161, 40.112.243.160 – 40.112.243.175, 104.42.122.49|
+| Versão prévia (Estados Unidos)  | 13.71.195.32 – 13.71.195.47, 52.161.102.22, 13.66.140.128 – 13.66.140.143, 52.183.78.157 |
 
 Por exemplo, se for necessário autorizar endereços IP para seu Banco de Dados SQL do Azure, você deverá usar esses endereços.
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d48ba29d932bc3d9b0d631b4646eb68d89134271
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035149"
+---
 Neste tópico, você aprenderá a **criar um fluxo de botão** para a Contoso Flooring Company. 
 
 Os fluxos de botão podem ser usados para **enviar email** para uma equipe e **alertá-los de tarefas** a serem executadas. A **Propriedade** dos fluxos **pode ser atribuída a um** trabalhador ou **compartilhada por vários** membros de uma equipe.  
@@ -5,7 +13,7 @@ Os fluxos de botão podem ser usados para **enviar email** para uma equipe e **a
 1. Primeiro, vá para o [site do Microsoft Flow](https://ms.flow.microsoft.com) e entre.
 2. Após entrar, selecione **Meus fluxos** e **Criar a partir do zero**.
    
-    ![Criar a partir do zero](./media/learning-create-button-flow/2-create-from-blank.png)
+    ![Criar de um modelo em branco](./media/learning-create-button-flow/2-create-from-blank.png)
    
     A primeira coisa que você precisará é de um gatilho. O fluxo de botão é uma boa opção. 
 3. Se ele não existir em sua lista, selecione **Pesquisar centenas de conectores e gatilhos** na parte inferior da página e digite **botão**, e ele será exibido para você. 
@@ -48,7 +56,7 @@ Os fluxos de botão podem ser usados para **enviar email** para uma equipe e **a
      ![Criar fluxo](./media/learning-create-button-flow/12-create-flow.png)
 
 ## <a name="create-a-team-flow"></a>Criar um fluxo de equipe
-Você pode usar esse fluxo de botão como um exemplo de como criar um fluxo de equipe. E se o criador desse fluxo estiver ausente por estar doente? E se ele sair da empresa? Você deve certificar-se de que este fluxo continua em execução. Para fazer isso, adicione os coproprietários.
+Você pode usar esse fluxo de botão como um exemplo de como criar um fluxo de equipe. E se o criador desse fluxo estiver ausente por estar doente? E se essa pessoa sair da empresa? Você deve certificar-se de que este fluxo continua em execução. Para fazer isso, adicione os coproprietários.
 
 1. Selecione o **ícone de equipe** em seu fluxo para adicionar um coproprietário.
    
@@ -66,9 +74,9 @@ Você pode usar esse fluxo de botão como um exemplo de como criar um fluxo de e
 ## <a name="summary"></a>Resumo
 Nesta lição, você viu como **criar um fluxo de botão**. 
 
-Em poucos minutos, o fluxo forneceu a um trabalhador do depósito a capacidade de **alertar sua equipe** para a **chegada de uma entrega**, de modo que eles não tenham que ficar por perto esperando, desperdiçando tempo valioso que poderiam gastar em outras tarefas . 
+Em poucos minutos, o fluxo forneceu a um funcionário do depósito a capacidade de **alertar a equipe** sobre a **chegada de uma entrega**, de modo que eles não tenham que ficar por perto esperando, desperdiçando um tempo valioso que eles poderiam gastar em outras tarefas. 
 
-O trabalhador, em seguida, compartilhou esse botão com sua equipe, para que os outros pudessem acionar o mesmo fluxo caso ele não estivesse por perto.
+Em seguida, o funcionário compartilhou esse botão com a equipe, para que os colegas pudessem acionar o mesmo fluxo, caso ele não estivesse por perto.
 
 ## <a name="next-lesson"></a>Próxima lição
 Confira a próxima lição para conferir como criar um fluxo que usa **notificações por push**.

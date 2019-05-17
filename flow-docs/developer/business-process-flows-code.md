@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 4fcbca859d167e82229aa60f96f5122912e5cca3
-ms.sourcegitcommit: c7c9add30d5bf1ab6bd5b55b802fd28618b38411
+ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362968"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65054074"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Trabalhar com fluxos de processo empresarial usando código
 
@@ -131,7 +131,7 @@ Você pode recuperar o nome da sua entidade de fluxo do processo empresarial usa
 
 A entidade personalizada que é criada automaticamente na ativação de um fluxo do processo empresarial para armazenar as instâncias dele segue o modelo de segurança padrão como qualquer outra entidade personalizada no Customer Engagement. Isso implica que os privilégios concedidos nessas entidades definem as permissões de tempo de execução dos usuários dos fluxos dos processos empresariais.
 
-A entidade personalizada do fluxo do processo empresarial tem um escopo da organização. Os privilégios regulares para criar, recuperar, atualizar e excluir nessa entidade definem a permissão que o usuário teria com base em suas funções atribuídas. Por padrão, quando a entidade personalizada do fluxo do processo empresarial é criada, somente as funções de segurança **administrador do sistema** e **personalizador do sistema** recebem acesso a ela. Para outras funções de segurança, você precisa conceder as permissões explicitamente para a nova entidade do fluxo do processo empresarial (por exemplo, **Meu BPF personalizado**), conforme o necessário.
+A entidade personalizada do fluxo do processo empresarial tem um escopo da organização. Os privilégios básicos para criar, recuperar, atualizar e excluir nessa entidade definem a permissão dos usuários de acordo com as funções atribuídas a eles. Por padrão, quando a entidade personalizada do fluxo do processo empresarial é criada, somente as funções de segurança **administrador do sistema** e **personalizador do sistema** recebem acesso a ela. Para outras funções de segurança, você precisa conceder as permissões explicitamente para a nova entidade do fluxo do processo empresarial (por exemplo, **Meu BPF personalizado**), conforme o necessário.
 
 ![](media/bpf-privileges.png)
 

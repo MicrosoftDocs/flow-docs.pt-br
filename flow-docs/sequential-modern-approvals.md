@@ -20,17 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f75f9b822078fcec8701bf06c3dcb8be0e07d874
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: dd30051425906fdc305be536342eeb7e1762d1eb
+ms.sourcegitcommit: 197bdf2fd1867c2c7162c909daf41e10279721f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690713"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "65019858"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Gerenciar aprovações sequenciais com o Microsoft Flow
 Alguns fluxos de trabalho exigem aprovação prévia antes do aprovador final ser solicitado a desconectar. Por exemplo, uma empresa pode ter uma política de aprovação sequencial que requer aprovação prévia para faturas acima de $1000.00 antes de serem aprovadas pelo departamento de Finanças.
 
 Neste passo a passo, podemos criar um fluxo sequencial de aprovação que gerencia as solicitações de férias do funcionário.
+
+> [!NOTE]
+> O SharePoint é usado aqui somente como um exemplo. Não é necessário usá-lo para criar fluxos de aprovação. Você pode escolher entre mais de 200 serviços com os quais o Microsoft Flow se integra para gerar fluxos.
+
 
 ## <a name="detailed-steps-in-the-flow"></a>Etapas detalhadas no fluxo
 O fluxo:
@@ -40,7 +44,7 @@ O fluxo:
 3. Envia por email a decisão de aprovação prévia para o funcionário.
 4. Atualiza a lista do SharePoint Online com a decisão e os comentários do aprovador prévio.
    
-   Observação: se a solicitação for aprovada previamente, o fluxo continuará com estas etapas:
+   Observação: se a solicitação for pré-aprovada, o fluxo continuará com estas etapas:
 5. Envia a solicitação para o aprovador final.
 6. Envia por email a decisão final para o funcionário.
 7. Atualiza a lista do SharePoint com a decisão final.
@@ -52,7 +56,7 @@ Esta imagem resume as etapas anteriores:
 ## <a name="prerequisites"></a>Pré-requisitos
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
-A lista do SharePoint Online que você criar deve incluir as seguintes colunas:
+Para fins deste passo a passo, a lista do SharePoint Online que você criar deverá incluir as seguintes colunas:
 
    ![Colunas da lista do SharePoint](./media/sequential-modern-approvals/sharepoint-columns.png)
 
@@ -137,7 +141,7 @@ Observação: esta ação envia a solicitação de aprovação prévia para o en
 
    ![configuração de solicitações rejeitadas](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-Observação: essa ação deve ser adicionada à ramificação **SE NÃO, NÃO FAÇA NADA** abaixo do cartão **Condição**.
+Observação: esta ação deve ser adicionada à ramificação **SE NÃO, NÃO FAÇA NADA**, abaixo do cartão **Condição**.
 
 ## <a name="update-sharepoint-with-pre-approval-rejection"></a>Atualizar o SharePoint com rejeição de aprovação prévia
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
@@ -147,7 +151,7 @@ Observação: essa ação deve ser adicionada à ramificação **SE NÃO, NÃO F
 ## <a name="send-email-with-final-rejection"></a>Enviar email com a rejeição final
 1. Use as etapas de [Enviar email com rejeição de aprovação prévia](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) para adicionar e, em seguida, configurar uma ação que envia um email quando a solicitação de férias é rejeitada pelo aprovador final.
    
-    Observação: essa ação deve ser adicionada à ramificação **SE NÃO, NÃO FAÇA NADA** abaixo do cartão **Condição 2**.
+    Observação: esta ação deve ser adicionada à ramificação **SE NÃO, NÃO FAÇA NADA**, abaixo do cartão **Condição 2**.
 2. Quando terminar, o cartão deve ser semelhante a esta imagem:
    
    ![configuração de solicitações rejeitadas](./media/sequential-modern-approvals/final-rejection-email-card.png)
@@ -183,7 +187,7 @@ Sua solicitação deve ser semelhante a esta imagem:
 ## <a name="approve-the-request"></a>Aprovar a solicitação
 As etapas para aprovar uma solicitação são idênticas às etapas para [aprovar previamente uma solicitação](sequential-modern-approvals.md#pre-approve-a-request)
 
-Observação: o aprovador final obtém a solicitação de férias somente depois que a solicitação tiver sido previamente aprovada.
+Observação: o aprovador final receberá a solicitação de férias, somente após a aprovação prévia da solicitação.
 
 ## <a name="reject-a-request"></a>Rejeitar uma solicitação
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]

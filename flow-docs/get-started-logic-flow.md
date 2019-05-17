@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: db0d7003017eb9929b03a89f697defb40c5ed6e4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 4ea24ed12ab12d2d52502477cdb7a4a9eb822076
+ms.sourcegitcommit: edc0f625914b7dc8f0dd7f05e7b9c05346282064
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690791"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "64992601"
 ---
 # <a name="create-a-flow-in-microsoft-flow"></a>Criar um fluxo no Microsoft Flow
 
@@ -88,6 +88,11 @@ Primeiro, você precisará selecionar qual evento, ou *gatilho*, inicia o fluxo.
 1. Envie um tweet com a palavra-chave indicada ou aguarde até que outra pessoa poste esse tweet.
 
      Dentro de um minuto após o tweet ser postado, uma mensagem de email notifica sobre o novo tweet.
+
+> [!TIP]
+> Use a ação **Enviar email (V2)** para formatar o email com personalização de fonte, cor e realce, uso de negrito, itálico e sublinhado, para criar listas, links e muito mais.
+
+![Edição avançada de email](media/get-started-logic-flow/email-rich-text.png)
 
 ## <a name="manage-a-flow"></a>Gerenciar um fluxo
 

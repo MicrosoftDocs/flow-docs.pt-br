@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: b9dd1fd2f3c00870b0a713f50cc567d5d79385d8
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 43f6f36cc32ec40088bd9b4c61e2895a7de78589
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690619"
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035044"
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Uso de ambientes no Microsoft Flow
 
@@ -33,21 +33,21 @@ ms.locfileid: "44690619"
 
 Os ambientes fornecem os benefícios a seguir:
 
-* **Localidade dos dados**: os ambientes podem ser criados em diferentes regiões e são associados a esse local geográfico. Quando você cria um fluxo em um ambiente, esse fluxo é roteado para todos os datacenters no local geográfico. Isso também fornece um benefício de desempenho.
+* **Localidade dos dados**: é possível criar ambientes em diferentes regiões e associá-los a essa localização geográfica. Quando você cria um fluxo em um ambiente, esse fluxo é roteado para todos os datacenters no local geográfico. Isso também fornece um benefício de desempenho.
 
     Se os usuários estiverem na Europa, crie e use o ambiente na região da Europa. Se os usuários estiverem nos Estados Unidos, crie e use o ambiente na região dos EUA. 
 
     > [!IMPORTANT]
     > Se você excluir o ambiente, todos os fluxos dentro desse ambiente também são excluídos. Isso se aplica a qualquer item que você criar no ambiente, incluindo conexões, gateways, PowerApps e muito mais.
-* **Prevenção de perda de dados**: como um Administrador, você não quer fluxos que recebem dados de um local interno (como uma lista do *OneDrive for Business* ou SharePoint que contém informações salariais) e postem dados publicamente (como no *Twitter*). Use a prevenção de perda de dados para controlar quais serviços podem compartilhar dados em sua implantação do Microsoft Flow.
+* **Prevenção contra perda de dados**: como administrador, você não quer fluxos que recebam dados de uma localização interna (como uma lista do *OneDrive for Business* ou do SharePoint, que contém informações sobre salários) e postem esses dados publicamente (por exemplo, no *Twitter*). Use a prevenção de perda de dados para controlar quais serviços podem compartilhar dados em sua implantação do Microsoft Flow.
 
     Por exemplo, é possível adicionar serviços do *SharePoint* e do *OneDrive for Business* a uma política somente dados de negócios. Qualquer fluxo criado nesse ambiente pode usar serviços do *SharePoint* e do *OneDrive for Business*. No entanto, eles não poderão compartilhar dados com outros serviços que não estão incluídos na política somente de dados da empresa.
 
   > [!NOTE]
   > A prevenção de perda de dados está disponível com alguns SKUs de licença, incluindo a licença P2.
 
-* **Limite de isolamento para todos os recursos**: quaisquer fluxos, gateways, conexões, conectores personalizados, entre outros, residem em um ambiente específico. Eles não existem em qualquer outro ambiente.
-* **Common Data Service**: aqui estão suas opções caso queira criar um fluxo que insira dados em um serviço:
+* **Limite de isolamento para todos os recursos**: todos os fluxos, gateways, conexões, conectores personalizados, entre outros, residem em um ambiente específico. Eles não existem em qualquer outro ambiente.
+* **Common Data Service**: aqui estão suas opções, caso você pretenda criar um fluxo que insira dados em um serviço:
 
   * Inserir dados em um arquivo do Excel e armazenar o arquivo do Excel em uma conta de armazenamento de nuvem, como o OneDrive.
   * Crie um Banco de Dados SQL e armazene seus dados nele.
@@ -70,7 +70,7 @@ O ambiente **Padrão** é compartilhado por todos os usuários e qualquer usuár
 
 Os administradores usam o centro de administração para criar e gerenciar ambientes. Aqui estão as duas maneiras de abrir o centro de administração:
 
-### <a name="option-1-select-settings"></a>Opção 1: selecionar configurações
+### <a name="option-1-select-settings"></a>Opção 1: selecione Configurações
 
 1. Entre em [flow.microsoft.com](https://flow.microsoft.com).
 1. Selecione a engrenagem Configurações e escolha **Centro de Administração** na lista:
@@ -84,7 +84,7 @@ Vá até [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e entre co
 
 ## <a name="create-an-environment"></a>Criar um ambiente
 
-1. No [Centro de administração do Microsoft Flow](https://admin.flow.microsoft.com), selecione **Ambientes**. Você verá todos os ambientes existentes: ![Ambientes](./media/environments-overview-admin/environments-list.png)
+1. No [Centro de administração do Microsoft Flow](https://admin.flow.microsoft.com), selecione **Ambientes**. Todos os ambientes existentes estarão visíveis: ![Ambientes](./media/environments-overview-admin/environments-list.png)
 2. Selecione **Novo ambiente** e forneça as informações necessárias:
 
 
@@ -122,7 +122,7 @@ Agora é possível adicionar usuários ao ambiente.
     Um **Criador** pode criar novos recursos como fluxos, conexões de dados e gateways em um ambiente.
 
    > [!NOTE]
-   > Um usuário não precisa ser um **Criador** para *editar* recursos em um ambiente. Cada Criador determina quem pode editar seus recursos concedendo permissões a usuários que não sejam criadores de ambiente.
+   > Um usuário não precisa ser um **Criador** para *editar* recursos em um ambiente. Cada Criador determina quem pode editar os respectivos recursos, concedendo permissões a usuários que não sejam criadores de ambiente.
    > 
    > 
 
@@ -186,7 +186,7 @@ Não. O Common Data Service requer um ambiente. [Leia mais](common-data-model-in
 
 ### <a name="what-regions-include-microsoft-flow"></a>Quais regiões estão incluídas no Microsoft Flow?
 
-O Microsoft Flow oferece suporte à maioria das regiões compatíveis com o Office 365, confira mais detalhes [na visão geral das regiões](regions-overview.md).
+O Microsoft Flow dá suporte à maioria das regiões compatíveis com o Office 365, confira mais detalhes [na visão geral das regiões](regions-overview.md).
 
 ### <a name="whats-needed-to-create-my-own-custom-environment"></a>O que é necessário para meu próprio ambiente personalizado?
 

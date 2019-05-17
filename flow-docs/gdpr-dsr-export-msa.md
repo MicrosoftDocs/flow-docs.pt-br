@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d03b2fff23fc313ebb7f8c12ce2835687f589516
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6f181a66453573c2f636cbe5130b7fc003a3b151
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690757"
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035026"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Responder às solicitações de exportação de entidade de dados de GDPR do Microsoft Flow
 
@@ -33,7 +33,7 @@ Como parte do nosso comprometimento em firmar uma parceria com você em sua jorn
 
 ## <a name="manage-export-requests"></a>Gerenciar solicitações de exportação
 
-O *direito de portabilidade de dados* permite que um titular dos dados solicite uma cópia de seus dados pessoais em formato eletrônico (que é um "formato estruturado, usado normalmente, legível por computadores e interoperável") que pode ser transmitido para outro controlador de dados.
+O *direito de portabilidade de dados* permite ao titular dos dados solicitar uma cópia dos respectivos dados pessoais em formato eletrônico (que é um "formato estruturado, normalmente usado, legível por máquina e interoperável"), que podem ser transmitidos para outro controlador de dados.
 
 Use o [Painel de privacidade da Microsoft](https://account.microsoft.com/privacy/) ou o [Microsoft Flow](https://flow.microsoft.com/) para encontrar ou exportar dados pessoais de um usuário específico.
 
@@ -98,7 +98,7 @@ O histórico de execução é baixado como um arquivo.csv para que possa ser abe
 
 ## <a name="export-a-users-activity-feed"></a>Exportar um feed de atividades do usuário
 
-No [Microsoft Flow](https://flow.microsoft.com/), o feed de atividades mostra o histórico de atividades, falhas e notificações de um usuário. O usuário pode exibir seu feed de atividades seguindo estas etapas:
+No [Microsoft Flow](https://flow.microsoft.com/), o feed de atividades mostra o histórico de atividades, falhas e notificações de um usuário. Os usuários podem exibir os próprios feeds de atividades executando estas etapas:
 
 1. Entre no [Microsoft Flow](http://flow.microsoft.com/), selecione o ícone de sino no canto superior direito e selecione **Mostrar todas as atividades**.
 
