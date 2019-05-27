@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: f87320c61427957c02ff75675e4e15b938ac99f4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688319"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64468793"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Crie um fluxo usando o telefone com o Microsoft Flow
 Crie um fluxo através do seu telefone, usando um modelo que pode ser encontrado pesquisando em uma lista de serviços, navegando por categorias ou especificando palavras-chave. Siga as etapas deste tópico para criar um fluxo que envia uma notificação por push para o seu telefone, ao receber mensagens de seu gerente.

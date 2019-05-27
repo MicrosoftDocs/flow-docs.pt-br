@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ec3c6725ca6c0b1e03738f50132464b00c1f8695
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690647"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469268"
 ---
 # <a name="create-parallel-approval-workflows-with-microsoft-flow"></a>Criar fluxos de trabalho de aprovação paralela com o Microsoft Flow
 
@@ -147,7 +147,7 @@ Vamos continuar:
 
 Execute as seguintes etapas do lado de **SE SIM** do branch **Condição**.
 
-   Observação: seu fluxo usa estas etapas para enviar um email quando a solicitação é aprovada:
+   Observação: Seu fluxo usa estas etapas para enviar um email quando a solicitação for aprovada:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
@@ -161,7 +161,7 @@ Repita as etapas anteriores nas ramificações **Iniciar uma aprovação 2** (a 
 
 Execute as seguintes etapas para atualizar o SharePoint ao tomar decisões.
 
-   Observação: lembre-se de executar estas etapas em ambos os lados da ramificação **SE SIM** e **SE NÃO**.
+   Observação: Ser claro que executar essas etapas em ambos os **se Sim** e o **se não** lados da ramificação.
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 

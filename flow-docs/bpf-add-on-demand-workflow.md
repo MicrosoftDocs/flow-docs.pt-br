@@ -17,11 +17,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: aa061d5e2f668e8950a6cdab89992996f64c6fe8
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689607"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460908"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Adicionar um fluxo de trabalho sob demanda a um fluxo de processo empresarial
 
@@ -32,8 +32,8 @@ Um fluxo de trabalho torna-se ativo com base em onde você solta o fluxo de trab
 - Processos globais sob demanda. Quando o fluxo de trabalho é solto na área **Fluxos de trabalho globais**, o fluxo de trabalho é disparado na ativação de processo ou no arquivamento do processo (quando o status faz a transição para um estado aplicado, concluído, reativado ou abandonado). 
 
 Observe os seguintes requisitos quando você adiciona um fluxo de trabalho a um fluxo de processo empresarial.
-- Para fluxos de trabalho adicionados a um estágio: você só pode usar fluxos de trabalho sob demanda e ativos criados para a mesma entidade do estágio em que você pode adicionar o fluxo de trabalho.  
-- Para fluxos de trabalho globais: você só pode usar os fluxos de trabalho sob demanda e ativos criados para a entidade principal do fluxo de processo empresarial.
+- Para adicionar a um estágio de fluxos de trabalho: Você só pode usar o Active Directory, sob demanda fluxos de trabalho criados para a mesma entidade do estágio de onde você pode adicionar o fluxo de trabalho.  
+- Para fluxos de trabalho globais: Você só pode usar o Active Directory sob demanda fluxos de trabalho criados para a entidade principal do fluxo de processos de negócios.
 
 ## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>Adicionar um fluxo de trabalho sob demanda a um estágio de fluxo de processo empresarial
 
@@ -66,5 +66,5 @@ No exemplo a seguir, um fluxo de trabalho sob demanda denominado **Meu fluxo de 
  
 ## <a name="next-steps"></a>Próximas etapas
 [Use processos de fluxo de trabalho para automatizar processos que não exigem interação do usuário](workflow-processes.md) <br/>
-[Tutorial: criar um fluxo de processo empresarial para padronizar processos](create-business-process-flow.md) <br/>
+[Tutorial: Criar um fluxo de processo empresarial para padronizar processos](create-business-process-flow.md) <br/>
 [Automação de fluxo de processo empresarial no Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)

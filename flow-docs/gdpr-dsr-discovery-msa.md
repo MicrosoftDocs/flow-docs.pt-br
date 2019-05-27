@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 9a7031780ed6582d9f881571c3d07ce8aece074d
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690711"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64453979"
 ---
 # <a name="respond-to-gdpr-data-subject-discovery-requests"></a>Responder às solicitações de descoberta de titular dos dados do RGPD 
 

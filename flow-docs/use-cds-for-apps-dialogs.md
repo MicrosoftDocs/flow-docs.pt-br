@@ -16,11 +16,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 90bdbc0ecf9b778ec6da3e4cac2b32b44e361fb0
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58352908"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463648"
 ---
 # <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Usar as caixas de diálogo do Common Data Service para processos guiados (preterido)
 

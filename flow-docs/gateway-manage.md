@@ -22,9 +22,9 @@ search.audienceType:
 - enduser
 ms.openlocfilehash: b8b14f720736a60b04cbd9ae23dec5c0524ff03c
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65054061"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Gerenciar um gateway de dados locais no Microsoft Flow
@@ -55,7 +55,7 @@ Com um gateway, você pode conectar aos dados locais através dessas conexões:
 * Permissões administrativas em um gateway.
 
   Você tem essas permissões por padrão para cada gateway que instalar. Além disso, um administrador de outro gateway pode conceder essas permissões para esse gateway.
-* Uma licença que dá suporte a gateways. Para obter mais informações, confira a seção “Conectividade” da [página de preços](https://flow.microsoft.com/pricing/).
+* Uma licença que oferece suporte a gateways. Para obter mais informações, confira a seção “Conectividade” da [página de preços](https://flow.microsoft.com/pricing/).
 
 > [!NOTE]
 > Crie um gateway e uma conexão local em seu [ambiente padrão](environments-overview-maker.md).

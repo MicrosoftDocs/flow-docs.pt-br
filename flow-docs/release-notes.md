@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 392a869d6b25bb16ee02a6bb3373d6edcf81621b
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58353138"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64464570"
 ---
 # <a name="release-notes"></a>Notas de versão
 ## <a name="top-questions"></a>Principais perguntas

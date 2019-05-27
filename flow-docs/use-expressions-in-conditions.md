@@ -19,11 +19,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d6ad21cace7643abeb19de185c247f17ec9a2b35
-ms.sourcegitcommit: dfd9b4994aa9cb877ac4136460e011a344e27cb2
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59614524"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64466981"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Usar funções nas condições para verificar diversos valores
 Neste passo a passo, você aprenderá a usar expressões e **Condições** para comparar diversos valores no **modo Avançado**.

@@ -15,11 +15,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: 1cda3fb99dac66bcb675db031573be682c6e85ba
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58352931"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455843"
 ---
 # <a name="custom-common-data-service-workflow-activities-workflow-assemblies"></a>Atividades de fluxo de trabalho personalizadas do Common Data Service (assemblies de fluxo de trabalho)
 

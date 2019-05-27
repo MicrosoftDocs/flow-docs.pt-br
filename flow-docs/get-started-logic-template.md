@@ -21,16 +21,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 52aae570f65eaae537f548e686f437592eb5ef03
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689446"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461273"
 ---
 # <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>Criar um fluxo de um modelo no Microsoft Flow
 Crie um fluxo de um dos muitos modelos internos que podem, por exemplo, enviar uma mensagem de Slack quando seu gerente lhe envia um email no Office 365.
 
-**Observação:** [criar um flux do zero](get-started-logic-flow.md) se você já tiver um processo em mente e não conseguir encontrar um modelo para ele.
+**Observação:** [Criar um fluxo do zero](get-started-logic-flow.md) se você já tiver um processo em mente e não é possível localizar um modelo para ele.
 
 **Pré-requisitos**
 

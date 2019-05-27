@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 985e15451fd080e69310fea5617a0cf8f3c3c7f9
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461088"
+---
 Com uma crescente lista de [serviços](https://flow.microsoft.com/services) disponíveis para criar fluxos de trabalho com o [Microsoft Flow](https://flow.microsoft.com), torna-se necessário proteger dados de negócios confidenciais ou essenciais armazenados em serviços corporativos, como o SharePoint ou o Salesforce. É provável que você pense que sua organização precisa criar uma política para garantir que dados corporativos confidenciais não sejam publicados nos serviços de clientes, como o Twitter e o Facebook. Com o Microsoft Flow, você pode facilmente criar políticas de **prevenção contra perda de dados** (DLP) para controlar exatamente com quais serviços de clientes seus dados corporativos podem ser compartilhados quando os usuários criarem fluxos.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Termos com os quais você deve se familiarizar

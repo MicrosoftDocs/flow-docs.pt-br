@@ -1,4 +1,12 @@
-Nesta lição, falaremos sobre o aplicativo móvel Microsoft Flow e seus recursos. No aplicativo móvel, você pode acessar esses recursos: **Feed de Atividades**, **Procurando**, **Botões** e **Gerenciando Fluxos**.
+---
+ms.openlocfilehash: af3b0e4171e49cc918d8a18985136ffb760c1473
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462776"
+---
+Nesta lição, falaremos sobre o aplicativo móvel Microsoft Flow e seus recursos. No aplicativo móvel, você pode acessar esses recursos: **Feed de atividades**, **navegando**, **botões**, e **Gerenciando fluxos**.
 
 Primeiro, você precisará **baixar** e **instalar** o aplicativo Microsoft Flow em sua loja de aplicativos.
 

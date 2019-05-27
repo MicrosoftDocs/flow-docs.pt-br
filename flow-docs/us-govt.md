@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: a32b80ce9dba28f0c94c13989e4892fe6533813f
-ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65035192"
 ---
 # <a name="microsoft-flow-us-government"></a>Microsoft Flow para o Governo dos EUA
@@ -109,7 +109,7 @@ A equipe de engenharia de serviço e suporte do Microsoft Flow não tem acesso p
 
 ## <a name="certifications-and-accreditations"></a>Certificações e referências
 
-O Microsoft Flow para o Governo dos EUA foi projetado para dá suporte ao credenciamento do Programa Federal de Gerenciamento de Risco e Autorização (FedRAMP) em um nível de Alto Impacto. Este programa infere o alinhamento ao DoD DISA IL2. Os artefatos do FedRAMP estão disponíveis para revisão por clientes federais que precisam estar em conformidade com o FedRAMP. As agências federais podem examinar esses artefatos em suporte à sua revisão para conceder uma Autoridade para Operar (ATO).
+O Microsoft Flow para o Governo dos EUA foi projetado para oferecer suporte ao credenciamento do Programa Federal de Gerenciamento de Risco e Autorização (FedRAMP) em um nível de Alto Impacto. Este programa infere o alinhamento ao DoD DISA IL2. Os artefatos do FedRAMP estão disponíveis para revisão por clientes federais que precisam estar em conformidade com o FedRAMP. As agências federais podem examinar esses artefatos em suporte à sua revisão para conceder uma Autoridade para Operar (ATO).
 
 > [!NOTE]
 > Atualmente, os serviços do Microsoft Flow para o Governo dos EUA estão sob revisão com o FedRAMP, mas receberam um Relatório de Avaliação de Segurança (SAR) por um [3PAO](https://www.fedramp.gov/3pao-requirements-update/) qualificado.

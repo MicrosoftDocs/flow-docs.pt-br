@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690458"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455635"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Executar seu fluxos pressionando um botão inteligente Flic (Visualização)
 Dispare seus fluxos pressionando um botão físico, conhecido como Flic, da Shortcut Labs. Por exemplo, pressione um Flic para controlar o horário de trabalho, bloquear seu calendário, contar os visitantes em um evento ou salvar as localizações geográficas.
@@ -57,7 +57,7 @@ Depois de ter vinculado um evento Flic ao Microsoft Flow, você poderá selecion
 ## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Criar um fluxo que é disparado por um Flic
 Neste passo a passo, usamos um Flic para executar um fluxo que registra o tempo que um consultor passa com cada cliente. O consultor pressiona o Flic uma vez na chegada e pressiona-o novamente, um pouco antes da partida do cliente. Cada Flic pressionado inicia uma execução do fluxo ao qual ele está conectado. O fluxo salva a hora atual nas planilhas do Google e envia uma notificação por email. O email contém detalhes sobre a execução do fluxo.
 
-Observação: verifique se você usou o aplicativo móvel do Flic para emparelhar e configurar pelo menos uma ação de **clique** para disparar o Microsoft Flow. Nessa tela, eu configurei a ação de **clique** para disparar o Microsoft Flow. Posteriormente neste passo a passo, iremos configurar nosso fluxo para disparar quando o Flic for pressionado uma vez (clicado).
+Observação: Certifique-se de que você já usou o aplicativo móvel do Flic para emparelhar e configurar pelo menos um **clique em** ação para disparar o Microsoft Flow. Nessa tela, eu configurei a ação de **clique** para disparar o Microsoft Flow. Posteriormente neste passo a passo, iremos configurar nosso fluxo para disparar quando o Flic for pressionado uma vez (clicado).
 
    ![configuração do flic](./media/flic-button-flows/flic-configured-for-flow.png)
 
@@ -80,11 +80,11 @@ Vamos começar criando nosso fluxo.
    ![revisar os detalhes do modelo](./media/flic-button-flows/flic-template-details.png)
 2. Nas Planilhas do Google, crie uma planilha que contenha uma folha com colunas denominadas **TipoClique** e **CarimboHora**.
    
-      Dica: você nomeia as colunas nas Planilhas do Google digitando o nome da coluna na parte superior da coluna. Assim, sua planilha deverá parecer com esta captura de tela:
+      Dica: Você nomeia as colunas nas planilhas do Google digitando o nome da coluna na parte superior da coluna. Assim, sua planilha deverá parecer com esta captura de tela:
    
    ![Planilhas do Google](./media/flic-button-flows/flic-google-sheet.png)
    
-   Observação: você usará esta planilha posteriormente no passo a passo.
+   Observação: Você usará esta planilha posteriormente neste passo a passo.
 
 ### <a name="add-the-flic-trigger-to-your-flow"></a>Adicionar o gatilho do Flic ao seu fluxo
 1. Entre nos serviços do modelo e selecione **Continuar**.
@@ -112,7 +112,7 @@ Vamos começar criando nosso fluxo.
 1. Selecione a planilha que você criou anteriormente na lista **Arquivo**.
 2. Selecione a planilha na lista **Planilha**.
    
-   Observação: duas caixas adicionais aparecerão no cartão **Inserir linha** depois de você selecionar a planilha. Essas caixas representam as duas colunas na planilha criada anteriormente.
+   Observação: Duas caixas adicionais aparecerão na **Inserir linha** depois de selecionar a planilha de cartão. Essas caixas representam as duas colunas na planilha criada anteriormente.
 3. Marque a caixa **TipoClique** e selecione o token **Tipo do clique**.
 4. Marque a caixa **CarimboHora** e selecione o token **Hora do clique**.
    

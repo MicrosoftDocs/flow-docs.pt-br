@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711601"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462591"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Introdução aos tokens de gatilho de botão
 ## <a name="what-are-button-trigger-tokens"></a>O que são os tokens de gatilho de botão?
@@ -84,7 +84,7 @@ Vamos começar:
    ![token de gatilho de botão](./media/introduction-to-button-trigger-tokens/9.png)  
 
 ## <a name="run-the-button-flow"></a>Executar o fluxo de botão
-**OBSERVAÇÃO**: este fluxo de botão enviará seu local atual por email.  
+**OBSERVAÇÃO**: Esse fluxo de botão enviará seu local atual por email.  
 
 1. Toque na categoria **Botões** na parte inferior da tela. Você verá uma lista dos botões que você tem permissões para usar. Toque no botão que representa o fluxo de botão que você acabou de criar:  
    ![token de gatilho de botão](./media/introduction-to-button-trigger-tokens/10.png)  

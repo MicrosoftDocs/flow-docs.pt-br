@@ -20,11 +20,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: f510d387b594bb11306f8bc2530573b775e5f08e
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690389"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455872"
 ---
 # <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Microsoft Flow para desenvolvedores corporativos, ISVs e parceiros
 

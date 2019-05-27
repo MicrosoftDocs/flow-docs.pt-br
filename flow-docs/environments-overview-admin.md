@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 43f6f36cc32ec40088bd9b4c61e2895a7de78589
-ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65035044"
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Uso de ambientes no Microsoft Flow
@@ -186,7 +186,7 @@ Não. O Common Data Service requer um ambiente. [Leia mais](common-data-model-in
 
 ### <a name="what-regions-include-microsoft-flow"></a>Quais regiões estão incluídas no Microsoft Flow?
 
-O Microsoft Flow dá suporte à maioria das regiões compatíveis com o Office 365, confira mais detalhes [na visão geral das regiões](regions-overview.md).
+O Microsoft Flow oferece suporte à maioria das regiões compatíveis com o Office 365, confira mais detalhes [na visão geral das regiões](regions-overview.md).
 
 ### <a name="whats-needed-to-create-my-own-custom-environment"></a>O que é necessário para meu próprio ambiente personalizado?
 

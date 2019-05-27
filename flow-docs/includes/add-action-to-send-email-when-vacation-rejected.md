@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 05c2f4add521300687b1a7bf21580977a161e241
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64472077"
+---
 1. Selecione **Adicionar uma ação** na ramificação **SE NÃO, NÃO FAÇA NADA**.
 2. Insira **Enviar email** na caixa de pesquisa do cartão **Escolher uma ação**.
    

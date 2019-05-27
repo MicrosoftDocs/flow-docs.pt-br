@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6c48d79138dfdafa94e56380343840d6aa0fcbb5
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690825"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64470749"
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Criar um loop de aprovação com o Microsoft Flow e o Common Data Service da Microsoft
 O Common Data Service pode fornecer uma maneira de criar fluxos que tenham informações armazenadas em um banco de dados, independente de um fluxo. O melhor exemplo disso é com as aprovações. Se você armazenar o status da aprovação em uma entidade, o fluxo poderá trabalhar com ele.
@@ -148,7 +148,7 @@ Seguindo as etapas nesta seção, você criará:
     ![Adicionar token de nome do arquivo](./media/common-data-model-approve/add-filename-token.png)
 5. Em **Aprovador**, digite ou cole o endereço de email da pessoa que examinará os arquivos.
    
-    **Observação**: para facilitar o teste do fluxo, especifique seu próprio endereço. Você pode alterá-lo mais tarde, quando o fluxo estiver pronto para uso real.
+    **Observação**: Para fazer o teste do fluxo, especifique seu próprio endereço. Você pode alterá-lo mais tarde, quando o fluxo estiver pronto para uso real.
    
     ![Adicionar aprovador](./media/common-data-model-approve/add-approver.png)
 6. Em **Status**, digite ou cole **Pendente**.
@@ -166,7 +166,7 @@ Seguindo as etapas nesta seção, você criará:
    
     ![Escolher um valor](./media/common-data-model-approve/choose-value.png)
    
-    **Observação**: se a janela do navegador não estiver maximizada, clique ou toque na caixa superior que contém **Escolher um valor**.
+    **Observação**: Se a janela do navegador não estiver maximizada, clique ou toque na caixa superior que contém **escolher um valor**.
 3. Em **Saídas de Criar objeto**, clique ou toque em **Status** para adicionar esse token de parâmetro ao campo.
    
     ![Adicionar token de status](./media/common-data-model-approve/add-status.png)
@@ -177,7 +177,7 @@ Seguindo as etapas nesta seção, você criará:
    
     ![Especificar status a inspecionar](./media/common-data-model-approve/do-until-not-pending.png)
    
-    **Observação**: se a janela do navegador não estiver maximizada, clique ou toque na caixa inferior que contém **Escolher um valor**.
+    **Observação**: Se a janela do navegador não estiver maximizada, clique ou toque na caixa inferior que contém **escolher um valor**.
 6. Próximo à parte inferior da ação **Do until**, clique ou toque **Adicionar uma ação**.
    
     ![Adicionar ação dentro de um do until](./media/common-data-model-approve/add-action-in-dountil.png)
@@ -200,7 +200,7 @@ Seguindo as etapas nesta seção, você criará:
    
     ![Canto superior esquerdo da condição](./media/common-data-model-approve/condition-upper-left.png)
    
-    **Observação**: se a janela do navegador não estiver maximizada, clique ou toque na caixa superior que contém **Escolher um valor**.
+    **Observação**: Se a janela do navegador não estiver maximizada, clique ou toque na caixa superior que contém **escolher um valor**.
 3. Em **Saídas de Obter objeto**, clique ou toque no token de parâmetro **Status** para adicioná-lo ao campo.
    
     ![Adicionar status à condição](./media/common-data-model-approve/add-status-to-condition.png)
@@ -208,7 +208,7 @@ Seguindo as etapas nesta seção, você criará:
    
     ![Verificar se o status está definido como aprovado](./media/common-data-model-approve/status-equals-approved.png)
    
-    **Observação**: se a janela do navegador não estiver maximizada, digite ou cole **Aprovado** na caixa inferior que contém **Escolher um valor**.
+    **Observação**: Se a janela do navegador não estiver maximizada, digite ou cole **aprovado** na caixa inferior que contém **escolha um valor**.
 
 ## <a name="send-notification-mail"></a>Enviar email de notificação
 1. Em **Se Sim, não faça nada**, clique ou toque em **Adicionar uma ação**.
@@ -219,7 +219,7 @@ Seguindo as etapas nesta seção, você criará:
     ![Se sim, enviar email](./media/common-data-model-approve/if-yes-send-mail.png)
 3. Em **Para**, digite ou cole o endereço da pessoa a quem você deseja notificar quando um item é aceito.
    
-    **Observação**: para facilitar o teste do fluxo, especifique seu próprio endereço. Você pode alterá-lo quando o fluxo estiver pronto para uso real.
+    **Observação**: Para fazer o teste do fluxo, especifique seu próprio endereço. Você pode alterá-lo quando o fluxo estiver pronto para uso real.
    
     ![Destinatário de aprovação](./media/common-data-model-approve/approval-recipient.png)
 4. Em **Assunto**, clique ou toque na caixa e clique ou toque no token de parâmetro **Nome do arquivo** para adicioná-lo ao campo.

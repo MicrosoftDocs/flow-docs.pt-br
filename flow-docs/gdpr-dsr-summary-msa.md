@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 3742ac7afed24b0a1523a6038978589d293ba00b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688480"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460304"
 ---
 # <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>Responder a solicitações de DSRs (direitos do titular dos dados) do RGPD
 
@@ -54,14 +54,14 @@ A Microsoft fornece produtos, serviços e ferramentas para ajudar os controlador
 
 Aqui está uma visão geral dos processos descritos neste guia:
 
-1. **Descobrir**: usar as ferramentas de pesquisa e a descoberta para localizar facilmente os dados do cliente que podem ser o assunto de uma solicitação de DSR. Se você determinar que os documentos coletados atendam às diretrizes do controlador para executar ações, execute uma ou mais das ações de DSR descritas nas etapas a seguir. Saiba mais na [Documentação de descoberta de DSR do Microsoft Flow para contas da Microsoft](gdpr-dsr-discovery-msa.md). Como alternativa, você pode determinar que a solicitação não atende às diretrizes do controlador para responder às solicitações de DSR.
+1. **Descobrir**: Use ferramentas de pesquisa e a descoberta para localizar facilmente os dados do cliente que podem ser o assunto de uma solicitação de DSR. Se você determinar que os documentos coletados atendam às diretrizes do controlador para executar ações, execute uma ou mais das ações de DSR descritas nas etapas a seguir. Saiba mais na [Documentação de descoberta de DSR do Microsoft Flow para contas da Microsoft](gdpr-dsr-discovery-msa.md). Como alternativa, você pode determinar que a solicitação não atende às diretrizes do controlador para responder às solicitações de DSR.
 
-1. **Acesso**: recuperar dados pessoais que residem na nuvem da Microsoft e, se solicitado, fazer uma cópia para que eles fiquem disponíveis para o titular dos dados.
+1. **Acesso**: Recupere dados pessoais que residem na nuvem da Microsoft e, se solicitado, faça uma cópia do mesmo modo que pode estar disponível para a entidade de dados.
 
-1. **Corrigir**: fazer alterações ou implementar outras ações solicitadas nos dados pessoais, conforme o necessário.
+1. **Corrigir**: faça alterações ou implemente outras ações solicitadas nos dados pessoais, conforme o necessário.
 
-1. **Restringir**: restringir o processamento de dados pessoais, removendo licenças de vários serviços online ou desabilitando os serviços desejados sempre que possível. Você também pode remover dados da nuvem da Microsoft e retê-los no local ou em outro lugar.
+1. **Restringir**: restrinja o processamento de dados pessoais, removendo licenças de vários serviços online ou desabilitando os serviços desejados sempre que possível. Você também pode remover dados da nuvem da Microsoft e retê-los no local ou em outro lugar.
 
-1. **Excluir**: remover permanentemente os dados pessoais que residem na nuvem da Microsoft. Saiba mais sobre a [exclusão de dados pessoais de contas da Microsoft](gdpr-dsr-delete-msa.md). Saiba mais sobre o [encerramento de uma conta da Microsoft](gdpr-dsr-accountclose-msa.md).
+1. **Delete**: remova permanentemente os dados pessoais que residem na nuvem da Microsoft. Saiba mais sobre a [exclusão de dados pessoais de contas da Microsoft](gdpr-dsr-delete-msa.md). Saiba mais sobre o [encerramento de uma conta da Microsoft](gdpr-dsr-accountclose-msa.md).
 
-1. **Exportar**: fornecer uma cópia eletrônica (em um formato legível por computadores) dos dados pessoais. [Saiba mais sobre como exportar dados pessoais de contas da Microsoft](gdpr-dsr-export-msa.md).
+1. **Exportar**: Forneça uma cópia eletrônica (em um formato legível por máquina) dos dados pessoais. [Saiba mais sobre como exportar dados pessoais de contas da Microsoft](gdpr-dsr-export-msa.md).

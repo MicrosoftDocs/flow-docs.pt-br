@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 813ad16dbc9514975daadac456b73d98fc30db79
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689055"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462208"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Execute seus fluxos com botões físicos (bttns) a partir do The Button Corporation (versão prévia)
 Dispare seus fluxos pressionando um bttn (um botão físico feito por [The Button Corporation](https://my.bt.tn/)). Por exemplo, você pode pressionar uma bttn que dispara um fluxo para executar estas tarefas:
@@ -56,7 +56,7 @@ Você pode usar qualquer um desses modelos para criar rapidamente fluxos para su
 
 ![Modelos de bttn](./media/bttn-button-flows/bttn-templates.png)
 
-Dica: para os fins deste passo a passo, dê um nome a seu bttn que represente uma sala de conferência em um edifício de escritórios típico.
+Dica: Para os fins deste passo a passo, nomeie seu bttn que represente uma sala de conferência em um edifício de escritórios típico.
 
 As configurações para seu bttn devem ser semelhantes a este exemplo (do site bttn):
 
@@ -69,7 +69,7 @@ Agora que você registrou e configurou seu bttn, vamos começar criando o nosso 
    
     ![entrar](./media/bttn-button-flows/sign-into-flow.png)
    
-    Observação: como alternativa, você pode criar fluxos no aplicativo móvel Microsoft Flow para [Android](https://aka.ms/flowmobiledocsandroid) ou [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows).
+    Observação: Como alternativa, você pode criar fluxos no aplicativo móvel do Microsoft Flow para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), ou [Windows Phone](https://aka.ms/flowmobilewindows).
 2. Digite **bttn** na caixa de pesquisa e selecione o ícone de pesquisa.
    
     ![pesquisar](./media/bttn-button-flows/bttn-search-template.png)
@@ -85,7 +85,7 @@ Agora que você registrou e configurou seu bttn, vamos começar criando o nosso 
     ![credenciais](./media/bttn-button-flows/bttn-provide-credentials.png)
 2. Ao entrar no serviço bttn, autorize o Microsoft Flow a usar seu bttns.
    
-    **Importante**: se você não autorizar o Microsoft Flow a usar seus bttns, não poderá vê-los ou conectá-los do Microsoft Flow.
+    **Importante**: Se você não autorizar o Microsoft Flow a usar seus bttns, é possível ver ou conectá-los do Microsoft Flow.
    
     ![autorizar](./media/bttn-button-flows/authorize-bttn.png)
 3. Depois de entrar com ambos os serviços, selecione **Continuar**.
@@ -110,7 +110,7 @@ Agora que você registrou e configurou seu bttn, vamos começar criando o nosso 
    
     Você pode verificar o histórico de execução no site do Microsoft Flow ou em seu dispositivo móvel.
    
-    Observação: o status de execução é definido como **executando** até que alguém selecione **Confirmação** no email de solicitação de suporte.
+    Observação: O status de execução é definido como **em execução** até que alguém selecione **confirmação** no email de solicitação de suporte.
 3. Você também pode confirmar que o email foi enviado para a equipe de suporte.
    
     Se você acompanhou até aqui, o email de suporte é semelhante a este exemplo:

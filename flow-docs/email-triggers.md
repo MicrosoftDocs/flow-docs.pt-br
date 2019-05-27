@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 94af3389301f40aa5caaa46eda98c8b1c9be0228
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689791"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64459225"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>Dispare um fluxo com base nas propriedades de email
 Use o gatilho **Quando um novo email chega** para criar um fluxo que é executado quando uma ou mais das seguintes propriedades de email correspondem aos critérios fornecidos:

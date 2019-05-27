@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d45bf5974c24a8258f3f4e51e1e4c89b9c74fba7
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460335"
+---
 Para este fluxo, você compilará uma lista do **SharePoint** na qual a equipe de Marketing da **Contoso Flooring** armazena suas **postagens do Twitter** e as datas da postagem. A partir daí, você criará um fluxo que postará os tweets de conteúdo automaticamente. 
 
 ## <a name="connect-microsoft-flow-services"></a>Conectar os serviços do Microsoft Flow
@@ -81,7 +89,7 @@ Ok, isso basta para o gatilho.
 3. Defina o valor do atraso.
    
    1. Clique ou toque no campo **Carimbo de data/hora**. 
-   2. Quando a caixa de conteúdo dinâmico abrir, role até a parte inferior, e você verá as três colunas da lista do SharePoint: **Título**, **Data do Tweet** e **Conteúdo do Tweet**.
+   2. Quando a caixa de conteúdo dinâmica abrir, role para baixo até a parte inferior, e você vê as três colunas da lista do SharePoint: **Título**, **data do Tweet**, e **conteúdo do Tweet**.
    3. Selecione **Data do Tweet**. 
       
        ![Atrasar até o carimbo de data/hora](./media/learning-push-notifications/14-delay-until-timestamp.png)

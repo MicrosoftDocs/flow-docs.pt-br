@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bb5f08b2606b889a19de0167ef2825cd3428d069
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463395"
+---
 Em um tópico anterior, você viu como criar um processo de aprovação em torno de tweets armazenados em uma lista do SharePoint.  Neste tópico, você verá a aparência da experiência de quando um aprovador recebe uma nova solicitação de aprovação. 
 
 ## <a name="create-and-process-a-request"></a>Criar e processar uma solicitação

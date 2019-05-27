@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4c1a6ae20b0402a2629d3f1b615ddf738b165098
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64471634"
+---
 1. Selecione **Nova etapa** e **Adicionar uma condição**.
    
     ![adicionar condição](media/modern-approvals/add-response-condition.png)

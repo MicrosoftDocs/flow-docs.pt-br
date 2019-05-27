@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b2cf6c52a2cbaf06fc638fe8fc898689e6d523c4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690786"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64459917"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Crie um fluxo que utiliza o Common Data Service
 Melhore a eficiência operacional com uma exibição unificada de dados de negócios com a criação de fluxo que usa o [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Implante esse banco de dados de negócios seguro que inclui entidades de negócios padrão bem formadas (como Vendas, Compras, Atendimento ao cliente e Produtividade) em sua organização. Armazene dados organizacionais em uma ou mais [entidades personalizadas](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), que oferecem várias vantagens sobre fontes de dados externas, como o Microsoft Excel e Salesforce.
@@ -85,12 +85,12 @@ Por exemplo, aproveite o Common Data Service no Microsoft Flow das seguintes pri
     ![Especificar a instância do Dynamics 365](./media/common-data-model-intro/specify-instance.png)
 2. (opcional) Próximo ao topo da tela, especifique um nome diferente para o fluxo que você está criando.
    
-    **Observação**: se a janela do navegador não estiver maximizada, a interface do usuário poderá parecer um pouco diferente.
+    **Observação**: Se a janela do navegador não estiver maximizada, a interface do usuário pode parecer um pouco diferente.
    
     ![Nomear fluxo](./media/common-data-model-intro/name-flow.png)
 3. Clique ou toque em **Criar fluxo**.
    
-    **Observação**: se a janela do navegador não estiver maximizada, apenas a marca de seleção poderá aparecer.
+    **Observação**: Se a janela do navegador não estiver maximizada, apenas a marca de seleção poderá aparecer.
    
     ![Criar fluxo](./media/common-data-model-intro/create-flow.png)
 

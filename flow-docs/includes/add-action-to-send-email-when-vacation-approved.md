@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 5d3a4df4ac575f42790a2748aa9cebad05348da1
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469977"
+---
 1. Selecione **Adicionar uma ação**, no branch da condição **SE SIM**.
    
     ![adicionar nova etapa](media/modern-approvals/add-action-after-condition.png)

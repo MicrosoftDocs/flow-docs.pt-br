@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e46ba9a9ff1044e72b8550b47d126e2999cfb71
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461135"
+---
 ## <a name="what-is-an-environment"></a>O que é um ambiente:
 Um ambiente é um espaço virtual usado para armazenar, gerenciar e compartilhar aplicativos, fluxos e dados de negócios no Common Data Service. Os ambientes são geolocalizados para que todos os aplicativos e dados armazenados no banco de dados de um ambiente também sejam geolocalizados.  
 

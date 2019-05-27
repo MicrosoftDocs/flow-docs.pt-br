@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d886fb55c8cafb50020547c912a8207f335f04ad
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463367"
+---
 Além de conseguir **obter notificações** e **copiar arquivos**, **o Microsoft Flow** também permite que você **colete dados**.  Isso pode ser útil para a **análise**, como com o **Power BI**.  
 
 ## <a name="sources-and-destinations-triggers-and-actions"></a>Origens e destinos, gatilhos e ações

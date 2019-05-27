@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 702fd695a91fdf267f166d5162570b39505dbc91
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690412"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64465883"
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Filtrar e copiar dados com o Microsoft Flow
 Este passo a passo mostra como criar um fluxo que monitora uma origem para itens novos ou alterados e, em seguida, copia as alterações para um destino. Você pode criar um fluxo como este se seus usuários inserem dados em um local, mas sua equipe precisa deles em um local ou formato diferente.

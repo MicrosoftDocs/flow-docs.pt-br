@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a4c1189e943d5e1f48507bd3e55b5f2d8fe52a8c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460496"
+---
 Neste tópico, você verá como executar fluxos previamente agendados usando um gatilho chamado **Recorrência**.  Você criará um fluxo para a equipe de marketing da Contoso que recebe efetua pull de endereços de email do cliente de uma tabela do Excel no OneDrive. Você vai configurar o fluxo de forma que, uma vez por dia, novos endereços de email adicionados à planilha sejam então adicionados a uma lista de clientes do MailChimp. 
 
 ## <a name="create-a-scheduled-flow"></a>Criar um fluxo agendado
@@ -15,7 +23,7 @@ Neste tópico, você verá como executar fluxos previamente agendados usando um 
    
     ![](./media/learning-recurrence/excel-get-rows.png)
    
-    **Observação**: selecione **Obter linhas**, não **Obter linha**. 
+    **Observação**: Verifique se você selecionou **obter linhas**, e não **obter linha**. 
 6. Selecione **Nome de arquivo** e navegue até o local do arquivo. Selecione **Nome da tabela** e selecione a tabela desejada na planilha. 
    
     ![](./media/learning-recurrence/excel-get-file.png)
@@ -26,7 +34,7 @@ Neste tópico, você verá como executar fluxos previamente agendados usando um 
    
     ![](./media/learning-recurrence/select-mailchimp.png)
    
-    **Observação:** MailChimp é um conector *premium*. Dependendo de sua licença do Microsoft Flow, você precisará se inscrever em uma avaliação para usar esse conector.
+    **Observação:** O MailChimp é um *premium* conector. Dependendo de sua licença do Microsoft Flow, você precisará se inscrever em uma avaliação para usar esse conector.
 9. Adicione os campos **Id da lista** e **Status** dos menus suspensos:
    
    * **Id da lista** – selecione sua lista de endereçamento do MailChimp

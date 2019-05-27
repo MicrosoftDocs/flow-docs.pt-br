@@ -22,11 +22,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 498efb98a4c89ca6c2a01e345f5593beae4dbcca
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462991"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64464607"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Substituir caixas de diálogo por fluxos de processos empresariais ou aplicativos de tela
 
