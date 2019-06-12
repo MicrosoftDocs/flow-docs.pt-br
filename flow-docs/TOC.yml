@@ -109,6 +109,10 @@
           href: use-cds-for-apps-dialogs.md
         - name: Substituir caixas de diálogo do Common Data Service clássico
           href: replace-dialogs.md
+- name: AI Builder
+  items:
+    - name: Usar o AI Builder no Microsoft Flow
+      href: use-ai-builder.md
 - name: Como
   items:
     - name: Adicionar uma ação
