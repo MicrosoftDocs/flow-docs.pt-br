@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: MT
+ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455173"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58656121"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Usar markdown em solicitações de aprovação do Microsoft Flow
 
@@ -57,23 +57,23 @@ Facilite a leitura do texto dividindo-o com parágrafos ou quebras de linha. Ins
    
 **Exemplo**
 
-Add lines between your text with the Enter key.
-This spaces your text better and makes it easier to read.
+Adicione linhas entre o texto com a tecla Enter.
+Isso melhora o espaçamento e facilita a leitura.
 
-**Resultado:**   
-Add lines between your text with the Enter key.      
-This spaces your text better and makes it easier to read.
+**Resultado:**    
+Adicione linhas entre o texto com a tecla Enter.      
+Isso melhora o espaçamento e facilita a leitura.
 
 
 **Exemplo 2**
 
-Adicione dois espaços antes do final da linha (espaço, espaço).     
-This adds space in between paragraphs.
+Adicione dois espaços antes do final da linha. (espaço, espaço)     
+Isso adiciona espaço entre os parágrafos.
 
 **Resultado:**  
-Add two spaces prior to the end of the line.   
+Adicione dois espaços antes do final da linha.   
 
-This adds space in between paragraphs.
+Isso adiciona espaço entre os parágrafos.
   
 
 ## <a name="lists"></a>Listas
@@ -94,9 +94,9 @@ As listas ordenada começam com um número seguido por um ponto para cada item d
 
 **Resultado:**
 
-1. First item.
-2. Second item.
-3. Third item.
+1. Primeiro item.
+2. Segundo item.
+3. Terceiro item.
 
 ### <a name="bullet-lists"></a>Listas com marcador
 
@@ -134,15 +134,15 @@ As listas ordenada começam com um número seguido por um ponto para cada item d
 
 **Resultado:**  
 
-1. First item.
+1. Primeiro item.
 
     - Item 1
     - Item 2
     - Item 3
-2. Second item.
-    - Nested item 1
-    - Nested item 2
-    - Nested item 3
+2. Segundo item.
+    - Item aninhado 1
+    - Item aninhado 2
+    - Item aninhado 3
 
 
 ## <a name="links"></a>Links
@@ -212,10 +212,10 @@ Organize dados estruturados com tabelas.
 
 **Resultado:**  
 
-| Heading 1 | Heading 2 | Heading 3 |  
+| Título 1 | Título 2 | Título 3 |  
 |-----------|:---------:|-----------:|  
-| Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
+| Célula A1 | Célula A2 | Célula A3 |  
+| Célula B1 | Célula B2 | Célula B3<br/>segunda linha do texto |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Ênfase (negrito, itálico, tachado)  
@@ -239,9 +239,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Resultado:**
 
-Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italicized text_**   
-**~~Bold, strike-through text~~**  
+Use _ênfase_ em comentários para expressar opiniões **fortes** e indicar <s>correções</s>   
+**_Texto em negrito e itálico_**    
+**~~Texto em negrito e tachado~~**  
 
 
 ## <a name="special-characters"></a>Caracteres especiais
