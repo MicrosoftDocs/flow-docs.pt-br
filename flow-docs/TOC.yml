@@ -80,15 +80,18 @@
       href: remove-solution-aware-flow.md
 - name: Common Data Service
   items:
-    - name: Fluxos de trabalho do Common Data Service clássico
-      href: workflow-processes.md
+    - name: Fluxos de trabalho clássicos do Common Data Service
       items:
+        - name: Visão geral
+          href: workflow-processes.md
         - name: Configurar os estágios e as etapas do fluxo de trabalho
           href: configure-workflow-steps.md
         - name: Monitorar e gerenciar os processos de fluxo de trabalho
           href: monitor-manage-processes.md
         - name: Melhores práticas para processos de fluxo de trabalho
           href: best-practices-workflow-processes.md
+        - name: Substituir fluxos de trabalho por fluxos
+          href: replace-workflows-with-flows.md
     - name: Ações do Common Data Service clássico
       items:
         - name: Usar ações
@@ -123,7 +126,7 @@
       href: data-operations.md
     - name: Usar expressões nas condições
       href: use-expressions-in-conditions.md
-    - name: 'Referência: Usar funções em expressões'
+    - name: 'Referência: usar funções em expressões'
       href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
     - name: Fluxos de aprovação
       items:
@@ -178,7 +181,7 @@
     - name: Trabalhar com fluxos de processos empresariais usando código
       href: ./developer/business-process-flows-code.md
       items:
-        - name: 'Exemplo: Trabalhar com fluxos dos processos empresariais'
+        - name: 'Exemplo: trabalhar com fluxos de processos empresariais'
           href: ./developer/sample-work-business-process-flows.md
     - name: Personalizar atividades de fluxo de trabalho do Common Data Service
       href: ./developer/custom-cds-for-apps-workflow-activities.md
