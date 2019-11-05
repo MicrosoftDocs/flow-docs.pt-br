@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com fluxos de processo empresarial usando código | Microsoft Docs
-description: Saiba como trabalhar programaticamente com fluxos de processo empresarial para criar processos empresariais mais eficientes e otimizados.
+title: Trabalhar com fluxos de processos de negócios usando código | MicrosoftDocs
+description: Saiba como trabalhar programaticamente com fluxos de processos empresariais para criar processos de negócios mais eficientes e simplificados.
 ms.custom: ''
 ms.date: 07/09/2018
 ms.reviewer: ''
@@ -14,78 +14,79 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 5ce11084cb9a430899fd0a4b672e009c0dc22d25
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65054074"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547741"
 ---
-# <a name="work-with-business-process-flows-using-code"></a>Trabalhar com fluxos de processo empresarial usando código
+# <a name="work-with-business-process-flows-using-code"></a>Trabalhar com fluxos de processos de negócios usando código
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Um *fluxo do processo empresarial* permite que você crie processos mais eficientes e otimizados de vendas, serviço e outros processos empresariais. Ele cria uma visualização de seu processo empresarial colocando controles especiais na parte superior dos formulários de entidade. Os usuários são guiados por vários estágios de vendas, marketing ou processos de serviço em direção à conclusão. Cada processo dá suporte a vários estágios e etapas. Você pode adicionar ou remover etapas, alterar a ordem dos estágios ou adicionar novas entidades ao fluxo do processo empresarial.  
+Um *fluxo de processo de negócios* permite que você crie processos de negócios, serviços e outras vendas mais eficientes e simplificados. Ele cria uma visualização de seu processo de negócios, colocando controles especiais na parte superior dos formulários de entidade. Os usuários são guiados por meio de vários estágios de vendas, marketing ou processos de serviço para a conclusão. Cada processo dá suporte a vários estágios e etapas. Você pode adicionar ou remover etapas, alterar a ordem dos estágios ou adicionar novas entidades ao fluxo do processo de negócios.  
   
-As instâncias de fluxo de processo empresarial diferentes podem ser executadas simultaneamente no mesmo registro de entidade. Os usuários podem alternar entre as instâncias de processos empresariais simultâneas e retomar seu trabalho em um estágio atual no processo. 
+Diferentes instâncias de fluxo de processo de negócios podem ser executadas simultaneamente no mesmo registro de entidade. Os usuários podem alternar entre instâncias de processos de negócios simultâneas e retomar seu trabalho em um estágio atual no processo. 
 
-Este tópico fornece informações sobre como você pode trabalhar, por meio de programação, com fluxos de processo empresarial.
+Este tópico fornece informações sobre como você pode trabalhar programaticamente com fluxos de processo de negócios.
 
 > [!NOTE]
-> Você não precisa escrever código para trabalhar com fluxos de processo empresarial. Para obter informações sobre como usar a interface do usuário para criar e gerenciar fluxos de processo empresarial, consulte [Visão geral de fluxos de processo empresarial](../business-process-flows-overview.md)  
+> Você não precisa escrever código para trabalhar com fluxos de processo de negócios. Para obter informações sobre como usar a interface do usuário para criar e gerenciar fluxos de processos comerciais, consulte [visão geral de fluxos de processos de negócios](../business-process-flows-overview.md)  
 
 <a name="PrereqsBPF"></a>   
-## <a name="prerequisites-for-business-process-flow"></a>Pré-requisitos para o fluxo de processo empresarial 
+## <a name="prerequisites-for-business-process-flow"></a>Pré-requisitos para o fluxo de processos de negócios 
 
-Entidades personalizadas e entidades que tenham formulários de interface do usuário atualizados podem participar no fluxo do processo empresarial. As entidades de interface do usuário atualizadas têm a propriedade <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> definida como `true`. 
+Entidades personalizadas e entidades que atualizaram formulários de interface do usuário podem participar do fluxo do processo de negócios. As entidades de interface do usuário atualizadas têm a propriedade <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> definida como `true`. 
 
-Para habilitar uma entidade para o fluxo do processo empresarial, defina a propriedade <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> para `true`.
+Para habilitar uma entidade para o fluxo do processo de negócios, defina a propriedade <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> como `true`.
 
 > [!IMPORTANT]
->  Habilitar uma entidade para o fluxo do processo empresarial é um processo unidirecional. Não é possível revertê-lo.
+>  Habilitar uma entidade para fluxo de processo empresarial é um processo unidirecional. Você não pode revertê-lo.
 
    
 <a name="DefineBPF"></a>   
-## <a name="define-business-process-flow"></a>Definir fluxo do processo empresarial
+## <a name="define-business-process-flow"></a>Definir o fluxo do processo de negócios
   
-Use o designer de fluxo do processo empresarial visual para definir um fluxo de processo empresarial. Mais informações: [Criar um fluxo de processo empresarial](../create-business-process-flow.md)
+Use o Visual Business Process Flow designer para definir um fluxo de processo de negócios. Mais informações: [criar um fluxo de processo de negócios](../create-business-process-flow.md)
 
-Por padrão, um registro de fluxo do processo empresarial é criado no estado `Draft`.  
+Por padrão, um registro de fluxo do processo de negócios é criado no estado `Draft`.  
 
-Uma definição de fluxo de processo empresarial é armazenada na entidade <xref:Microsoft.Dynamics.CRM.workflow> e as informações de estágio para o fluxo do processo empresarial são armazenadas na entidade <xref:Microsoft.Dynamics.CRM.processstage>.
+Uma definição de fluxo de processo de negócios é armazenada na entidade <xref:Microsoft.Dynamics.CRM.workflow> e as informações de estágio para o fluxo do processo comercial são armazenadas na entidade <xref:Microsoft.Dynamics.CRM.processstage>.
   
 <a name="ActivateBPF"></a>   
-## <a name="activate-business-process-flow"></a>Ativar fluxo do processo empresarial  
- Antes de usar o fluxo do processo, você precisará ativá-lo. Para ativá-lo, você deve ter o privilégio `prvActivateBusinessProcessFlow` para a entidade `Workflow`. Use a mensagem <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> para definir o estado do registro da entidade `Workflow` para `Activated`. Mais informações: [Executar operações especializadas usando Update](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
+## <a name="activate-business-process-flow"></a>Ativar o fluxo do processo de negócios  
+ Antes de poder usar o fluxo do processo, você precisa ativá-lo. Para ativá-lo, você deve ter o privilégio de `prvActivateBusinessProcessFlow` para a entidade `Workflow`. Use a mensagem <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> para definir o estado do registro de entidade `Workflow` como `Activated`. Mais informações: [executar operações especializadas usando a atualização](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
 
  > [!NOTE]
- > Você também pode usar o designer de fluxo do processo empresarial para ativar um fluxo de processo empresarial. 
+ > Você também pode usar o designer de fluxo de processo de negócios para ativar um fluxo de processo de negócios. 
 
 <a name="BPFEntity"></a>   
-## <a name="business-process-flow-entity"></a>Entidade de fluxo de processo empresarial 
- Depois de ativar uma definição de fluxo de processo empresarial alterando o estado o registro de entidade `Workflow` correspondente ou usando o designer de fluxo do processo empresarial, uma entidade personalizada com o seguinte nome é criada automaticamente para armazenar as instâncias de fluxo de processo empresarial: "*\<activesolutionprefix>*_*\<uniquename>*", em que o nome exclusivo é derivado do nome que você especificar.  
+## <a name="business-process-flow-entity"></a>Entidade de fluxo do processo de negócios 
+ Depois de ativar uma definição de fluxo de processo de negócios alterando o estado do registro de entidade `Workflow` correspondente ou usando o designer de fluxo de processo de negócios, uma entidade personalizada com o seguinte nome é criada automaticamente para armazenar os negócios ativados instâncias de fluxo de processo: " *\<activesolutionprefix >* _ *\<UniqueName >* ", em que o UniqueName é derivado do nome que você especificar.  
   
- Por exemplo, se você especificou "Meu BPF personalizado" como o nome da definição de fluxo de processo empresarial e estiver usando o editor padrão (novo) para sua solução ativa, o nome da entidade personalizada criada para armazenar as instâncias de processo será "new_mycustombpf".  
+ Por exemplo, se você tiver especificado "meu BPF personalizado" como o nome da definição de fluxo de processo empresarial e estiver usando o Publicador padrão (novo) para sua solução ativa, o nome da entidade personalizada criada para armazenar instâncias de processo será "new_mycustombpf".  
   
- Se o valor de `uniquename` não estiver disponível para uma definição de fluxo do processo empresarial, por exemplo, se o fluxo do processo empresarial tiver sido importado como parte da solução de uma versão anterior, o nome padrão da entidade personalizada será "`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`:  
+ Se o valor de `uniquename` não estiver disponível para uma definição de fluxo de processo de negócios, por exemplo, se o fluxo do processo comercial foi importado como parte da solução de uma versão anterior, o nome padrão da entidade personalizada será "`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`:  
   
 > [!IMPORTANT]
->  Os registros de fluxo de processo empresarial de amostra usam entidades do sistema para armazenar os registros de instância do fluxo de processo empresarial correspondentes.  
+>  Os registros de fluxo do processo de negócios de exemplo usam entidades do sistema para armazenar os registros correspondentes da instância do fluxo de processos de negócios.  
 >   
->  No entanto, quaisquer novas definições de fluxo de processo empresarial que você criar usarão entidades personalizadas para armazenar seus registros de instância, conforme explicado anteriormente. 
+>  No entanto, quaisquer novas definições de fluxo de processo de negócios criadas usarão entidades personalizadas para armazenar seus registros de instância, conforme explicado anteriormente. 
 
-Você pode recuperar o nome da sua entidade de fluxo do processo empresarial usando qualquer uma das seguintes maneiras:
+Você pode recuperar o nome da sua entidade de fluxo de processo de negócios usando qualquer uma das seguintes maneiras:
 
-- **Usando a interface do usuário**: use a interface do usuário de personalização para navegar até a entidade de fluxo do processo empresarial:
+- **Usando a interface do usuário**: Use a interface do usuário de personalização para navegar até sua entidade de fluxo do processo de negócios:
 
     ![](media/bpf-entity-name.png)
-- **Usando a API Web**: use a seguinte solicitação:
+- **Usando a API Web**: Use a seguinte solicitação:
 
-    **Solicitar**
+    **Quest**
 
     ```
     GET [Organization URI]/api/data/v9.0/workflows?$filter=name eq 'My Custom BPF'&$select=uniquename HTTP/1.1
     ```
 
-    **Resposta**
+    **Responde**
     ```
     {  
     "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#workflows(uniquename)",
@@ -98,7 +99,7 @@ Você pode recuperar o nome da sua entidade de fluxo do processo empresarial usa
       ]
     }
     ```
-- **Usando o serviço da organização**: use o exemplo de código a seguir:
+- **Usando o serviço da organização**: Use o exemplo de código a seguir:
 
     ```c#
     QueryExpression query = new QueryExpression
@@ -121,60 +122,60 @@ Você pode recuperar o nome da sua entidade de fluxo do processo empresarial usa
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
     ```
 > [!NOTE]
-> A propriedade <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> é `true` para as entidades do fluxo do processo empresarial. Você pode recuperar todas as entidades do fluxo do processo empresarial em sua instância executando a seguinte solicitação de API Web:
+> A propriedade <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> é `true` para entidades de fluxo de processo de negócios. Você pode recuperar todas as entidades de fluxo do processo de negócios em sua instância executando a seguinte solicitação de API Web:
 > ```http
 > GET [Organization URI]/api/data/v9.0/EntityDefinitions?$select=SchemaName,LogicalName,DisplayName&$filter=IsBPFEntity eq true HTTP/1.1
 > ```
 
 <a name="BPFSecurity"></a>   
-## <a name="manage-security-for-business-process-flows"></a>Gerenciar a segurança dos fluxos dos processos empresariais
+## <a name="manage-security-for-business-process-flows"></a>Gerenciar a segurança para fluxos de processos de negócios
 
-A entidade personalizada que é criada automaticamente na ativação de um fluxo do processo empresarial para armazenar as instâncias dele segue o modelo de segurança padrão como qualquer outra entidade personalizada no Customer Engagement. Isso implica que os privilégios concedidos nessas entidades definem as permissões de tempo de execução dos usuários dos fluxos dos processos empresariais.
+A entidade personalizada criada automaticamente na ativação de um fluxo de processo de negócios para armazenar instâncias de fluxo de processo de negócios segue o modelo de segurança padrão para qualquer outra entidade personalizada no Common Data Service. Isso implica que os privilégios concedidos nessas entidades definem as permissões de tempo de execução para os fluxos de processo de negócios para os usuários.
 
-A entidade personalizada do fluxo do processo empresarial tem um escopo da organização. Os privilégios básicos para criar, recuperar, atualizar e excluir nessa entidade definem a permissão dos usuários de acordo com as funções atribuídas a eles. Por padrão, quando a entidade personalizada do fluxo do processo empresarial é criada, somente as funções de segurança **administrador do sistema** e **personalizador do sistema** recebem acesso a ela. Para outras funções de segurança, você precisa conceder as permissões explicitamente para a nova entidade do fluxo do processo empresarial (por exemplo, **Meu BPF personalizado**), conforme o necessário.
+A entidade personalizada do fluxo do processo de negócios tem o escopo da organização. Os privilégios regular criar, recuperar, atualizar e excluir nessa entidade definem a permissão que os usuários teriam com base em suas funções atribuídas. Por padrão, quando a entidade personalizada de fluxo do processo de negócios é criada, somente as funções de segurança **administrador do sistema** e personalizador do **sistema** recebem acesso a ela e você deve conceder permissões explicitamente à nova entidade de fluxo de processo comercial (para exemplo, **meu BPF personalizado**) para outras funções de segurança, conforme necessário.
 
 ![](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
-## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>Criar, recuperar, atualizar e excluir registros de entidade do fluxo do processo empresarial (instâncias de processo)  
- A entidade personalizada que é criada automaticamente na ativação de uma definição de fluxo do processo empresarial armazena todas as instâncias de processo dessa definição. A entidade personalizada permite a criação e o gerenciamento programáticos padrão de registros (instâncias de processo) usando a API Web e o ponto de extremidade do CRM 2011.
+## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>Criar, recuperar, atualizar e excluir registros de entidade de fluxo de processo de negócios (instâncias de processo)  
+ A entidade personalizada criada automaticamente na ativação de uma definição de fluxo de processo de negócios armazena todas as instâncias de processo para a definição de fluxo do processo de negócios. A entidade personalizada dá suporte à criação programática padrão e ao gerenciamento de registros (instâncias de processo) usando a API da Web e o ponto de extremidade do CRM 2011.
 
 > [!IMPORTANT]
-> A mudança para outra instância de processo de um registro de entidade apenas é permitida por meio da interface do usuário (cliente) ou de forma programática usando as informações disponíveis nesta seção. Não é mais possível usar a mensagem `SetProcess` (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> ou <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) para mudar de processo de forma programática (definir outro fluxo do processo empresarial como a instância de processo ativa) no registro da entidade de destino. 
+> A alternância para outra instância de processo para um registro de entidade só tem suporte por meio da interface do usuário (cliente) ou programaticamente usando as informações disponíveis nesta seção. Você não pode mais usar a mensagem de `SetProcess` (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> ou <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) para alternar processos programaticamente (definir outro fluxo de processo empresarial como a instância de processo ativa) para o registro de entidade de destino. 
 
- Vamos considerar o seguinte exemplo contendo um fluxo do processo empresarial entre entidades, "Meu BPF personalizado", com três estágios: S1:Account, S2:Account e S3:Contact. 
+ Vamos considerar o exemplo a seguir em que temos um fluxo de processo empresarial de entidade cruzada, "meu BPF personalizado", com 3 estágios: S1: account, S2: Account e S3: contact. 
 
  ![](media/sample-bpf.png)
  
-### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>Recuperar todos os registros (instâncias) de uma entidade do fluxo do processo empresarial
- Se o nome da entidade do fluxo do processo empresarial for "new_mycustombpf", use a seguinte consulta para recuperar todos os registros (instâncias de processo) dessa entidade:  
+### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>Recuperar todos os registros (instâncias) de uma entidade de fluxo de processo de negócios
+ Se o nome da sua entidade de fluxo de processo de negócios for "new_mycustombpf", use a seguinte consulta para recuperar todos os registros (instâncias de processo) para sua entidade de fluxo de processo de negócios:  
   
 ```http
 GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
 ```
 
-Neste ponto, você não poderá obter todas as instâncias em sua resposta, pois não há nenhuma. Execute esta solicitação depois de criar uma instância de sua definição de fluxo de processo empresarial neste tópico.
+Neste ponto, você não poderá obter nenhuma instância em sua resposta, pois não há nenhuma. Execute essa solicitação depois de criar uma instância de sua definição de fluxo de processo de negócios posteriormente neste tópico.
 
 > [!NOTE]
-> Para saber como recuperar o nome da sua entidade de fluxo do processo empresarial, consulte a seção anterior, [Entidade de fluxo de processo empresarial](#business-process-flow-entity).
+> Para saber como recuperar o nome da sua entidade de fluxo de processo de negócios, consulte a seção anterior, [entidade de fluxo de processo de negócios](#business-process-flow-entity).
   
-### <a name="create-a-business-process-flow-entity-record-process-instance"></a>Criar um registro de entidade de fluxo de processo empresarial (instância de processo) 
+### <a name="create-a-business-process-flow-entity-record-process-instance"></a>Criar um registro de entidade do fluxo de processo de negócios (instância do processo) 
 
-Crie um registro de entidade de fluxo de processo empresarial (instância de processo) por meio de programação se quiser alternar para outro fluxo de processo empresarial para um registro de entidade sem usar a interface do usuário. 
+Crie um registro de entidade de fluxo de processo de negócios (instância de processo) programaticamente se você quiser alternar para outro fluxo de processo de negócios para um registro de entidade sem usar a interface do usuário. 
 
-Para criar um registro de entidade de fluxo de processo empresarial, você precisará especificar os seguintes valores: 
-- Associar o registro de entidade de fluxo de processo empresarial a um registro de entidade principal definindo a propriedade de navegação de valor único usando a anotação `@odata.bind`. Para descobrir o nome da propriedade de navegação que aponta para o registro de entidade principal para sua definição de fluxo de processo empresarial, use o [documento CSDL $metadata](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document). 
-- Associar o registro de entidade de fluxo de processo empresarial a estágio válido especificado na definição do fluxo de processo empresarial definindo a propriedade de navegação de valor único usando a anotação `@odata.bind`. Para descobrir o nome da propriedade de navegação (normalmente, `activestageid`) que aponta para o registro de estágio para sua definição de fluxo de processo empresarial, use o [documento CSDL $metadata](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document).
+Para criar um registro de entidade de fluxo de processo de negócios, você precisa especificar os seguintes valores: 
+- Associe o registro de entidade do fluxo do processo de negócios a um registro de entidade principal definindo a propriedade de navegação de valor único usando a anotação `@odata.bind`. Para descobrir o nome da propriedade de navegação que aponta para o registro de entidade principal para sua definição de fluxo de processo de negócios, use o [documento CSDL $Metadata](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document). 
+- Associe o registro de entidade do fluxo do processo de negócios a um estágio válido especificado na definição de fluxo do processo de negócios definindo a propriedade de navegação de valor único usando a anotação `@odata.bind`. Para descobrir o nome da propriedade de navegação (normalmente `activestageid`) que aponta para o registro de estágio para sua definição de fluxo de processo de negócios, use o [documento CSDL $Metadata](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document).
 
-    Além disso, você pode recuperar informações sobre todos os estágios para uma definição de fluxo do processo empresarial usando a seguinte solicitação da API Web, supondo que a ID da sua definição de fluxo de processo empresarial seja 2669927e-8ad6-4f95-8a9a-f1008af6956f:
+    Além disso, você pode recuperar informações sobre todos os estágios de uma definição de fluxo de processo de negócios usando a seguinte solicitação de API Web, supondo que a ID da definição de fluxo do processo de negócios seja 2669927e-8ad6-4f95-8a9a-f1008af6956f:
 
-    **Solicitar**
+    **Quest**
 
     ```http
     GET [Organization URI]/api/data/v9.0/processstages?$select=stagename&$filter=processid/workflowid eq 2669927e-8ad6-4f95-8a9a-f1008af6956f HTTP/1.1
     ```
 
-    **Resposta**
+    **Responde**
 
     ```http
     {
@@ -199,9 +200,9 @@ Para criar um registro de entidade de fluxo de processo empresarial, você preci
     }
     ```
 
-Em seguida, use a seguinte solicitação para criar uma instância de sua definição de fluxo de processo empresarial para um registro de conta (ID=a176be9e-9a68-e711-80e7-00155d41e206) e o estágio ativo definido como o primeiro estágio da instância do processo, S1 (ID=9a9185f5-b75b-4bbb-9c2b-a6626683b99b):
+Em seguida, use a seguinte solicitação para criar uma instância de sua definição de fluxo do processo de negócios para um registro de conta (ID = a176be9e-9a68-e711-80e7-00155d41e206) e o estágio ativo definido como o primeiro estágio da instância do processo, S1 (ID = 9a9185f5-b75b-4bbb-9c2b-a6626683b99b):
 
-**Solicitar**
+**Quest**
 
 ```http
 POST [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -216,7 +217,7 @@ Accept: application/json
 }
 ```
 
-**Resposta**
+**Responde**
 
 ```http
 HTTP/1.1 204 No Content
@@ -224,7 +225,7 @@ OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.0/new_mycustombpfs(cc3f721b-026e-e811-80ff-00155d513100)
 ```
 
-Observe que, se você quiser criar uma instância de sua definição de fluxo de processo empresarial com estágio ativo definido como um estágio ***diferente*** do primeiro, você também deverá fornecer `traversedpath` na sua solicitação. O caminho percorrido é a cadeia de caracteres delimitada por vírgulas de IDs de estágio do processo que representam estágios visitados da instância de fluxo do processo empresarial. A solicitação a seguir cria uma instância de um registro de conta (ID=679b2464-71b5-e711-80f5-00155d513100) e estágio ativo definido como o segundo estágio, S2 (ID=19a11fc0-3398-4214-8522-cb2a97f66e4b).
+Observe que, se você quiser criar uma instância de sua definição de fluxo de processo de negócios com o estágio ativo definido como um estágio ***diferente*** do primeiro estágio, você também deverá fornecer `traversedpath` em sua solicitação. O caminho percorrido é a cadeia de caracteres delimitada por vírgulas de IDs de estágio do processo que representam os estágios visitados da instância do fluxo do processo de negócios. A solicitação a seguir cria uma instância para um registro de conta (ID = 679b2464-71B5-e711-80f5-00155d513100) e o estágio ativo definido como o segundo estágio, S2 (ID = 19a11fc0-3398-4214-8522-cb2a97f66e4b).
 
 ```http
 POST [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -240,15 +241,15 @@ Accept: application/json
 }
 ```
 
-### <a name="update-a-business-process-flow-entity-record-process-instance"></a>Atualizar um registro de entidade de fluxo de processo empresarial (instância de processo)
+### <a name="update-a-business-process-flow-entity-record-process-instance"></a>Atualizar um registro de entidade do fluxo de processo de negócios (instância do processo)
 
 Você pode atualizar uma instância de processo para mover para o estágio seguinte ou anterior, abandonar uma instância de processo, reativar uma instância de processo ou concluir uma instância de processo. 
 
-#### <a name="stage-navigation"></a>Navegação de estágio
+#### <a name="stage-navigation"></a>Navegação do estágio
 
-Para navegar até um estágio diferente, você precisa atualizar um registro de instância de processo para alterar sua ID de estágio ativo e atualizar adequadamente o caminho percorrido. Observe que você só deve mover para o estágio anterior ou seguinte ao atualizar uma instância de fluxo de processo empresarial.
+Para navegar até um estágio diferente, você precisa atualizar um registro de instância de processo para alterar sua ID de estágio ativa e atualizar adequadamente o caminho atravessado. Observe que você deve mover para o estágio seguinte ou anterior durante a atualização de uma instância de fluxo de processo de negócios.
 
-Para executar a navegação de estágio, você precisará da ID da instância de fluxo do processo empresarial que você deseja atualizar. Para recuperar todas as instâncias do seu fluxo de processo empresarial, consulte [Recuperar todos os registros (instâncias) para uma entidade de fluxo de processo empresarial](#retrieve-all-the-records-instances-for-a-business-process-flow-entity) mencionado anteriormente.
+Para executar a navegação do estágio, você precisará da ID da instância do fluxo do processo de negócios que deseja atualizar. Para recuperar todas as instâncias do fluxo do processo de negócios, consulte [recuperar todos os registros (instâncias) para uma entidade de fluxo do processo de negócios](#retrieve-all-the-records-instances-for-a-business-process-flow-entity) anteriormente.
 
 Supondo que a ID da instância do processo que você deseja atualizar seja dc2ab599-306d-e811-80ff-00155d513100, use a seguinte solicitação para atualizar o estágio ativo de S1 para S2:
 
@@ -264,26 +265,26 @@ OData-Version: 4.0
 }
 ```
 
-#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Altere o estado de uma instância de processo: Anular, Reativar ou Concluir 
+#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Alterar o estado de uma instância de processo: abortar, reativar ou concluir 
 
-Uma instância de processo pode estar em um dos seguintes estados: **Ativa**, **Concluída** ou **Anulada**. O estado é determinado pelos seguintes atributos no registro de instância do processo:
+Uma instância de processo pode ter um dos seguintes Estados: **ativa**, **concluída**ou **anulada**. O estado é determinado pelos seguintes atributos no registro da instância do processo:
 
-- **statecode**: exibe o status da instância de processo.
+- **stateCode**: exibe o status da instância do processo.
 
-    |Valor|Rótulo|
+    |valor|Chamada|
     |-----|-----|
-    |0    |Ativo|
-    |1    |Inativo|
+    |0    |Activo|
+    |uma    |Inativo|
 
-- **statuscode**: exibe informações sobre o status da instância de processo.
+- **StatusCode**: exibe informações sobre o status da instância do processo.
 
-    |Valor|Rótulo|
+    |valor|Chamada|
     |-----|-----|
-    |1    |Ativo|
-    |2    |Concluído|
-    |3    |Anulado|
+    |uma    |Activo|
+    |2    |Finaliza|
+    |Beta    |Anulada|
 
-Portanto, para **Anular** uma instância de processo, use a seguinte solicitação e defina os valores `statecode` e `statuscode` adequadamente:
+Portanto, para **anular** uma instância de processo, use a seguinte solicitação defina o `statecode` e `statuscode` valores adequadamente:
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1   
@@ -300,13 +301,13 @@ OData-Version: 4.0
 > [!NOTE]
 > Você pode anular uma instância de processo em qualquer estágio.
 
-Da mesma forma, para reativar uma instância de processo, substitua os valores `statecode` e `statuscode` no código acima com **0** e **1**, respectivamente.
+Da mesma forma, para reativar uma instância de processo, substitua os valores `statecode` e `statuscode` no código acima por **0** e **1** , respectivamente.
 
-Por fim, para definir um status da instância de processo como **Concluído**, que é possível apenas no último estágio de uma instância de processo, substitua os valores `statecode` e `statuscode` no código acima por **0** e **2**, respectivamente.
+Por fim, para definir um status de instância de processo como **concluído**, o que só é possível no último estágio de uma instância de processo, substitua os valores `statecode` e `statuscode` no código acima por **0** e **2** , respectivamente.
 
 #### <a name="cross-entity-navigation"></a>Navegação entre entidades
 
-Para a navegação entre entidades neste exemplo, você deve definir o estágio ativo da instância do processo para o último estágio, S3 (ID=a107e2fd-7543-4c1a-b6b4-b8060ecb1a1a), atualizar o caminho percorrido adequadamente e definir um registro de contato como o registro de entidade principal de acordo a definição de fluxo do processo empresarial.
+Para navegação entre entidades neste exemplo, você deve definir o estágio ativo da instância do processo para o último estágio, S3 (ID = a107e2fd-7543-4c1a-b6b4-b8060ecb1a1a), atualizar o caminho atravessado de acordo e definir um registro de contato como o registro de entidade principal, de acordo com o a definição de fluxo do processo de negócios.
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1   
@@ -321,66 +322,66 @@ OData-Version: 4.0
 }
 ``` 
 
-### <a name="delete-a-business-process-flow-entity-record-process-instance"></a>Excluir um registro de entidade de fluxo de processo empresarial (instância de processo)
+### <a name="delete-a-business-process-flow-entity-record-process-instance"></a>Excluir um registro de entidade do fluxo de processo de negócios (instância do processo)
 
 Use a seguinte solicitação de API Web:
 
-**Solicitar**
+**Quest**
 
 ```http
 DELETE [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1
 ```  
 
-**Resposta**
+**Responde**
 
-Se o registro existir, você obterá uma resposta normal com status 204 para indicar que a exclusão foi bem-sucedida. Se a entidade não for encontrada, você obterá uma resposta com o status 404.
+Se o registro existir, você receberá uma resposta normal com o status 204 para indicar que a exclusão foi bem-sucedida. Se a entidade não for encontrada, você receberá uma resposta com o status 404.
 
-## <a name="use-retrieveprocessinstances-and-retrieveactivepath-messages"></a>Use as mensagens RetrieveProcessInstances e RetrieveActivePath
+## <a name="use-retrieveprocessinstances-and-retrieveactivepath-messages"></a>Usar mensagens RetrieveProcessInstances e RetrieveActivePath
 
-Use a mensagem `RetrieveProcessInstances` (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> ou <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) para recuperar todas as instâncias de fluxo de processo empresarial para um registro de entidade em todas as definições de processo empresarial. As instâncias de fluxo de processo empresarial retornadas para uma entidade são ordenadas com base no atributo `modifiedon` para a instância. Por exemplo, a instância de fluxo de processo empresarial mais recentemente modificada será o *primeiro* registro na coleção retornada. A instância de fluxo de processo empresarial mais recentemente modificada é aquela que está ativa na interface do usuário para um registro de entidade.  
+Use a mensagem de `RetrieveProcessInstances` (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> ou <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) para recuperar todas as instâncias de fluxo do processo de negócios para um registro de entidade entre todas as definições de processo de negócios. As instâncias de fluxo do processo de negócios retornadas para uma entidade são ordenadas com base no atributo `modifiedon` para a instância. Por exemplo, a instância de fluxo de processo de negócios modificada mais recentemente será o *primeiro* registro na coleção retornada. A instância de fluxo de processos de negócios modificada mais recentemente é aquela que está ativa na interface do usuário para um registro de entidade.  
   
-Cada registro de instância de fluxo de processo empresarial retornado para um registro de entidade como resultado do uso da mensagem `RetrieveProcessInstances` armazena a ID do estágio no atributo `processstageid` que pode ser usado para localizar o estágio ativo e, em seguida, mover para o estágio seguinte ou anterior. Para fazer isso, você primeiro precisa localizar o caminho ativo de uma instância de fluxo de processo empresarial e os estágios disponíveis na instância de fluxo de processo usando a mensagem `RetrieveActivePath` (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> ou <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>).   
+Cada registro de instância de fluxo de processo de negócios retornado para um registro de entidade como resultado do uso da mensagem `RetrieveProcessInstances` armazena a ID do estágio ativo no atributo `processstageid` que pode ser usado para localizar o estágio ativo e, em seguida, mover para o estágio anterior ou próximo. Para fazer isso, primeiro você precisa localizar o caminho ativo de uma instância de fluxo de processo de negócios e os estágios disponíveis na instância do fluxo de processo usando a mensagem de `RetrieveActivePath` (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> ou <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>).   
   
- Depois de ter o estágio ativo e as informações de caminho ativo para uma instância de fluxo de processo empresarial, você pode usar as informações para mover para um estágio anterior ou seguinte no caminho ativo. A navegação progressiva dos estágios deve ser feita em sequência, ou seja, você deve apenas passar para o próximo estágio no caminho ativo.   
+ Depois de ter o estágio ativo e as informações de caminho ativo para uma instância de fluxo de processo de negócios, você pode usar as informações para mover para um estágio anterior ou próximo no caminho ativo. A navegação progressiva de estágios deve ser feita em sequência, ou seja, você só deve avançar para o próximo estágio no caminho ativo.   
   
- Para obter o exemplo completo do código que demonstra o uso desses dois métodos e a navegação de estágio usando o [serviço da organização](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata), confira [Exemplo: Trabalhar com fluxos dos processos empresariais](sample-work-business-process-flows.md). 
+ Para obter o exemplo completo que o código demonstra o uso desses dois métodos e a navegação de estágio usando o [serviço da organização](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata), consulte [exemplo: trabalhar com fluxos de processo de negócios](sample-work-business-process-flows.md). 
 
 <a name="ApplyBPF"></a>   
-## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Aplicar o fluxo do processo empresarial durante a criação de um registro de entidade
+## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Aplicar o fluxo do processo de negócios ao criar um registro de entidade
 
-Esta seção fornece informações sobre o comportamento padrão para a aplicação de fluxos de processo empresarial automaticamente a novos registros de entidade criados na participação do cliente e como isso pode ser substituído para aplicar um fluxo de processo empresarial de sua escolha para novos registros de entidade.
+Esta seção fornece informações sobre o comportamento padrão para aplicar fluxos de processos comerciais automaticamente a novos registros de entidade criados em Common Data Service e como você pode substituí-lo para aplicar um fluxo de processo de negócios de sua escolha para novos registros de entidade.
 
-Por padrão, para uma entidade que tem vários fluxos de processo empresarial definidos para ela, o sistema aplica um fluxo de processo empresarial para o novo registro de entidade usando a lógica de várias etapas a seguir:
-1. Identificar todos os fluxos de processo empresarial aplicáveis para o novo registro de entidade com base no atributo **Workflow.PrimaryEntity** dos registros de definição de fluxo do processo empresarial.
-2. Identifique as definições de fluxo de processo empresarial as quais o usuário atual tem acesso. Para obter informações sobre como o acesso a um fluxo de processo empresarial é determinado e gerenciado, consulte [Gerenciar a segurança para fluxos de processo empresarial](#BPFSecurity) anteriormente neste tópico.<br/>  
-3. Todas as definições de fluxo de processo empresarial no sistema estão sujeitas a uma ordem global por entidade. A ordem do fluxo de processo empresarial é armazenada no atributo **Workflow.ProcessOrder**. As definições de fluxo do processo empresarial para uma entidade são classificadas com base nessa ordem, e a que tiver o menor valor de ordem é escolhida.
-4. Por fim, se o registro de entidade é criado de um aplicativo de negócios (módulo de aplicativo), mais um nível de filtragem é aplicado para escolher o fluxo do processo empresarial que será aplicado automaticamente ao novo registro de entidade. Ao trabalhar em um aplicativo, os usuários podem acessar apenas entidades relevantes, fluxos de processo empresarial, exibições e formulários aos quais eles tenham acesso em virtude de funções de segurança atribuídas ao aplicativo de negócios. 
-    - Se o aplicativo de negócios não contiver qualquer fluxo de processo empresarial, então o fluxo do processo empresarial será aplicado conforme explicado até a etapa 3.
-    - Se o aplicativo de negócios tiver um ou mais fluxos de processo empresarial, então apenas os fluxos de processo empresarial presentes no aplicativo serão aplicáveis. Nesse caso, quando o usuário está trabalhando em um contexto de aplicativo de negócios, a lista de fluxos de processo empresarial da etapa 3 é filtrada para aqueles que fazem parte do aplicativo de negócios e que estão presentes dentro do módulo de aplicativo e são classificados com base na ordem do processo. 
-    - Se nenhum fluxo de processo empresarial estiver disponível em um aplicativo de negócios para a entidade ou um que o usuário tenha acesso, então nenhum fluxo de processo empresarial será aplicado para o novo registro de entidade.
+Por padrão, para uma entidade que tem vários fluxos de processo de negócios definidos para ele, o sistema aplica um fluxo de processo de negócios ao novo registro de entidade usando a seguinte lógica de várias etapas:
+1. Identifique todos os fluxos de processos de negócios aplicáveis ao novo registro de entidade com base no atributo **Workflow. PrimaryEntity** dos registros de definição de fluxo do processo de negócios.
+2. Identifique as definições de fluxo do processo de negócios às quais o usuário atual tem acesso. Para obter informações sobre como o acesso a um fluxo de processo de negócios é determinado e gerenciado, consulte [gerenciar a segurança para fluxos de processo de negócios](#BPFSecurity) anteriormente neste tópico.<br/>  
+3. Todas as definições de fluxo de processo de negócios no sistema estão sujeitas a uma ordem global por entidade. A ordem do fluxo do processo de negócios é armazenada no atributo **Workflow. ProcessOrder** . As definições de fluxo do processo de negócios para uma entidade são classificadas com base nessa ordem e a que com o valor de ordem mínimo é selecionada.
+4. Por fim, se o registro de entidade for criado a partir de um aplicativo de negócios (módulo de aplicativo), mais um nível de filtragem será aplicado para escolher o fluxo do processo de negócios a ser aplicado automaticamente ao novo registro de entidade. Ao trabalhar em um aplicativo, os usuários podem acessar somente entidades relevantes, fluxos de processos comerciais, exibições e formulários aos quais eles têm acesso em virtude das funções de segurança atribuídas ao aplicativo de negócios. 
+    - Se o aplicativo de negócios não contiver nenhum fluxo de processo de negócios, o fluxo do processo de negócios será aplicado conforme explicado até a etapa 3.
+    - Se o aplicativo de negócios tiver um ou mais fluxos de processo de negócios, somente os fluxos de processo de negócios presentes no aplicativo seriam aplicáveis. Nesse caso, quando o usuário está trabalhando em um contexto de aplicativo de negócios, a lista de fluxos de processo de negócios da etapa 3 é filtrada ainda mais para aqueles que fazem parte do aplicativo de negócios que estão presentes dentro do módulo de aplicativo e são classificados com base na ordem de processo. 
+    - Se nenhum fluxo de processo comercial estiver disponível em um aplicativo de negócios para a entidade ou com o qual o usuário tem acesso, nenhum fluxo de processo comercial será aplicado ao novo registro de entidade.
 
-Você pode substituir a lógica padrão de fluxos de processo empresarial sendo aplicados automaticamente para novos registros de entidade. Para fazer isso, defina o atributo **ProcessId** da entidade para um dos valores a seguir ao criar um novo registro de entidade:
-- Defina **Guid.Empty** para ignorar a configuração de um fluxo de processo empresarial para novos registros de entidade. Você talvez queira fazer isso se você criar registros de entidade em massa, mas não quiser que o fluxo do processo empresarial seja aplicado a eles.
-- Defina-o para uma entidade de fluxo de processo empresarial específica (como uma referência de entidade). Nesse caso, o sistema aplicará o fluxo do processo empresarial especificado em vez da lógica padrão.
+Você pode substituir a lógica padrão dos fluxos do processo de negócios sendo aplicada automaticamente a novos registros de entidade. Para fazer isso, defina o atributo **ProcessId** da entidade como um dos seguintes valores ao criar um novo registro de entidade:
+- Defina como **GUID. Empty** para ignorar a configuração de um fluxo de processo comercial para novos registros de entidade. Talvez você queira fazer isso se estiver criando registros de entidade em massa, mas não quiser que o fluxo do processo de negócios seja aplicado a eles.
+- Defina-o como uma entidade de fluxo de processo de negócios específica (como uma referência de entidade). Nesse caso, o sistema aplicará o fluxo do processo comercial especificado em vez da lógica padrão.
 
-Se você não definir um valor para o atributo **ProcessId** ao criar um novo registro de entidade, o sistema aplicará a lógica padrão conforme explicado anteriormente.
+Se você não definir um valor para o atributo **ProcessId** durante a criação de um novo registro de entidade, o sistema aplicará a lógica padrão conforme explicado anteriormente.
 
 > [!NOTE]
-> A substituição da lógica padrão de fluxos de processo empresarial sendo aplicados automaticamente a novos registros de entidade tem suporte apenas por meio de programação. Você não pode fazer isso usando a interface do usuário.
+> Substituir a lógica padrão dos fluxos do processo de negócios sendo aplicado automaticamente a novos registros de entidade tem suporte apenas por meio de programação. Você não pode fazer isso usando a interface do usuário.
 
-## <a name="legacy-process-related-attributes-in-entities"></a>Atributos herdados relacionados ao processo nas entidades
+## <a name="legacy-process-related-attributes-in-entities"></a>Atributos relacionados ao processo herdado em entidades
 
-Os atributos herdados relacionados ao processo (como **ProcessId**, **StageId** e **TraversedPath**) em entidades habilitadas para os fluxos do processo empresarial já foram preteridos. Manipular esses atributos herdados relacionados ao processo para registros de entidade de destino não garante a consistência do estado de fluxo do processo empresarial e ***não*** é um cenário com suporte. A maneira recomendada é usar os atributos da entidade de fluxo de processo empresarial, conforme explicado anteriormente na seção [Criar, recuperar, atualizar e excluir registros de entidade do fluxo de processo empresarial (instâncias do processo)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances)
+Os atributos herdados relacionados ao processo (como **ProcessId**, **stageid**e **TraversedPath**) em entidades habilitadas para fluxos de processo comercial já estão preteridos. Manipular esses atributos relacionados ao processo herdado para registros de entidade de destino não garante a consistência do estado de fluxo do processo de negócios e ***não*** é um cenário com suporte. A maneira recomendada é usar os atributos da entidade de fluxo do processo de negócios, conforme explicado anteriormente na seção [criar, recuperar, atualizar e excluir registros de entidade do fluxo de processo de negócios (instâncias de processo)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances)
 
-A única exceção é modificar de forma programática o atributo **ProcessId** durante a criação de um registro de entidade para substituir o aplicativo padrão do fluxo do processo empresarial no novo registro, conforme explicado na seção anterior: [Aplicar o fluxo do processo empresarial durante a criação de um registro de entidade](#ApplyBPF).
+A única exceção a isso é modificar programaticamente o atributo **ProcessId** ao criar um registro de entidade para substituir o aplicativo padrão do fluxo do processo de negócios para o novo registro, conforme explicado na seção anterior: [aplicar negócios fluxo do processo ao criar um registro de entidade](#ApplyBPF).
 
 <a name="BKMK_clientSideScript"></a>   
-## <a name="client-side-programmability-support-for-business-process-flows"></a>Suporte do lado do cliente por meio de programação para fluxos de processo empresarial  
- Há um objeto do lado do cliente que você pode usar para interagir com os fluxos de processo empresarial em seus scripts de formulário. Os fluxos de processo empresarial disparam eventos do lado do cliente sempre que um processo também é aplicado a um registro, o estágio é alterado ou seu status é alterado para `Active`, `Finished` ou `Aborted`. Mais informações: [formContext.data.process (referência de API do cliente)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md)  
+## <a name="client-side-programmability-support-for-business-process-flows"></a>Suporte à programação no lado do cliente para fluxos de processo de negócios  
+ Há um objeto do lado do cliente que você pode usar para interagir com fluxos de processo de negócios em seus scripts de formulário. Os fluxos de processos de negócios acionam eventos do lado do cliente sempre que um processo é aplicado a um registro, o estágio é alterado ou seu status é alterado para `Active`, `Finished`ou `Aborted`. Mais informações: [formContext. Data. Process (referência de API de cliente)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md)  
   
 <a name="BKMK_MaxSettings"></a>   
 ## <a name="maximum-number-of-processes-stages-and-steps"></a>Número máximo de processos, estágios e etapas  
- Por entidade, o valor padrão para o número máximo de fluxos de processo empresarial ativado é 10. Você pode especificar um valor diferente usando o atributo `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity`. No entanto, se o valor for maior que 10, você poderá ver uma diminuição no desempenho do sistema quando alternar entre processos ou abrir um registro que tenha um fluxo de processo empresarial atribuído. Isso pode ser particularmente perceptível se os processos abrangem várias entidades.  
+ Por entidade, o valor padrão para o número máximo de fluxos de processo de negócios ativados é 10. Você pode especificar um valor diferente usando o atributo `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity`. No entanto, se o valor for maior que 10, você poderá ver uma diminuição no desempenho do sistema ao alternar processos ou abrir um registro que tenha um fluxo de processo comercial atribuído. Isso pode ser especialmente perceptível se os processos abrangerem várias entidades.  
   
  As configurações a seguir não são personalizáveis:  
   
@@ -388,5 +389,5 @@ A única exceção é modificar de forma programática o atributo **ProcessId** 
   
 -   O número máximo de etapas em cada estágio é 30.  
   
--   O número máximo de entidades que podem participar no fluxo de processo é 5.  
+-   O número máximo de entidades que podem participar do fluxo do processo é 5.  
 

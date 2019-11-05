@@ -1,11 +1,12 @@
 ---
-title: Aguardar a aprovação em um fluxo | Microsoft Docs
-description: Os fluxos podem esperar que um evento externo ocorra, como um usuário aprovar ou rejeitar uma alteração, antes de executar uma ação, como o envio da notificação da decisão.
+title: Aguardar aprovação em um fluxo | Microsoft Docs
+description: Os fluxos podem aguardar a ocorrência de um evento externo, como um usuário que aprova ou rejeita uma alteração, antes de executar uma ação, como o envio de notificação da decisão.
 services: ''
 suite: flow
 documentationcenter: na
-author: merwanhade
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,106 +15,106 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2018
-ms.author: merwanhade
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0cc750dd9601e7675cee148882c6aaee9250b92e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: ea6be2d1deae080df58afd94c1f1e8d0c13c9fcd
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64464814"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548346"
 ---
-# <a name="wait-for-approval-in-microsoft-flow"></a>Aguardar a aprovação no Microsoft Flow
+# <a name="wait-for-approval-in-microsoft-flow"></a>Aguardar aprovação no Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 > [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 >
 
 
-Crie um fluxo que, se você criar um item no SharePoint, enviará um email de aprovação e notificará se o item foi aprovado ou rejeitado. Para acompanhar este tutorial de maneira exata, crie uma lista simples do SharePoint como uma ação de gatilho, mas você pode usar outra fonte de dados, como o Dropbox ou o OneDrive.
+Crie um fluxo que, se você criar um item no SharePoint, enviará um email de aprovação e notificará se o item foi aprovado ou rejeitado. Para seguir este tutorial exatamente, crie uma lista simples do SharePoint como uma ação de gatilho, mas você pode usar outra fonte de dados, como dropbox ou OneDrive.
 
 **Pré-requisitos**
 
-* Crie uma lista simples do SharePoint chamada de **Rastreador de Projetos**, adicione uma coluna chamada **Título** e uma coluna de Pessoa ou Grupo chamada **Atribuído a**.
+* Crie uma lista simples do SharePoint denominada **rastreador de projeto**, adicione uma coluna denominada **title**e, em seguida, adicione uma coluna Person ou Group nomeada **atribuída a**.
 
-   ![Imagem da lista de Rastreador de projetos do SPO](./media/wait-for-approvals/project-tracker.png)
+   ![Imagem da lista de SPO do rastreador de projeto](./media/wait-for-approvals/project-tracker.png)
 
-## <a name="add-an-event-to-trigger-the-flow"></a>Adicione um evento para disparar o fluxo
+## <a name="add-an-event-to-trigger-the-flow"></a>Adicionar um evento para disparar o fluxo
 
-1. Entre no [Microsoft Flow](https://flow.microsoft.com), selecione **Meus fluxos** na barra de navegação superior e, em seguida, selecione **Criar do zero**.
+1. Entre [Microsoft Flow](https://flow.microsoft.com), selecione **meus fluxos** na barra de navegação superior e, em seguida, selecione **criar em branco**.
 
-1. Selecione a caixa **Pesquisar centenas de conectores e gatilhos**, digite **novo item** e, em seguida, navegue até **SharePoint – quando um item é criado**.
+1. Selecione a caixa **Pesquisar centenas de conectores e gatilhos** , insira **novo item**e, em seguida, navegue até **SharePoint – quando um item é criado**.
 
-1. Se for solicitado, entre no SharePoint.
-1. Em **Endereço do site**, insira a URL do site do SharePoint que contém a lista.
+1. Se solicitado, entre no SharePoint.
+1. Em **endereço do site**, insira a URL do site do SharePoint que contém sua lista.
 
-1. Em **Nome da lista**, selecione a lista criada anteriormente. Se você estiver acompanhando, o nome será **Rastreador de projetos**.
+1. Em **nome da lista**, selecione a lista que você criou anteriormente. Se você estiver acompanhando, o nome será o **rastreador de projeto**.
 
-    ![Imagem do nome da lista do SPO](./media/wait-for-approvals/SPO-list-name.png)
+    ![Imagem do nome da lista de SPO](./media/wait-for-approvals/SPO-list-name.png)
 
-## <a name="add-the-resulting-action"></a>Adicione a ação resultante
+## <a name="add-the-resulting-action"></a>Adicionar a ação resultante
 
-1. Selecione o botão **Nova etapa** e, em seguida, selecione **Adicionar uma ação.**
+1. Selecione o botão **nova etapa** e, em seguida, selecione **Adicionar uma ação.**
 
-1. Na caixa **Pesquisar todos os conectores e ações**, digite ou cole **enviar email** e, sem guida, selecione **Office 365 Outlook – Enviar email com opções**.
+1. Na caixa **Pesquisar todos os conectores e ações** , digite ou cole **Enviar email**e, em seguida, selecione **Office 365 Outlook-enviar email com opções**.
 
 1. Se solicitado, entre no Office 365 Outlook.
 
-1. Selecione o campo **Para** e, em seguida, selecione o token **Atribuídos a Email**.
+1. Selecione o campo **para** e, em seguida, selecione o token **atribuído a email** .
 
-    O usuário na coluna **Atribuído a** recebe o email para aprovar ou rejeitar o item. Quando você criar um item para testar o fluxo, especificará a si mesmo nesse campo. Dessa forma, você não apenas aprova ou rejeita o item, mas também recebe o email de notificação.
+    O usuário na coluna **atribuído a** recebe o email para aprovar ou rejeitar itens. Quando você cria um item para testar o fluxo, especifique-o nesse campo. Dessa forma, você não apenas aprova ou rejeita o item, mas também recebe o email de notificação.
 
     > [!NOTE]
-    > É possível personalizar os campos **Assunto** e **Opções do usuário** para se adequar às suas necessidades.
+    > Você pode personalizar os campos de **assunto** e de **Opções de usuário** para atender às suas necessidades.
 
-    ![Imagem do campo enviar o email de aprovação para](./media/wait-for-approvals/send-approval-email-to.png)
+    ![Imagem de enviar email de aprovação para o campo](./media/wait-for-approvals/send-approval-email-to.png)
 
 ## <a name="add-a-condition"></a>Adicionar uma condição
 
-1. Selecione o botão **Nova etapa** e, em seguida, selecione **Adicionar uma condição**.
+1. Selecione o botão **nova etapa** e, em seguida, selecione **Adicionar uma condição**.
 
     ![Imagem de adicionar uma condição](./media/wait-for-approvals/add-a-condition.png)
-1. Selecione a primeira caixa e, em seguida, selecione o token **SelectedOption**.
-1. Selecione a última caixa e, em seguida, digite **Aprovar**.
+1. Selecione a primeira caixa e, em seguida, selecione o token **SelectedOption** .
+1. Selecione a última caixa e, em seguida, digite **aprovar**.
 
-    ![Imagem da placa de condição](./media/wait-for-approvals/condition-card-2.png)
+    ![Imagem do cartão condição](./media/wait-for-approvals/condition-card-2.png)
 
-1. Na área **Se sim**, selecione **Adicionar uma ação**.
+1. Na área **se sim** , selecione **Adicionar uma ação**.
 
-1. Na caixa **Pesquisar todos os conectores e ações**, digite ou cole **enviar email** e, em seguida, selecione **Office 365 Outlook – Enviar um email**.
+1. Na caixa **Pesquisar todos os conectores e ações** , digite ou cole **Enviar email**e, em seguida, selecione **Office 365 Outlook-enviar um email**.
 
-1. No campo **Para**, insira um destinatário como **Criado por Email**.
+1. No campo **para** , insira um destinatário, como **criado por email**.
 
-1. Na caixa **Assunto**, especifique um assunto.
+1. Na caixa **assunto** , especifique um assunto.
 
-    Por exemplo, selecione **Atribuído a DisplayName**, digite **Aprovou** com um espaço em cada lado e, em seguida, selecione **Título**.
+    Por exemplo, selecione **atribuído a DisplayName**, o tipo **foi aprovado** com um espaço em cada lado e, em seguida, selecione **título**.
 
-1. Na caixa **Corpo**, especifique o corpo de email com algo como **Pronto para prosseguir com a próxima fase do projeto.**
+1. Na caixa **corpo** , especifique um corpo de email, como **pronto, para prosseguir com a próxima fase do projeto.**
 
     > [!NOTE]
     > A pessoa que criou o item na lista do SharePoint será notificada se o projeto foi aprovado ou rejeitado.
 
-    ![Imagem de sim-enviar-email](./media/wait-for-approvals/if-yes-send-email-card-3.png)
+    ![Imagem de Sim-enviar-email](./media/wait-for-approvals/if-yes-send-email-card-3.png)
 
-1. Na área **Se não**, repita as cinco últimas etapas alterando o **Assunto** e **Corpo** para demonstrar que o projeto foi rejeitado.
+1. Na área **se não** , repita as cinco últimas etapas, exceto alterar o **assunto** e o **corpo** para refletir que o projeto foi rejeitado.
 
-     ![Imagem de não-enviar-email](./media/wait-for-approvals/no-send-email-2.png)
+     ![Imagem de no-send-email](./media/wait-for-approvals/no-send-email-2.png)
 
 ## <a name="finish-and-test-your-flow"></a>Concluir e testar seu fluxo
 
-1. Nomeie seu fluxo e, em seguida, selecione **Criar fluxo**.
+1. Dê um nome ao seu fluxo e, em seguida, selecione **criar fluxo**.
 
-     ![Imagem de criar-fluxo](./media/wait-for-approvals/create-flow.png)
-1. Crie um item na sua lista do SharePoint.
+     ![Imagem do fluxo de criação](./media/wait-for-approvals/create-flow.png)
+1. Crie um item em sua lista do SharePoint.
 
-    Um email de aprovação é enviado para o destinatário especificado. Quando o destinatário seleciona **Aprovar** ou **Rejeitar** nesse email, você recebe um email que indica a resposta.
+    Um email de aprovação é enviado para o destinatário que você especificou. Quando o destinatário seleciona **aprovar** ou **rejeitar** nesse email, você recebe um email que indica a resposta.
 
-## <a name="learn-more"></a>Saiba mais
+## <a name="learn-more"></a>Saiba Mais
 
-* [Passo a passo das aprovações modernas do aprovador único](modern-approvals.md)
-* Crie [aprovações sequenciais](sequential-modern-approvals.md)
-* Crie [aprovações paralelas](parallel-modern-approvals.md)
-* Aprove [solicitações em qualquer lugar](mobile-approvals.md)
+* [Passo a passos de aprovações modernas de aprovador único](modern-approvals.md)
+* Criar [aprovações sequenciais](sequential-modern-approvals.md)
+* Criar [aprovações paralelas](parallel-modern-approvals.md)
+* Aprovar [solicitações em qualquer lugar](mobile-approvals.md)

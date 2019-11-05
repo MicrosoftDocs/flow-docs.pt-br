@@ -20,66 +20,67 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b41397d74c7396081154526ad2e248cb293e2460
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: a71d1e53199f0dacfc2086812cc3cd2fd9585f4d
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64468168"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548686"
 ---
-# <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Aprovar solicitações em seu dispositivo móvel usando o Microsoft Flow
-Se um fluxo o identifica como um aprovador e você instalou o aplicativo móvel do Microsoft Flow, receberá uma notificação por push sempre que for solicitada sua aprovação.
+# <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Aprovar solicitações em seu dispositivo móvel usando Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Se um fluxo o identificar como Aprovador e você tiver instalado o aplicativo móvel para Microsoft Flow, você receberá uma notificação por push sempre que sua aprovação for solicitada.
 
-Este artigo explica alguns dos cenários comuns que você provavelmente encontrará enquanto gerencia solicitações de aprovação no aplicativo móvel do Microsoft Flow.
+Este artigo orienta você por alguns cenários comuns que você provavelmente encontrará enquanto gerencia solicitações de aprovação no aplicativo móvel para Microsoft Flow.
 
 > [!NOTE]
-> As imagens neste tópico são de um dispositivo Android. No entanto, a experiência do iOS é semelhante.
+> As imagens neste tópico são de um dispositivo Android; no entanto, a experiência no iOS é semelhante.
 > 
 > 
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Para concluir este passo a passo, você precisa:
+Para concluir este passo a passos, você precisa de:
 
-* Um dispositivo [Android](https://aka.ms/flowmobiledocsandroid) ou [iOS](https://aka.ms/flowmobiledocsios) executando o aplicativo móvel do Microsoft Flow.
-* Para ser designado como o aprovador em um fluxo de aprovação.
+* Um dispositivo [Android](https://aka.ms/flowmobiledocsandroid) ou [Ios](https://aka.ms/flowmobiledocsios) executando o aplicativo móvel para Microsoft Flow.
+* A ser designado como Aprovador em um fluxo de aprovação.
 * Solicitações pendentes para aprovação.
 
 ## <a name="view-pending-requests"></a>Exibir solicitações pendentes
-1. Abra o aplicativo móvel do Microsoft Flow.
+1. Abra o aplicativo móvel para Microsoft Flow.
    
     ![iniciar o aplicativo móvel](./media/mobile-approvals/open-app.png)
-2. Selecione **APROVAÇÕES** no canto superior direito.
+2. Selecione **aprovações** no canto superior direito.
    
     ![selecionar aprovações](./media/mobile-approvals/select-approvals.png)
 3. Exibir todas as aprovações pendentes:
    
-    ![confira as solicitações de aprovação pendentes](./media/mobile-approvals/show-pending-approval-requests.png)
+    ![consulte solicitações de aprovação pendentes](./media/mobile-approvals/show-pending-approval-requests.png)
 
-Se você não tiver nenhuma solicitação de aprovação pendente, crie um [fluxo de aprovação](modern-approvals.md), defina você mesmo como um aprovador e então dispare o fluxo. As solicitações de aprovação aparecem no centro de aprovações alguns segundos depois que o fluxo dispara e envia uma solicitação para aprovação.
+Se você não tiver nenhuma solicitação de aprovação pendente, crie um [fluxo de aprovação](modern-approvals.md), defina-o como um Aprovador e, em seguida, acione o fluxo. As solicitações de aprovação aparecem no centro de aprovação alguns segundos depois que o fluxo é disparado e envia uma solicitação de aprovação.
 
 ## <a name="approve-requests-and-leave-an-optional-comment"></a>Aprovar solicitações e deixar um comentário opcional
-1. Se você ainda não fez isso, siga as etapas anteriores para [exibir solicitações pendentes](mobile-approvals.md#view-pending-requests).
-2. Selecione **APROVAR** na solicitação que você deseja aprovar.
+1. Se você ainda não fez isso, siga as etapas anteriores para [exibir as solicitações pendentes](mobile-approvals.md#view-pending-requests).
+2. Selecione **aprovar** na solicitação que você deseja aprovar.
    
-    ![selecione aprovar](./media/mobile-approvals/select-approve.png)
-3. (Opcional) selecione **Adicionar comentário (opcional)**.
+    ![Selecione aprovar](./media/mobile-approvals/select-approve.png)
+3. (Opcional) selecione **adicionar comentário (opcional)** .
    
-    ![selecione adicionar um comentário](./media/mobile-approvals/select-add-comment.png)
+    ![selecione Adicionar um comentário](./media/mobile-approvals/select-add-comment.png)
    
-    Insira um comentário na tela **Adicionar comentário**.
+    Insira um comentário na tela **adicionar comentário** .
    
-    ![insira seu comentário](./media/mobile-approvals/enter-comment-for-approval.png)
-4. Selecione **CONFIRMAR** no canto superior direito.
+    ![Insira seu comentário](./media/mobile-approvals/enter-comment-for-approval.png)
+4. Selecione **confirmar** no canto superior direito.
    
-    ![confirme quando terminar](./media/mobile-approvals/tap-confirm-button.png)
+    ![Confirme que você terminou](./media/mobile-approvals/tap-confirm-button.png)
    
-    A tela de sucesso é exibida depois que o fluxo registra sua decisão.
+    A tela êxito é exibida depois que o fluxo registra sua decisão.
    
-    ![tela de sucesso](./media/mobile-approvals/approved.png)
+    ![tela de êxito](./media/mobile-approvals/approved.png)
 
 ## <a name="reject-requests-and-leave-an-optional-comment"></a>Rejeitar solicitações e deixar um comentário opcional
-Siga as [etapas para aprovar uma solicitação](mobile-approvals.md#approve-requests-and-leave-an-optional-comment), mas selecione **REJEITAR** na segunda etapa.
+Siga as [etapas para aprovar uma solicitação](mobile-approvals.md#approve-requests-and-leave-an-optional-comment), mas selecione **rejeitar** na segunda etapa.
 
-## <a name="learn-more"></a>Saiba mais
-[Criar fluxos de aprovação modernos](modern-approvals.md).
+## <a name="learn-more"></a>Saiba Mais
+[Crie fluxos de aprovação modernos](modern-approvals.md).
 

@@ -1,6 +1,6 @@
 ---
-title: Saiba como conectar seus dados usando conexões e gateways de dados locais | Microsoft Docs
-description: Adicionar ou gerenciar conexões com o SharePoint, SQL Server, OneDrive for Business, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google unidade e muito mais
+title: Aprenda a se conectar aos seus dados usando conexões e gateways de dados locais | Microsoft Docs
+description: Adicionar ou gerenciar conexões com o SharePoint, SQL Server, OneDrive for Business, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google Drive e muito mais
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,84 +20,85 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bdfa1072bca2afc7c608a4dbf68b8f598dff89f1
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 1de8602cc573e800d721b6b70222df49cf1577e3
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456820"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544768"
 ---
 # <a name="manage-connections-in-microsoft-flow"></a>Gerenciar conexões no Microsoft Flow
-Se você criar uma conexão no Microsoft Flow, poderá acessar facilmente seus dados durante a criação de um fluxo. O Microsoft Flow inclui conexões usadas normalmente, incluindo o SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter e muito mais. As conexões são compartilhadas com o PowerApps, assim, quando você cria uma conexão em um produto, ela aparece no outro.
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Se você criar uma conexão no Microsoft Flow, poderá acessar seus dados facilmente ao criar um fluxo. Microsoft Flow inclui conexões comumente usadas, incluindo SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter e muito mais. As conexões são compartilhadas com o PowerApps, portanto, quando você cria uma conexão em um produto, a conexão aparece no outro.
 
-Por exemplo, use uma conexão para executar estas tarefas:
+Por exemplo, você pode usar uma conexão para executar estas tarefas:
 
-* Atualizar uma lista do SharePoint.
-* Obter dados de um arquivo do Excel em sua conta do OneDrive for Business ou Dropbox.
+* Atualize uma lista do SharePoint.
+* Obtenha dados de um arquivo do Excel em sua conta do OneDrive for Business ou do dropbox.
 * Enviar email no Office 365.
-* Enviar um tweet.
+* Envie um tweet.
 
-Crie uma conexão em vários cenários, como estes:
+Você pode criar uma conexão em vários cenários, como estes:
 
-* Criar um [fluxo de um modelo](get-started-logic-template.md)
-* Criar um [fluxo de espaço em branco](get-started-logic-flow.md) ou atualizar um fluxo existente
-* Criar uma conexão diretamente no [site do Microsoft Flow][1]
+* Criando um [fluxo de um modelo](get-started-logic-template.md)
+* Criando um [fluxo de em branco](get-started-logic-flow.md) ou atualizando um fluxo existente
+* Criando uma conexão no [site Microsoft Flow][1] diretamente
 
-Este tópico mostra como gerenciar conexões no [site do Microsoft Flow][1].
+Este tópico mostra como gerenciar conexões no [site Microsoft Flow][1].
 
 ## <a name="add-a-connection"></a>Adicionar uma conexão
-1. No [site do Microsoft Flow][1], entre com sua conta corporativa ou da organização.
-2. No canto superior direito, selecione o ícone de engrenagem e selecione **Conexões**.
+1. No [site Microsoft Flow][1], entre com sua conta corporativa ou de organização.
+2. Próximo ao canto superior direito, selecione o ícone de engrenagem e, em seguida, selecione **conexões**.
    
-    ![Selecione conexões](./media/add-manage-connections/connections-menu.png)
-3. Selecione **Criar conexão**.
-4. Na lista de **Conexões disponíveis**, selecione a conexão que você quer configurar, como a do SharePoint.
-5. Selecione o botão **Criar conexão** e insira suas credenciais para configurar a conexão.
+    ![Selecionar conexões](./media/add-manage-connections/connections-menu.png)
+3. Selecione **criar conexão**.
+4. Na lista de **conexões disponíveis**, selecione a conexão que você deseja configurar, como o SharePoint.
+5. Selecione o botão **criar conexão** e, em seguida, insira suas credenciais para configurar a conexão.
 
-Após a configuração da conexão, ela é relacionada em **Minhas conexões**.
+Quando a conexão é configurada, ela é listada em **minhas conexões**.
 
-## <a name="connect-to-your-data-through-an-on-premises-data-gateway"></a>Conectar-se aos dados por meio de um gateway de dados local
-No momento deste texto, o SQL Server e o SharePoint oferecem suporte ao gateway de dados local. Para criar uma conexão que usa um gateway:
+## <a name="connect-to-your-data-through-an-on-premises-data-gateway"></a>Conectar-se aos seus dados por meio de um gateway de dados local
+No momento da redação deste artigo, SQL Server e SharePoint Server dão suporte ao gateway de dados local. Para criar uma conexão que usa um gateway:
 
-1. Siga as etapas anteriores deste tópico para adicionar uma conexão.
-2. Na lista de **Conexões disponíveis**, selecione **SQL Server** e, em seguida, marque a caixa de seleção **Conectar por meio do gateway de dados local**.
+1. Siga as etapas anteriores neste tópico para adicionar uma conexão.
+2. Na lista de **conexões disponíveis**, selecione **SQL Server**e, em seguida, marque a caixa de seleção **conectar via gateway de dados local** .
    
     ![Selecionar gateway](./media/add-manage-connections/select-gateway.png)
    
    > [!IMPORTANT]
-   > Os gateways de dados do Microsoft SharePoint oferecem suporte a tráfego HTTP, mas não ao tráfego HTTPS.
+   > Os gateways de dados do Microsoft SharePoint dão suporte ao tráfego HTTP, mas não ao tráfego HTTPS.
    > 
    > 
-3. Forneça as credenciais de conexão e selecione o gateway que você quer usar.
+3. Forneça as credenciais da conexão e selecione o gateway que você deseja usar.
    
-    Para obter mais informações, consulte [Gerenciar gateways](gateway-manage.md) e [Entender os gateways](gateway-reference.md).
+    Para obter mais informações, consulte [gerenciar gateways](gateway-manage.md) e [entender gateways](gateway-reference.md).
    
-    Após a configuração da conexão, ela é relacionada em **Minhas conexões**.
+    Quando a conexão é configurada, ela é listada em **minhas conexões**.
 
 ## <a name="delete-a-connection"></a>Excluir uma conexão
-1. Acesse a página **Minhas conexões** e selecione o ícone de lixeira para a conexão que você quer excluir.
+1. Vá para a página **minhas conexões** e selecione o ícone de lixeira para a conexão que você deseja excluir.
    
     ![Excluir conexão](./media/add-manage-connections/delete-connection.png)
-2. Selecione **OK** para confirmar a exclusão da conexão.
+2. Selecione **OK** para confirmar que você gostaria de excluir a conexão.
    
     ![Confirmar exclusão](./media/add-manage-connections/delete-confirmation.png)
 
 Quando você exclui uma conexão, ela é removida do PowerApps e do Microsoft Flow.
 
 ## <a name="update-a-connection"></a>Atualizar uma conexão
-Atualize uma conexão que não está funcionando devido a alguma alteração nos detalhes ou senha de sua conta.
+Você pode atualizar uma conexão que não está funcionando porque os detalhes da sua conta ou sua senha foram alterados.
 
-1. Na página **Minhas conexões**, selecione o link **Verificar senha** para a conexão que você deseja atualizar.
+1. Na página **minhas conexões** , selecione o link **verificar senha** para a conexão que você deseja atualizar.
    
     ![Verificar senha](./media/add-manage-connections/verify-password.png)
-2. Quando solicitado, atualize a conexão com novas credenciais.
+2. Quando solicitado, atualize sua conexão com novas credenciais.
 
-Ao atualizar uma conexão, ela será atualizada no PowerApps e no Microsoft Flow.
+Quando você atualiza uma conexão, ela é atualizada para o PowerApps e o Microsoft Flow.
 
-## <a name="troubleshoot-a-connection"></a>Solucionar problemas de uma conexão
-Dependendo das políticas de sua organização, talvez seja necessário usar a mesma conta para entrar no Microsoft Flow e criar uma conexão com o SharePoint, Office 365 ou OneDrive for Business.
+## <a name="troubleshoot-a-connection"></a>Solucionar problemas de conexão
+Dependendo das políticas da sua organização, talvez seja necessário usar a mesma conta para entrar no Microsoft Flow e criar uma conexão com o SharePoint, Office 365 ou OneDrive for Business.
 
-Por exemplo, você pode entrar no Microsoft Flow com  *yourname@outlook.com*, mas ser bloqueado ao tentar se conectar ao SharePoint com *yourname@contoso.com*. Em vez disso, entre no Microsoft Flow com *yourname@contoso.com* e você poderá se conectar ao SharePoint.
+Por exemplo, você pode entrar no Microsoft Flow com *yourname@outlook.com* mas ser bloqueado quando tentar se conectar ao SharePoint com o *yourname@contoso.com* . Em vez disso, você pode entrar no Microsoft Flow com *yourname@contoso.com* e você poderá se conectar ao SharePoint.
 
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com

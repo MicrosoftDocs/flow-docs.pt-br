@@ -1,32 +1,31 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Documentação do Microsoft Flow | Microsoft Docs
-description: O Microsoft Flow é um serviço com o qual você pode criar fluxos de trabalho automatizados entre seus aplicativos e serviços favoritos para sincronizar arquivos, obter notificações, coletar dados e muito mais.
+title: Documentação de Microsoft Flow | Microsoft Docs
+description: Microsoft Flow é um serviço que ajuda a criar fluxos de trabalho automatizados entre seus aplicativos e serviços favoritos para sincronizar arquivos, obter notificações, coletar dados e muito mais.
 keywords:
 - Microsoft Flow
-- fluxo de trabalho
+- Modelo
 - fluxo
 - fluxo de trabalho de aprovação
 - fluxo de trabalho do SharePoint
 author: msftman
 ms.author: deonhe
-manager: kfile
+manager: kvivek
 ms.date: 03/28/2018
 ms.topic: hub-page
-ms.reviewer:
-- karann-msft
+ms.reviewer: karann-msft
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6032b608719e01407395113cec40b554e7a945c8
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 0340b92072cf320e143db89fd5e96236e3fd60c6
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64463271"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547481"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -55,8 +54,8 @@ ms.locfileid: "64463271"
     <h1>Documentação do Microsoft Flow</h1>
     <ul class="pivots">
         <li>
-            <a href="#start">Sou um iniciante</a>
-            <ul id="start">
+            <a href="#start">Sou um
+             principiante</a><ul id="start">
                 <li>
                     <a href="#start-all"></a>
                     <ul id="start-all" class="cardsC">
@@ -70,8 +69,8 @@ ms.locfileid: "64463271"
                                                 <img src="media/index/guidedlearningtour.svg" alt="Learn Microsoft Flow" /><br/>                                            </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Conheça o Microsoft Flow</h3>
-                                            <p>Comece sua jornada de aprendizagem com essa coleção sequenciada de cursos para reconhecer as capacidades abrangentes e poderosas do Microsoft Flow.</p>
+                                            <h3>Saiba Microsoft Flow</h3>
+                                            <p>Comece sua jornada de aprendizado com esta coleção sequenciada de cursos para entender os recursos abrangentes e poderosos do Microsoft Flow.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -96,26 +95,7 @@ ms.locfileid: "64463271"
                                 </div>
                             </div>
                             </a>
-                        </li>
-                        <li>
-                            <a href="mobile-create-flow.md">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/get_to_know_mobile_app1.svg" alt="Get to know the mobile app." />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Conhecer o aplicativo móvel</h3>
-                                            <p>Gerencie, acompanhe e explore seus fluxos de trabalho automatizados a qualquer momento e em qualquer lugar.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
+                        </li>                        
                         <li>
                             <a href="introduction-to-button-flows.md">
                             <div class="cardSize">
@@ -127,8 +107,27 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Criar um fluxo de botão em dois minutos</h3>
-                                            <p>Saiba como automatizar e executar as tarefas repetitivas com os fluxos de botão.</p>
+                                            <h3>Criar um fluxo de botão em 2 minutos</h3>
+                                            <p>Saiba como automatizar e executar tarefas repetitivas com fluxos de botão.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/flow/ui-flows/overview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/ui_flows.svg" alt="Get started with UI flows (Preview)" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Introdução aos fluxos da interface do usuário (visualização)</h3>
+                                            <p>Automatize tarefas repetitivas em aplicativos que não têm APIs fáceis de usar ou completas disponíveis.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -147,7 +146,7 @@ ms.locfileid: "64463271"
                                         </div>
                                         <div class="cardText">
                                             <h3>Acompanhar o fluxo da semana</h3>
-                                            <p>Aprenda novos truques diretamente da equipe do Microsoft Flow.</p>
+                                            <p>Aprenda novos truques diretamente da equipe de Microsoft Flow.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -165,8 +164,8 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Ajuda</h3>
-                                            <p>Estamos sempre aqui para ajudar. Em que você está pensando?</p>
+                                            <h3>Obter ajuda</h3>
+                                            <p>Vamos&#39;sempre para ajudar. Quais&#39;s em mente?</p>
                                         </div>
                                     </div>
                                 </div>
@@ -177,9 +176,9 @@ ms.locfileid: "64463271"
                 </li>
             </ul>
         </li>
-        <li>
-            <a href="#intermediate">Sou intermediário</a>
-            <ul id="intermediate">
+        <li>Sou 
+            <a href="#intermediate">um
+             intermediário</a><ul id="intermediate">
                 <li>
                     <a href="#intermediate-all"></a>
                     <ul id="intermediate-all" class="cardsC">
@@ -213,8 +212,8 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Crie um fluxo a partir do zero</h3>
-                                            <p>Deixe sua imaginação levar você a fluxos incríveis.</p>
+                                            <h3>Criar um fluxo do zero</h3>
+                                            <p>Permita que sua imaginação conduza a fluxos incríveis.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -233,7 +232,7 @@ ms.locfileid: "64463271"
                                         </div>
                                         <div class="cardText">
                                             <h3>Criar fluxos de aprovação</h3>
-                                            <p>Aprenda a criar fluxos que gerenciem a aprovação de documentos ou processos em vários serviços.</p>
+                                            <p>Aprenda a criar fluxos que gerenciam a aprovação de documentos ou processos em vários serviços.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +251,7 @@ ms.locfileid: "64463271"
                                         </div>
                                         <div class="cardText">
                                             <h3>Colaborar em um fluxo de equipe</h3>
-                                            <p>O Microsoft Flow facilita a automatização de tarefas repetitivas. É possível adicionar usuários ou grupos como proprietários e colaborar com eles para criar e gerenciar fluxos.</p>
+                                            <p>Microsoft Flow torna fácil automatizar tarefas repetitivas. Você pode adicionar usuários ou grupos como proprietários e, em seguida, colaborar com eles para projetar e gerenciar fluxos.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -270,8 +269,8 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Permitir que outros usem seus fluxos de botão</h3>
-                                            <p>Compartilhe seus botões com outras pessoas para que elas possam usá-los para economizar tempo.</p>
+                                            <h3>Permitir que outras pessoas usem seus fluxos de botão</h3>
+                                            <p>Compartilhe seus botões com outras pessoas para que eles possam usá-las para economizar tempo.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -290,7 +289,7 @@ ms.locfileid: "64463271"
                                         </div>
                                         <div class="cardText">
                                             <h3>Solucionar problemas de seus fluxos</h3>
-                                            <p>Aqui estão algumas dicas para quando as coisas dão errado, e você precisa fazer uma análise mais detalhada.</p>
+                                            <p>Aqui estão algumas dicas para quando as coisas dão errado e você precisa dar uma olhada mais detalhada.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -301,8 +300,8 @@ ms.locfileid: "64463271"
                 </li>
             </ul>
         </li>
-        <li>
-            <a href="#expert">Sou um especialista</a>
+        <li>Sou 
+            <a href="#expert">um especialista</a>
             <ul id="expert">
                 <li>
                     <a href="#expert-all"></a>
@@ -318,8 +317,8 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Ajustar seus fluxos com expressões</h3>
-                                            <p>Saiba como usar expressões e condições para comparar diversos valores.</p>
+                                            <h3>Ajuste fino de seus fluxos com expressões</h3>
+                                            <p>Aprenda a usar expressões e condições para comparar vários valores.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -337,7 +336,7 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Gerenciar o Microsoft Flow para sua organização</h3>
+                                            <h3>Gerenciar Microsoft Flow para sua organização</h3>
                                             <p>Saiba como criar, usar e gerenciar ambientes no Microsoft Flow.</p>
                                         </div>
                                     </div>
@@ -356,8 +355,8 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Aprender a usar as APIs REST com seus fluxos</h3>
-                                            <p>Ative o Microsoft Flow a partir dos seus próprios aplicativos.</p>
+                                            <h3>Aprenda a usar as APIs REST com seus fluxos</h3>
+                                            <p>Chame Microsoft Flow de seus próprios aplicativos.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -376,7 +375,7 @@ ms.locfileid: "64463271"
                                         </div>
                                         <div class="cardText">
                                             <h3>Criar um conector personalizado</h3>
-                                            <p>Crie um conector personalizado que você possa usar nos Aplicativos Lógicos do Azure, no Microsoft Flow ou no Microsoft PowerApps.</p>
+                                            <p>Crie um conector personalizado que você pode usar em aplicativos lógicos do Azure, Microsoft Flow ou Microsoft PowerApps.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -394,8 +393,8 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Expandir seus fluxos com Aplicativos Lógicos</h3>
-                                            <p>Os Aplicativos Lógicos do Azure fornecem um conjunto de recursos mais rico do que o incluído no Microsoft Flow. Basta salvar qualquer fluxo como um modelo de Aplicativos Lógicos e gerenciá-lo como qualquer outro recurso de Aplicativos Lógicos.</p>
+                                            <h3>Expanda seus fluxos com aplicativos lógicos</h3>
+                                            <p>Os aplicativos lógicos do Azure fornecem um conjunto mais rico de recursos do que o que está incluído no Microsoft Flow. Basta salvar qualquer fluxo como um modelo de aplicativos lógicos e, em seguida, gerenciá-lo como qualquer outro recurso de aplicativos lógicos.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -413,8 +412,8 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Impulsione a coleta de dados e a consistência de fluxo de trabalho</h3>
-                                            <p>Impulsione a coleta de dados da unidade e a consistência de fluxo de trabalho por meio de fluxos de processos empresariais.</p>
+                                            <h3>Consistência da coleta de dados da unidade e do fluxo de trabalho</h3>
+                                            <p>Conduzir a coleta de dados e a consistência do fluxo de trabalho usando fluxos de processo de negócios.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -432,8 +431,8 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Usar o Common Data Service</h3>
-                                            <p>Use o Common Data Service com processos de fluxo de trabalho.</p>
+                                            <h3>Usar Common Data Service</h3>
+                                            <p>Use Common Data Service com processos de fluxo de trabalho.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -444,8 +443,8 @@ ms.locfileid: "64463271"
                 </li>
             </ul>
         </li>
-        <li>
-            <a href="#admin">Sou administrador</a>
+        <li>Sou 
+            <a href="#admin">um administrador</a>
             <ul id="admin">
                 <li>
                     <a href="#admin-all"></a>
@@ -500,7 +499,7 @@ ms.locfileid: "64463271"
                                         </div>
                                         <div class="cardText">
                                             <h3>Gerenciar execuções de fluxo</h3>
-                                            <p>Investigar e gerenciar cada execução de seus fluxos.</p>
+                                            <p>Investigue e gerencie cada execução de seus fluxos.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -518,8 +517,8 @@ ms.locfileid: "64463271"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Obter informações sobre seus fluxos</h3>
-                                            <p>Obtenha informações sobre a integridade de seus fluxos no painel de análise.</p>
+                                            <h3>Obtenha informações sobre seus fluxos</h3>
+                                            <p>Obter informações sobre a integridade de seus fluxos no painel de análise.</p>
                                         </div>
                                     </div>
                                 </div>

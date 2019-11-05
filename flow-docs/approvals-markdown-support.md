@@ -1,6 +1,6 @@
 ---
-title: Usar markdown para formatar aprovações do Microsoft Flow | Microsoft Docs
-description: Aprenda a usar markdown para formatar as solicitações de aprovação do Microsoft Flow.
+title: Usar redução para formatar Microsoft Flow aprovações | Microsoft Docs
+description: Aprenda a usar a redução para formatar Microsoft Flow solicitações de aprovação.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,24 +20,25 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
-ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
-ms.translationtype: HT
+ms.openlocfilehash: b82ac7c53c8c018b5e61011e4c1d8b9cdabe9747
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58656121"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545310"
 ---
-# <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Usar markdown em solicitações de aprovação do Microsoft Flow
+# <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Use a redução em Microsoft Flow solicitações de aprovação
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Este artigo ensina a usar a sintaxe do [Markdown](https://en.wikipedia.org/wiki/Markdown) para adicionar formatação detalhada e tabelas às suas solicitações de aprovação.
+Este artigo ensina como usar a sintaxe de [redução](https://en.wikipedia.org/wiki/Markdown) para adicionar formatação e tabelas ricas às suas solicitações de aprovação.
 
-## <a name="headers"></a>Cabeçalhos
+## <a name="headers"></a>Conector
 
 Estruture seus comentários usando cabeçalhos. Os cabeçalhos segmentam comentários mais longos, tornando-os mais fáceis de ler.
 
-Inicie uma linha com um caractere de hash `#` para definir um cabeçalho. Organize seus comentários com subtítulos iniciando uma linha com caracteres de hash adicionais, por exemplo `####`. Há suporte para até seis níveis de cabeçalhos.
+Inicie uma linha com um caractere de hash `#` para definir um título. Organize seus comentários com subtítulos iniciando uma linha com caracteres de hash adicionais, por exemplo `####`. Há suporte para até seis níveis de títulos.
 
-**Exemplo:**
+**Exemplo**
 
 ```Markdown
 # This is a H1 header
@@ -47,44 +48,44 @@ Inicie uma linha com um caractere de hash `#` para definir um cabeçalho. Organi
 ##### This is a H5 header
 ```
 
-**Resultado:**
+**Disso**
 
-![Exportar fluxo](./media/approvals-markdown-support/mrkdown-headers.png)
+![Fluxo de exportação](./media/approvals-markdown-support/mrkdown-headers.png)
 
 ## <a name="paragraphs-and-line-breaks"></a>Parágrafos e quebras de linha
 
-Facilite a leitura do texto dividindo-o com parágrafos ou quebras de linha. Insira dois espaços antes da quebra de linha para começar um novo parágrafo, ou insira duas quebras de linha consecutivas para iniciar um novo parágrafo.   
+Facilite a leitura do texto dividindo-o com parágrafos ou quebras de linha. Insira dois espaços antes da quebra de linha para iniciar um novo parágrafo ou insira duas quebras de linha consecutivamente para iniciar um novo parágrafo.   
    
 **Exemplo**
 
 Adicione linhas entre o texto com a tecla Enter.
-Isso melhora o espaçamento e facilita a leitura.
+Isso deixa o texto melhor e facilita a leitura.
 
 **Resultado:**    
 Adicione linhas entre o texto com a tecla Enter.      
-Isso melhora o espaçamento e facilita a leitura.
+Isso deixa o texto melhor e facilita a leitura.
 
 
 **Exemplo 2**
 
 Adicione dois espaços antes do final da linha. (espaço, espaço)     
-Isso adiciona espaço entre os parágrafos.
+Isso adiciona espaço entre parágrafos.
 
-**Resultado:**  
+**Disso**  
 Adicione dois espaços antes do final da linha.   
 
-Isso adiciona espaço entre os parágrafos.
+Isso adiciona espaço entre parágrafos.
   
 
-## <a name="lists"></a>Listas
+## <a name="lists"></a>Lista
 
-Organize itens relacionados com listas. Adicione listas ordenadas com números, ou listas não ordenadas com marcadores.
+Organizar itens relacionados com listas. Você pode adicionar listas ordenadas com números ou listas não ordenadas com apenas marcadores.
 
-As listas ordenada começam com um número seguido por um ponto para cada item da lista. As listas não ordenadas começam com um `*`. Comece cada item de lista em uma nova linha. Em um arquivo de Markdown ou widget, insira dois espaços antes da quebra de linha para começar um novo parágrafo, ou insira duas quebras de linha consecutivas para iniciar um novo parágrafo.   
+As listas ordenadas começam com um número seguido de um período para cada item de lista. As listas não ordenadas começam com um `*`. Iniciar cada item de lista em uma nova linha. Em um arquivo ou widget de redução, insira dois espaços antes da quebra de linha para iniciar um novo parágrafo ou insira duas quebras de linha consecutivamente para iniciar um novo parágrafo.   
 
-### <a name="ordered-or-numbered-lists"></a>Lista numerada ou ordenada
+### <a name="ordered-or-numbered-lists"></a>Listas ordenadas ou numeradas
 
-**Exemplo:**
+**Exemplo**
 
 ```Markdown
 0. First item.
@@ -92,15 +93,15 @@ As listas ordenada começam com um número seguido por um ponto para cada item d
 0. Third item.
 ```
 
-**Resultado:**
+**Disso**
 
 1. Primeiro item.
 2. Segundo item.
 3. Terceiro item.
 
-### <a name="bullet-lists"></a>Listas com marcador
+### <a name="bullet-lists"></a>Listas de marcadores
 
-**Exemplo:**
+**Exemplo**
 
 <pre>
 
@@ -110,7 +111,7 @@ As listas ordenada começam com um número seguido por um ponto para cada item d
 
 </pre>
 
-**Resultado:**
+**Disso**
 
 - Item 1
 - Item 2
@@ -118,7 +119,7 @@ As listas ordenada começam com um número seguido por um ponto para cada item d
 
 ### <a name="nested-lists"></a>Listas aninhadas
 
-**Exemplo:**
+**Exemplo**
 <pre>
 
 1. First item.
@@ -132,7 +133,7 @@ As listas ordenada começam com um número seguido por um ponto para cada item d
 
 </pre>
 
-**Resultado:**  
+**Disso**  
 
 1. Primeiro item.
 
@@ -145,30 +146,30 @@ As listas ordenada começam com um número seguido por um ponto para cada item d
     - Item aninhado 3
 
 
-## <a name="links"></a>Links
+## <a name="links"></a>Vincule
 
 As URLs HTTP e HTTPS são formatadas automaticamente como links. 
 
-Você pode definir hiperlinks de texto para a sua URL usando a sintaxe de link de markdown padrão:
+Você pode definir hiperlinks de texto para sua URL usando a sintaxe de link de redução padrão:
 
 ```Markdown
 [Link Text](Link URL)
 ```
 
-**Exemplo:**
+**Exemplo**
 <pre>
 &#91;Microsoft Flow](https://flow.microsoft.com)
 </pre>
 
-**Resultado:**
+**Disso**
 
 [Microsoft Flow](https://flow.microsoft.com)
 
 ### <a name="anchor-links"></a>Links de âncora
 
-As IDs de âncora são atribuídas a todos os cabeçalhos, quando renderizados como HTML. A ID é o texto do cabeçalho, com os espaços substituído por traços (-) e com todas as letras minúsculas.
+As IDs de âncora são atribuídas a todos os títulos quando renderizadas como HTML. A ID é o texto do título, com os espaços substituídos por traços (-) e todas as letras minúsculas.
 
-**Exemplo:**
+**Exemplo**
 
 <pre>
 ###Link to a heading in the page
@@ -176,15 +177,15 @@ As IDs de âncora são atribuídas a todos os cabeçalhos, quando renderizados c
 
 <br/>
 
-**Resultado:**
+**Disso**
 
-A sintaxe para um link de âncora para uma seção...
+A sintaxe de um link de âncora para uma seção...
 
 <pre>
 [Link to a heading in the page](#link-to-a-heading-in-the-page)
 </pre> 
 <br/>
-A ID fica toda em letra minúscula, e o link diferencia maiúsculas de minúsculas, portanto, use letras minúsculas, mesmo que o título use letras maiúsculas.
+A ID é todas as letras minúsculas e o link diferencia maiúsculas de minúsculas, portanto, certifique-se de usar letras minúsculas, mesmo que o próprio título use maiúsculas e minúsculas.
 
 
 ## <a name="tables"></a>Tabelas
@@ -192,13 +193,13 @@ A ID fica toda em letra minúscula, e o link diferencia maiúsculas de minúscul
 Organize dados estruturados com tabelas. 
 
 - Coloque cada linha da tabela em sua própria linha 
-- Separe as células da tabela usando o caractere de pipe `|` 
-- As duas primeiras linhas de uma tabela definem os cabeçalhos da coluna e o alinhamento dos elementos na tabela
-- Use dois-pontos (`:`) ao dividir o cabeçalho e o corpo das tabelas a fim de especificar o alinhamento da coluna (à esquerda, centro, à direita) 
-- Para iniciar uma nova linha, use a marca de quebra HTML (`<br/>`) (funciona dentro de um Wiki, mas não em outro lugar)  
-- Finalize cada linha com um CR ou LF. 
+- Separar células de tabela usando o caractere de barra `|` 
+- As duas primeiras linhas de uma tabela definem os cabeçalhos de coluna e o alinhamento dos elementos na tabela
+- Use dois-pontos (`:`) ao dividir o cabeçalho e o corpo de tabelas para especificar o alinhamento da coluna (esquerda, centro, direita) 
+- Para iniciar uma nova linha, use a marca de quebra de HTML (`<br/>`) (funciona em um wiki, mas não em outro lugar)  
+- Certifique-se de finalizar cada linha com uma CR ou LF. 
 
-**Exemplo:**
+**Exemplo**
 
 ```
 | Heading 1 | Heading 2 | Heading 3 |  
@@ -210,24 +211,24 @@ Organize dados estruturados com tabelas.
 
 
 
-**Resultado:**  
+**Disso**  
 
 | Título 1 | Título 2 | Título 3 |  
 |-----------|:---------:|-----------:|  
-| Célula A1 | Célula A2 | Célula A3 |  
-| Célula B1 | Célula B2 | Célula B3<br/>segunda linha do texto |  
+| Célula a1 | Célula A2 | Célula a3 |  
+| Célula B1 | Célula B2 | Célula B3<br/>segunda linha de texto |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Ênfase (negrito, itálico, tachado)  
 
-Você pode enfatizar o texto aplicando negrito, itálico ou tachado aos caracteres: 
-- Para aplicar itálico: envolva o texto com um asterisco `*` ou sublinhado `_`   
-- Para aplicar negrito: envolva o texto entre dois asteriscos `**`.    
-- Para aplicar tachado: envolva o texto com caracteres de duplo til `~~`.   
+Você pode enfatizar o texto aplicando negrito, itálico ou tachado a caracteres: 
+- Para aplicar itálico: Coloque o texto com um asterisco `*` ou sublinhado `_`   
+- Para aplicar negrito: Coloque o texto com asteriscos duplos `**`.    
+- Para aplicar tachado: Coloque o texto com caracteres de til duplo `~~`.   
 
-Combine esses elementos para aplicar várias ênfases ao texto.    
+Combine esses elementos para aplicar várias ênfase ao texto.    
 
-**Exemplo:**
+**Exemplo**
 
 <pre>
 Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~ 
@@ -237,10 +238,10 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 <br/>
 
-**Resultado:**
+**Disso**
 
-Use _ênfase_ em comentários para expressar opiniões **fortes** e indicar <s>correções</s>   
-**_Texto em negrito e itálico_**    
+Use _ênfase_ em comentários para expressar opiniões **fortes** e destacar as <s>correções</s>   
+**_Texto em negrito e em itálico_**    
 **~~Texto em negrito e tachado~~**  
 
 
@@ -257,7 +258,7 @@ Use _ênfase_ em comentários para expressar opiniões **fortes** e indicar <s>c
 
 <tr>
 <td>
-<p>Para inserir um dos seguintes caracteres, use uma barra invertida como prefixo:</p>
+<p>Para inserir um dos seguintes caracteres, coloque um prefixo com uma barra invertida:</p>
 
 <p style="margin-bottom:2px;">```\   backslash ``` </p>
 <p style="margin-bottom:2px;"><code>\`</code>   `backtick`</p>

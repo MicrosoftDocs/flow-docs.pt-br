@@ -1,11 +1,12 @@
 ---
-title: Solicitações de encerramento de conta do titular dos dados do RGPD do Microsoft Flow para contas da Microsoft (MSA) | Microsoft Docs
-description: Saiba como usar o Microsoft Flow para responder às solicitações de encerramento de conta do titular dos dados do RGPD para contas da Microsoft.
+title: Microsoft Flow solicitações de fechamento da conta de assunto de dados do GDPR para contas da Microsoft (MSA) | Microsoft Docs
+description: Saiba como usar Microsoft Flow para responder a solicitações de fechamento da conta de entidade de dados do às GPDR para contas da Microsoft.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: KFile
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,56 +15,56 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/25/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6480fe6a7e6ca26a7dbad3952b6608a9e0a880ae
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 8665148baf4d752f1f384670b296a66bbfca6163
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65035082"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548014"
 ---
-# <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Respondendo às solicitações de encerramento de conta do titular dos dados do RGPD do Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Respondendo a solicitações de fechamento da conta de entidade de dados do GDPR para Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-O **direito de apagar** dados pessoais é uma proteção importante no RGPD. Esse direito inclui a remoção de todos os dados pessoais, com exceção das informações de log de auditoria. Quando um usuário decide encerrar a respectiva conta Microsoft, os dados subjacentes desse usuário também são excluídos.
+O **direito de apagamento** de dados pessoais é uma proteção de chave no GDPR. Esse direito inclui a remoção de todos os dados pessoais, exceto as informações do log de auditoria. Quando os usuários decidem fechar sua conta da Microsoft (MSA), os dados subjacentes do usuário também são excluídos.
 
-Esses recursos contêm dados pessoais que são excluídos automaticamente quando um usuário encerra uma MSA:
+Esses recursos contêm dados pessoais que são excluídos automaticamente quando um usuário fecha um MSA:
 
 |Recursos que contêm dados pessoais|
 |------|
-|Atividade de produtos e serviços|
+|Atividade de produto e serviço|
 |Histórico de execuções|
-|Fluxos|
-|Feed de Atividades|
+|Fluxo|
+|Feed de atividades|
 |Detalhes do usuário|
 |Conexões|
 
-## <a name="account-close-requests"></a>Solicitações de encerramento de conta
+## <a name="account-close-requests"></a>Solicitações de fechamento de conta
 
-Estas etapas descrevem como fazer o autoatendimento de solicitações de encerramento de conta relacionadas ao RGPD.
+Estas etapas descrevem como autoatendimento de solicitações de fechamento de conta para GDPR.
 
-1. Entre no [Portal de Encerramento de conta da Microsoft](http://go.microsoft.com/fwlink/?LinkId=523898) usando sua conta da Microsoft e, em seguida, selecione **Avançar**.
+1. Entre no [portal de fechamento da conta da Microsoft](https://go.microsoft.com/fwlink/?LinkId=523898) usando sua conta da Microsoft e, em seguida, selecione **Avançar**.
 
     > [!NOTE]
-    > Você será lembrado de cancelar as assinaturas existentes ou de exportar dados dos serviços existentes aos quais você esteja inscrito.
+    > Você está lembrado de cancelar assinaturas existentes ou de exportar dados de serviços existentes para os quais você pode ter assinado.
     >
     >
 
     ![Cancelar assinaturas](./media/gdpr-dsr-delete-msa/accountclose.png)
 
-1. Confirme se você entendeu o impacto de encerrar sua MSA e, em seguida, selecione **Marcar conta para encerramento**.
+1. Confirme que você entendeu o impacto de fechar o MSA e, em seguida, selecione **Marcar conta para encerramento**.
 
-    Uma notificação será exibida, indicando que sua conta será encerrada em 30 dias. Você poderá reabrir essa conta a qualquer momento durante esse período de 30 dias.
+    Uma notificação é exibida, indicando que sua conta será fechada em 30 dias. Você pode reabrir essa conta a qualquer momento durante este período de 30 dias.
 
-    ![Conta encerrada](./media/gdpr-dsr-delete-msa/accountclosed.png)
+    ![Conta fechada](./media/gdpr-dsr-delete-msa/accountclosed.png)
 
-    No final desse período de 30 dias, será iniciado o processo para excluir todos os recursos do Microsoft Flow dessa MSA.
+    No final deste período de 30 dias, o processo para excluir todos os Microsoft Flow recursos para esse MSA começa.
 
-## <a name="learn-more"></a>Saiba mais
+## <a name="learn-more"></a>Saiba Mais
 
 * Introdução ao [Microsoft Flow](getting-started.md)
-* Conheça as [novidades](release-notes.md) do Microsoft Flow
+* Saiba [o que há de novo com o](release-notes.md) Microsoft Flow

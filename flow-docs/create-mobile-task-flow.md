@@ -1,12 +1,12 @@
 ---
-title: Criar um fluxo de tarefa móvel com o PowerApps | Microsoft Docs
+title: Criar um fluxo de tarefas móveis com o PowerApps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
 ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
@@ -21,65 +21,66 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7f15f11a4e66d80762384f8183af7973fcca76bf
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: ccd3b6c0e8cf97a490d01bb9ba5e5c3c4043fda5
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456209"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546440"
 ---
-# <a name="create-a-mobile-task-flow"></a>Criar um fluxo de tarefa móvel
+# <a name="create-a-mobile-task-flow"></a>Criar um fluxo de tarefas móveis
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Crie um fluxo no Dynamics 365 para telefones ou Dynamics 365 para tablets com base em tarefas comuns executadas pelos seus usuários. Por exemplo, se eles precisarem executar regularmente uma série de etapas de acompanhamento depois de reuniões com clientes, crie um fluxo de tarefa. Quando os usuários tocam na nova tarefa em seu aplicativo móvel, eles são direcionados do início ao fim, para que não se esqueçam de alguma etapa importante.  
+Crie um fluxo no Dynamics 365 para telefones ou Dynamics 365 para tablets com base em tarefas comuns que os usuários executam. Por exemplo, se eles precisarem executar regularmente uma série de etapas de acompanhamento após reuniões do cliente, crie um fluxo de tarefas. Quando os usuários tocam na nova tarefa em seu aplicativo móvel, ele os conduzirá do início ao fim para que não se esqueçam de uma etapa importante.  
   
- Os fluxos de tarefa podem usar formulários de várias entidades e lógica e podem ter lógica de formulário executada entre as páginas de fluxo de tarefa.  
+ Os fluxos de tarefas podem usar formulários e lógica de várias entidades e podem ter uma lógica de formulário que é executada nas páginas de fluxo de tarefas.  
   
 ## <a name="create-a-task-flow"></a>Criar um fluxo de tarefas
   
-1. Certifique-se de que você tenha o administrador do sistema, ou as permissões de função de segurança do personalizador do sistema ou equivalentes. Se você usar a participação do cliente do Dynamics 365, gerente, vice-presidente ou gerente de negócios e CEO, as funções de segurança também poderão criar fluxos de tarefas móveis. 
+1. Verifique se você tem o administrador do sistema ou a função de segurança do personalizador do sistema ou as permissões equivalentes. O gerente, vice-presidente ou CEO – gerente de negócios, funções de segurança também podem criar fluxos de tarefas móveis. 
   
-2. Abra o [gerenciador de soluções](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) e selecione **Processos**.  
+2. Abra o [Gerenciador de soluções](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) e selecione **processos**.  
   
-3.  Na barra de ferramentas **Ações**, selecione **Novo**.  
+3.  Na barra de ferramentas **ações** , selecione **novo**.  
   
-4.  Na caixa de diálogo **Criar processo**, preencha os campos obrigatórios:  
+4.  Na caixa de diálogo **criar processo** , preencha os campos obrigatórios:  
   
     -   Insira um nome de processo.  
   
-    -   Na lista **Categoria**, selecione **Fluxo de processo empresarial**.  
+    -   Na lista **categoria** , selecione **fluxo de processo empresarial**.  
   
-    -   Na lista **Entidade**, selecione a entidade desejada.  
+    -   Na lista **entidade** , selecione a entidade desejada.  
   
-5.  Selecione a opção **Executar processo como um fluxo de tarefa (online para dispositivo móvel)**.  
+5.  Selecione a opção **Executar processo como um fluxo de tarefas (móvel online)** .  
   
 6.  Selecione **OK**.
   
-     O designer de fluxo de tarefa é aberto em uma nova janela.  
+     O designer de fluxo de tarefas é aberto em uma nova janela.  
   
-     ![Janela do designer de fluxo de tarefa](media/task-flow-designer-window.png "Janela do designer de fluxo de tarefa") 
+     ![Janela designer de fluxo de tarefas](media/task-flow-designer-window.png "Janela designer de fluxo de tarefas") 
   
-7.  Se seus usuários progredirem de uma página para outra em ordem, arraste o componente **Página** da guia **Componentes** no lado direito da tela e solte-o no sinal “+” no ponto apropriado. Para adicionar um nome a uma página, selecione a página, selecione a guia **Propriedades**, digite um novo nome e, em seguida, selecione **Aplicar**.  
+7.  Se os usuários forem progredindo de uma página para outra em ordem, arraste o componente da **página** da guia **componentes** no lado direito da tela e solte-o no sinal de + no ponto apropriado. Para adicionar um nome para uma página, selecione a página, selecione a guia **Propriedades** , digite um novo nome e, em seguida, selecione **aplicar**.  
   
-8.  Para adicionar uma ramificação ao fluxo de tarefas, arraste o componente **Condição** da guia **Componentes** e solte-o no sinal “+” no ponto apropriado. Para definir propriedades para a condição, selecione a condição, defina as propriedades na guia **Propriedades** e, em seguida, selecione **Aplicar**.  
+8.  Para adicionar uma ramificação ao fluxo de tarefas, arraste o componente **condição** da guia **componentes** e solte-o no sinal de + no ponto apropriado. Para definir as propriedades da condição, selecione a condição, defina as propriedades na guia **Propriedades** e, em seguida, selecione **aplicar**.  
   
     > [!NOTE]
-    >  Conforme adicionar páginas e as condições ao fluxo de tarefas, você verá um minimapa no canto inferior esquerdo da janela que mostra todas as páginas e as condições no fluxo de tarefa.  
+    >  Ao adicionar páginas e condições ao fluxo de tarefas, você verá um minimapa no canto inferior esquerdo da janela que mostra todas as páginas e condições no fluxo de tarefas.  
   
-9. Para adicionar um campo, um rótulo ou um rótulo de seção a uma página, arraste **Campo**, **Rótulo** ou **Rótulo de seção** da guia **Componentes** para a página apropriada. Para alterar as propriedades para um desses itens, selecione o item, defina as propriedades na guia **Propriedades** e, em seguida, selecione **Aplicar**.  
+9. Para adicionar um campo, rótulo ou rótulo de seção a uma página, arraste o **campo**, o **rótulo**ou o **rótulo de seção** da guia **componentes** para a página apropriada. Para alterar as propriedades de um desses itens, selecione o item, defina as propriedades na guia **Propriedades** e, em seguida, selecione **aplicar**.  
   
-10. Para validar o fluxo de tarefa, selecione **Validar** na barra de ações.  
+10. Para validar o fluxo de tarefas, selecione **validar** na barra de ação.  
   
-11. Para salvar o processo como um rascunho, selecione **Salvar** na parte superior da tela. (Se um processo for um rascunho, as pessoas não poderão usá-lo.)  
+11. Para salvar o processo como um rascunho, selecione **salvar** na parte superior da tela. (Desde que um processo seja um rascunho, as pessoas não poderão usá-lo.)  
   
 12. Para ativar o fluxo de tarefas para que as pessoas possam usá-lo, selecione **Ativar**.  
   
 > [!TIP]
->  Veja algumas dicas a se ter em mente enquanto você trabalha em seu fluxo de tarefas na janela do designer:  
+>  Aqui estão algumas dicas para ter em mente enquanto você trabalha em seu fluxo de tarefas na janela do designer:  
 >   
-> -  Para tirar um instantâneo de tudo na janela do fluxo de tarefa, selecione **Instantâneo** na barra de ações.  
-> -  Para conectar a um componente válido a outro componente válido no designer, selecione **Conector** na barra de ações.  
-> -  Você pode fazer as imagens na tela ficarem maiores ou menores selecionando os botões **Aumentar o nível de zoom** ou **Diminuir o nível de zoom** no canto superior direito da tela. Selecione o botão **Ajustar à tela** para ampliar as imagens até o maior tamanho que se ajuste à tela.  
+> -  Para tirar um instantâneo de tudo na janela fluxo de tarefas, selecione **instantâneo** na barra de ação.  
+> -  Para conectar um componente válido a outro componente válido no designer, selecione **conector** na barra de ação.  
+> -  Você pode tornar as imagens na tela maiores ou menores selecionando os botões **aumentar nível de zoom** ou **diminuir nível de zoom** no canto superior direito da tela. Selecione o botão **ajustar à tela** para apagar as imagens até o maior tamanho que cabe na tela.  
   
 ## <a name="next-steps"></a>Próximas etapas  
- [Criar um fluxo de processo empresarial](create-business-process-flow.md)   
+ [Criar um fluxo de processo de negócios](create-business-process-flow.md)   
 

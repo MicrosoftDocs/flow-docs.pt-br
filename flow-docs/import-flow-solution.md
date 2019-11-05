@@ -20,44 +20,46 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7b0b809b30e59cbdb4ffa66d39fede89a6124548
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: db90ed07e4c5b6da858782e496d6b47df2ecb0cd
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460744"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548298"
 ---
 # <a name="import-a-solution"></a>Importar uma solução
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Depois de exportar a solução, você pode importá-la para qualquer ambiente que seja compatível com os pré-requisitos. Para importar uma solução, faça o seguinte:
+> [!TIP]
+> Se você quiser que seus fluxos sejam iniciados automaticamente depois de importar uma solução, use o conector Common Data Service (ambiente atual) em seu fluxo ao criá-lo.
 
-1. Entre no Microsoft Flow e selecione **Soluções**, na barra de navegação.
+Depois de exportar sua solução, você pode importá-la em qualquer ambiente que atenda aos pré-requisitos. Siga estas etapas para importar uma solução:
+
+1. Entre no Microsoft Flow e, em seguida, selecione **soluções** na barra de navegação.
 
    ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
-
-<!--from editor: I don't think you need the symbols on the left of Import, below. They don't look like the arrow icon, and I think Import is clear enough. -->
-
-1. Selecione **<- Importar**.
+1. Selecione **importar**.
 
    ![](./media/import-flow-solution/select-import.png)
 
-1. Selecione **Procurar**, na página exibida **Importar solução**.
+1. Selecione **procurar** na página **importar solução** que é aberta.
 1. Localize e selecione a solução que você deseja importar.
-1. Selecione **Abrir**.
+1. Selecione **abrir**.
 
-   Agora, você verá a página **Selecionar Pacote de Soluções**, que é semelhante à seguinte imagem:
+   Agora você deve ver a página **selecionar pacote de solução** semelhante a esta imagem:
 
    ![](./media/import-flow-solution/import-solution.png)
 
 1. Selecione **Avançar**.
 
-   Se não houver nenhum erro, a importação será concluída em alguns instantes.
+   Se não houver erros, a importação será concluída em alguns instantes.
 
 > [!NOTE]
-> Não é possível importar uma solução para um ambiente no qual a solução já existe.
+> Você não pode importar uma solução para um ambiente no qual a solução já existe.
 
-## <a name="learn-more"></a>Saiba mais
+
+## <a name="learn-more"></a>Saiba Mais
 
 <!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
 

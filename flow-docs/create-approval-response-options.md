@@ -20,90 +20,91 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: d1f4b6d6dad3138bf935947076be4fe75661e36e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: eaaa87f9213c5ed04aee65e37ee642436e49dfca
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061700"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547214"
 ---
-# <a name="create-custom-response-options-for-approval-flows"></a>Criar opções de resposta personalizada para fluxos de aprovação
+# <a name="create-custom-response-options-for-approval-flows"></a>Criar opções de resposta personalizadas para fluxos de aprovação
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Digamos que você queira enviar uma solicitação de aprovação sempre que um funcionário carregar um relatório de despesas no SharePoint e, em seguida, permitir que o aprovador responda com uma dessas três opções: Aceitar, Precisamos de mais informações ou Rejeitar.
+Digamos que você deseja enviar uma solicitação de aprovação sempre que um funcionário carregar um relatório de despesas no SharePoint e, em seguida, permitir que o aprovador responda com uma das três opções: aceitar, precisar de mais informações ou rejeitar.
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Uma conta do Microsoft Flow com uma licença do Plano 2 (para usar os recursos premium, como as aprovações, será necessário ter esse plano).
-- Uma lista do SharePoint para que os funcionários possam inserir os respectivos relatórios de despesas.
+- Uma conta de Microsoft Flow.
+- Uma lista do SharePoint para que os funcionários insiram seus relatórios de despesas.
 
 ## <a name="create-approval-flow"></a>Criar fluxo de aprovação
 1. Entre no [Microsoft Flow](https://flow.microsoft.com).
-1. Selecione **Meus fluxos**, na barra de navegação esquerda.
-1. Selecione **Novo** > **Criar do zero**.
+1. Selecione **meus fluxos** na barra de navegação à esquerda.
+1. Selecione **novo** > **criar em branco**.
 
-    ![Opção Criar do zero](media/create-approval-response-options/create-approval-response-options.png)
+    ![Opção criar com base em branco](media/create-approval-response-options/create-approval-response-options.png)
 
-1. Selecione **Criar do zero** na tela exibida. 
+1. Na tela que é aberta, selecione **criar em branco**. 
 
-    ![Selecione Criar do zero](media/create-approval-response-options/create-from-blank.png)
+    ![Selecione criar em branco](media/create-approval-response-options/create-from-blank.png)
 
-1. Procure o **SharePoint** e escolha a opção **Quando um item é criado** na lista de gatilhos. 
+1. Pesquise o **SharePoint** e, em seguida, selecione **quando um item for criado** na lista de gatilhos. 
 
-1. Forneça o **Endereço do Site** e o **Nome da lista** do SharePoint. 
+1. Forneça o **endereço do site** do SharePoint e o **nome da lista**. 
 
-1. Selecione **Nova etapa**, procure a opção **Aprovação** e escolha **Iniciar e aguardar uma aprovação (V2)**.
+1. Selecione **nova etapa**, Pesquisar **aprovação**e, em seguida, selecione **Iniciar e aguardar uma aprovação (v2)** .
 
-1. No cartão **Iniciar e aguardar uma aprovação (V2)**, selecione a lista **Tipo de aprovação**.
+1. Na barra **Iniciar e aguardar uma aprovação (v2)** , selecione a lista **tipo de aprovação** .
 
     ![Tipo de aprovação](media/create-approval-response-options/select-approval-type.png)
 
-1. Selecione **Respostas Personalizadas - Aguardar uma resposta (Premium)**.
+1. Selecione **respostas personalizadas – aguardar uma resposta (Premium)** .
 
     ![Respostas personalizadas](media/create-approval-response-options/select-custom-responses.png)
 
-    Veja a seguir como criar as respostas personalizadas que os aprovadores usarão ao responder às solicitações de aprovação de despesas dos funcionários.
+    Em seguida, você criará as respostas personalizadas que seus aprovadores usarão quando responderem a uma solicitação de aprovação para uma despesa de funcionário.
 
 
-1. Na caixa **Opções de resposta - Item 1**, insira **Aceitar** e selecione **Adicionar novo item**. 
+1. Na caixa de **Opções de resposta item-1** , digite **Accept** e, em seguida, selecione **Adicionar novo item**. 
 
     ![Resposta personalizada 1](media/create-approval-response-options/enter-response-1.png)
 
-1. Na caixa **Opções de resposta - Item 2**, insira **Rejeitar** e selecione **Adicionar novo item**.
+1. Na caixa **Opções de resposta item-2** , digite **rejeitar** e, em seguida, selecione **Adicionar novo item**.
 
     ![Resposta personalizada 2](media/create-approval-response-options/enter-response-2.png)
 
-1. Na caixa **Opções de resposta - Item 3**, insira **Precisamos de mais Informações**.
+1. Na caixa **Opções de resposta item-3** , digite **precisa de mais informações**.
 
     ![Resposta personalizada 3](media/create-approval-response-options/enter-response-3.png)   
     
 
-1. Insira as informações, como **Título**, **Atribuído a** (email do aprovador) e **Detalhes** (os detalhes que serão incluídos na solicitação de aprovação).
+1. Insira um **título**, **atribuído a** (email para o aprovador) e **detalhes** (os detalhes a serem contidos na solicitação de aprovação).
 
-    Veja um exemplo do que você pode incluir para sua organização.
+    Aqui está um exemplo do que você pode incluir para sua organização.
 
     ![Detalhes de respostas personalizadas](media/create-approval-response-options/enter-title-assigned-to-details.png)
 
 
-Depois de criar as respostas personalizadas, talvez você queira fazer outras coisas no fluxo, dependendo da resposta do aprovador.
+Agora que você criou suas respostas personalizadas, talvez queira fazer coisas diferentes em seu fluxo, dependendo da resposta do aprovador.
 
 
 ## <a name="use-approval-responses"></a>Usar respostas de aprovação 
 
-Se a resposta à solicitação for **Aceitar**, você pode enviar um email ao departamento de contabilidade, solicitando o reembolso da despesa para o funcionário. 
+Se a resposta à solicitação for **aceita**, talvez você queira enviar um email para o departamento de contabilidade, solicitando que ele reembolsa o funcionário pela despesa. 
 
-Se a resposta for **Rejeitar**, você pode enviar um email ao funcionário informando a ele que a solicitação foi rejeitada.
+Se a resposta for **rejeitada**, talvez você queira enviar um email para o funcionário, informando-o de que a solicitação foi rejeitada.
 
-Por fim, se a resposta do aprovador for **Precisamos de mais informações**, é possível enviar um email ao funcionário solicitando mais informações.
+E, finalmente, se a resposta do aprovador **precisar de mais informações**, talvez você queira enviar um email para o funcionário, solicitando que o funcionário forneça mais informações.
 
-Para fazer isso tudo, adicione uma [**Condição**](add-condition.md) ou uma ação de **Alternância** ao fluxo e selecione o campo **Resultado** da solicitação de aprovação no seletor de conteúdo dinâmico. Verifique se os valores são Aceitar, Precisamos de mais informações, ou Rejeitar.
+Para fazer qualquer um deles no fluxo, adicione uma [**condição**](add-condition.md) ou uma ação de **comutação** ao seu fluxo e, em seguida, selecione o campo **resultado** da solicitação de aprovação no seletor de conteúdo dinâmico. Certifique-se de confirmar se o valor é aceito, precisar de mais informações ou rejeitar.
 
-## <a name="respond-to-approval-requests-with-a-custom-response"></a>Responder às solicitações de aprovação com uma resposta personalizada
+## <a name="respond-to-approval-requests-with-a-custom-response"></a>Responder a solicitações de aprovação com uma resposta personalizada
 
-Os aprovadores recebem solicitações de aprovação por email. As solicitações também são exibidas no Centro de Aprovação do Microsoft Flow. 
+Os aprovadores recebem solicitações de aprovação por email. As solicitações também são exibidas no centro de aprovação em Microsoft Flow. 
 
-![Email com uma solicitação de aprovação](media/create-approval-response-options/approval-request-email.png)
+![Email de solicitação de aprovação](media/create-approval-response-options/approval-request-email.png)
 
-## <a name="learn-more"></a>Saiba mais
-- Criar [fluxos de aprovação simples](modern-approvals.md)
-- Criar [fluxos de aprovação sequenciais](sequential-modern-approvals.md)
+## <a name="learn-more"></a>Saiba Mais
+- Criar [fluxos de aprovador único](modern-approvals.md)
+- Criar [fluxos de aprovador sequenciais](sequential-modern-approvals.md)

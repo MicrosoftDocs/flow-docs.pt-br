@@ -1,6 +1,6 @@
 ---
 title: Criar um fluxo com o Dynamics 365 (online) | Microsoft Docs
-description: Crie fluxos de trabalho úteis usando uma conexão do Dynamics 365 e o Microsoft Flow
+description: Criar fluxos de trabalho úteis usando uma conexão do Dynamics 365 e Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,151 +20,152 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: c3a138cef3761b188998766a60ceb84619ae5f0a
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64457086"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546907"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Criar um fluxo usando o Dynamics 365 (online)
-Com um conector do Dynamics 365, crie fluxos iniciados quando ocorre um evento no Dynamics 365, ou em algum outro serviço, que, em seguida, executa uma ação no Dynamics 365, ou em algum outro serviço. 
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Usando um conector do Dynamics 365, você pode criar fluxos que iniciam quando um evento ocorre no Dynamics 365 ou em algum outro serviço, que executa uma ação no Dynamics 365 ou em algum outro serviço. 
 
-No Microsoft Flow é possível configurar fluxos de trabalho automatizados entre seus aplicativos e serviços favoritos a fim de sincronizar arquivos, obter notificações, coletar dados e muito mais. Para saber mais, confira [Introdução ao Microsoft Flow](getting-started.md).
+No Microsoft Flow, você pode configurar fluxos de trabalho automatizados entre seus aplicativos e serviços favoritos para sincronizar arquivos, obter notificações, coletar dados e muito mais. Para obter mais informações, consulte Introdução [ao Microsoft Flow](getting-started.md).
 
 > [!IMPORTANT] 
-> Para invocar um gatilho de fluxo, a entidade de engajamento de cliente do Dynamics 365 usada com o fluxo deve estar com o **Controle de Alterações** habilitado. Mais informações: [Habilitar o Controle de Alterações para controlar a sincronização de dados](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+> Para invocar um gatilho de fluxo, a entidade de Common Data Service usada com o fluxo deve ter **controle de alterações** habilitado. Mais informações: [habilitar o controle de alterações para controlar a sincronização de dados](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## <a name="create-a-flow-from-a-template"></a>Criar um fluxo de um modelo
-Crie um fluxo usando um dos vários modelos disponíveis, como nestes exemplos:
+Você pode criar um fluxo usando um dos vários modelos disponíveis, como estes exemplos:
 
-* Quando um objeto é criado no Dynamics 365, um item de lista também é criado no SharePoint.
-* Crie registros de lead do Dynamics 365 a partir de uma tabela do Excel.
-* Copie contas do Dynamics 365 para os clientes no Dynamics 365 for Operations.
+* Quando um objeto é criado no Dynamics 365, crie um item de lista no SharePoint.
+* Criar registros de Lead do Dynamics 365 de uma tabela do Excel.
+* Copie contas do Dynamics 365 para clientes no Dynamics 365 para operações.
 
-Para criar um fluxo de um modelo, execute estas etapas.
+Para criar um fluxo de um modelo, siga estas etapas.
 
-1. Entre no [site do Microsoft Flow](https://flow.microsoft.com/).
-2. Clique ou toque **Serviços** e depois clique ou toque em **Dynamics 365**.
-3. Há vários modelos disponíveis. Para começar, selecione o modelo que você deseja.
+1. Entre no site do [Microsoft Flow](https://flow.microsoft.com/).
+2. Clique ou toque em **Serviços**e, em seguida, clique ou toque em **Dynamics 365**.
+3. Vários modelos estão disponíveis. Para começar, selecione o modelo desejado.
 
-## <a name="create-a-task-from-a-lead"></a>Criar uma tarefa a partir de um lead
-Se não houver um modelo disponível para sua necessidade, crie um fluxo do zero. Este passo a passo mostra como criar uma tarefa no Dynamics 365 sempre que um lead for criado no Dynamics 365.
+## <a name="create-a-task-from-a-lead"></a>Criar uma tarefa de um cliente potencial
+Se um modelo não estiver disponível para o que você precisa, crie um fluxo do zero. Este tutorial mostra como criar uma tarefa no Dynamics 365 sempre que um cliente potencial é criado no Dynamics 365.
 
-1. Entre no [site do Microsoft Flow](https://flow.microsoft.com/).
-2. Clique ou toque em **Meus fluxos**e depois clique ou toque em **Criar de um modelo em branco**.
-3. Na lista de gatilhos de fluxo, clique ou toque em **Dynamics 365 - Quando um registro for criado**.
-4. Se receber uma solicitação, entre no Dynamics 365.
-5. Em **Nome da Organização**, selecione a instância do Dynamics 365 na qual você quer que o fluxo escute.
-6. Em **Nome da Entidade**, selecione a entidade que você deseja ouvir, que agirá como um gatilho que inicia o fluxo.
+1. Entre no site do [Microsoft Flow](https://flow.microsoft.com/).
+2. Clique ou toque em **meus fluxos**e, em seguida, clique ou toque em **criar em branco**.
+3. Na lista de gatilhos de fluxo, clique ou toque em **Dynamics 365-quando um registro é criado**.
+4. Se solicitado, entre no Dynamics 365.
+5. Em **nome da organização**, selecione a instância do Dynamics 365 onde você deseja que o fluxo escute.
+6. Em **nome da entidade**, selecione a entidade que você deseja escutar, que atuará como um gatilho que inicia o fluxo.
    
-     Para este passo a passo, selecione **Leads**.
+     Para este passo a passos, selecione **leads**.
    
     ![Detalhes do fluxo](./media/connection-dynamics365/flow-details.png)
-    > [IMPORTANTE] Para o fluxo ser disparado na entidade do Dynamics 365, a definição da entidade precisa estar com o **Controle de Alterações** habilitado. Consulte [Habilitar o Controle de Alterações para controlar a sincronização de dados](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    > FUNDAMENTAL Para que o fluxo seja disparado na entidade do Dynamics 365, a definição de entidade deve ter **controle de alterações** habilitado. Consulte [habilitar o controle de alterações para controlar a sincronização de dados](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
-7. Clique ou toque em **Nova etapa** e, em seguida, clique ou toque **Adicionar uma ação**.
-8. Clique ou toque em **Dynamics 365 – Criar um novo registro**.
-9. Em **Nome da Organização**, selecione a instância do Dynamics 365 na qual você quer que o fluxo crie o registro. Observe que não precisa ser a mesma instância a partir da qual o evento é disparado.
-10. Em **Nome da Entidade**, selecione a entidade que criará um registro quando o evento ocorrer.
+7. Clique ou toque em **nova etapa**e, em seguida, clique ou toque em **Adicionar uma ação**.
+8. Clique ou toque em **Dynamics 365 – criar um novo registro**.
+9. Em **nome da organização**, selecione a instância do Dynamics 365 na qual você deseja que o fluxo crie o registro. Observe que ele não precisa ser a mesma instância da qual o evento é disparado.
+10. Em **nome da entidade**, selecione a entidade que criará um registro quando o evento ocorrer.
     
-     Para este passo a passo, selecione **Tarefas**.
-11. Uma caixa **Assunto** é exibida. Quando você clica ou toca nela, um painel de conteúdo dinâmico é exibido no qual você pode selecionar um destes campos.
+     Para este guia, selecione **tarefas**.
+11. Uma caixa de **assunto** é exibida. Quando você clica ou toca nele, um painel de conteúdo dinâmico é exibido, onde você pode selecionar um desses campos.
     
-    * **Sobrenome**. Se você selecionar esse campo, o sobrenome do lead será inserido no campo **Assunto** da tarefa após a criação.
-    * **Tópico** Se você selecionar esse campo, o campo **Tópico** do lead será inserido no campo **Assunto** da tarefa após a criação.
+    * **Sobrenome**. Se você selecionar esse campo, o último nome do cliente potencial será inserido no campo **assunto** da tarefa quando ele for criado.
+    * **Tópico**. Se você selecionar esse campo, o campo de **tópico** do cliente potencial será inserido no campo **assunto** da tarefa quando ele for criado.
     
-    Para este passo a passo, selecione **Tópico**.
+    Para este guia, selecione **tópico**.
     
-    ![Tópico de adição de fluxo](./media/connection-dynamics365/flow-addtopic.png)
+    ![Adicionar tópico de fluxo](./media/connection-dynamics365/flow-addtopic.png)
     
-    > **Dica:** no painel de conteúdo dinâmico, clique ou toque em **Ver mais** para exibir mais campos associados à entidade. Por exemplo, preencha também o campo **Assunto** da tarefa com o campo **Nome da Empresa**, **Cliente**, **Descrição** ou **Email** do lead.
+    > **Dica:** No painel de conteúdo dinâmico, clique ou toque em **Ver mais** para exibir mais campos associados à entidade. Por exemplo, você também pode preencher o campo de **assunto** da tarefa com o campo **nome da empresa**, **cliente**, **Descrição**ou **email** do cliente potencial.
     > 
     > 
-12. Clique ou toque em **Criar fluxo**.
+12. Clique ou toque em **criar fluxo**.
 
-## <a name="create-a-wunderlist-task-from-a-dynamics-365-task"></a>Criar uma tarefa de Wunderlist a partir de uma tarefa de Dynamics 365
-Este passo a passo mostra como criar uma tarefa no [Wunderlist](https://www.wunderlist.com) sempre que uma tarefa for criada no Dynamics 365. Wunderlist é um serviço baseado na Internet que pode ser usado para criar listas de tarefas, adicionar lembretes ou controlar incumbências.
+## <a name="create-a-wunderlist-task-from-a-dynamics-365-task"></a>Criar uma tarefa do Wunderlist de uma tarefa do Dynamics 365
+Este tutorial mostra como criar uma tarefa no [Wunderlist](https://www.wunderlist.com) sempre que uma tarefa é criada no Dynamics 365. O Wunderlist é um serviço baseado na Internet que você pode usar para criar listas de tarefas pendentes, adicionar lembretes ou controlar as alterações.
 
-1. Entre no [site do Microsoft Flow](https://flow.microsoft.com/).
-2. Clique ou toque em **Meus fluxos**e depois clique ou toque em **Criar de um modelo em branco**.
-3. Na lista de gatilhos de fluxo, clique ou toque em **Dynamics 365 - Quando um registro for criado**.
-4. Em **Nome da Organização**, selecione a instância do Dynamics 365 na qual você quer que o fluxo escute.
-5. Em **Nome da Entidade**, selecione a entidade que você deseja ouvir, que agirá como um gatilho que inicia o fluxo.
+1. Entre no site do [Microsoft Flow](https://flow.microsoft.com/).
+2. Clique ou toque em **meus fluxos**e, em seguida, clique ou toque em **criar em branco**.
+3. Na lista de gatilhos de fluxo, clique ou toque em **Dynamics 365-quando um registro é criado**.
+4. Em **nome da organização**, selecione a instância do Dynamics 365 onde você deseja que o fluxo escute.
+5. Em **nome da entidade**, selecione a entidade que você deseja escutar, que atuará como um gatilho para iniciar o fluxo.
    
-    Para este passo a passo, selecione **Tarefas**.
-6. Clique ou toque em **Nova etapa** e, em seguida, clique ou toque **Adicionar uma ação**.
-7. Digite *criar uma tarefa* e depois clique ou toque em **Wunderlist – Criar uma tarefa**.
-8. Em **ID da Lista**, selecione **caixa de entrada**.
-9. Em **Título**, selecione **Assunto** no painel de conteúdo dinâmico.
-10. Clique ou toque em **Criar fluxo**.  
+    Para este guia, selecione **tarefas**.
+6. Clique ou toque em **nova etapa**e, em seguida, clique ou toque em **Adicionar uma ação**.
+7. Digite *criar uma tarefa*e, em seguida, clique ou toque em **Wunderlist – criar uma tarefa**.
+8. Em **ID da lista**, selecione **caixa de entrada**.
+9. Em **título**, selecione **assunto** no painel de conteúdo dinâmico.
+10. Clique ou toque em **criar fluxo**.  
 
 ## <a name="trigger-based-logic"></a>Lógica baseada em gatilho
-Gatilhos como **Quando um registro é criado**, **Quando um registro é atualizado** e **Quando um registro é excluído** iniciam o fluxo em alguns minutos depois que o evento ocorre.  Em casos raros, o fluxo pode levar até 2 horas para ser disparado.
+Gatilhos como **quando um registro é criado**, **quando um registro é atualizado**e **quando um registro é excluído** iniciam o fluxo dentro de alguns minutos do evento que ocorre.  Em casos raros, o fluxo pode levar até 2 horas para ser disparado.
 
-Quando o gatilho ocorre, o fluxo recebe uma notificação, mas o fluxo é executado nos dados que existem no momento em que a ação é executada.  Por exemplo, se o fluxo é disparado quando um novo registro é criado e você atualiza o registro duas vezes antes da execução do fluxo, o fluxo é executado apenas uma vez com os dados mais recentes.
+Quando o gatilho ocorre, o fluxo recebe uma notificação, mas o fluxo é executado em dados que existem no momento em que a ação é executada.  Por exemplo, se o fluxo disparar quando um novo registro for criado e você atualizar o registro duas vezes antes de executar o fluxo, o fluxo será executado apenas uma vez com os dados mais recentes.
 
 ## <a name="specify-advanced-options"></a>Especificar opções avançadas
-Quando você adiciona uma etapa a um fluxo, clique ou toque em **Mostrar opções avançadas** para adicionar um filtro ou uma consulta de ordenar por que controla como os dados são filtrados no fluxo.
+Ao adicionar uma etapa a um fluxo, você pode clicar ou tocar em **Mostrar opções avançadas** para adicionar uma consulta de filtro ou ordenar por que controla como os dados são filtrados no fluxo.
 
-Por exemplo, use uma consulta de filtro para recuperar somente os contatos ativos, e organize-os por sobrenome. Para fazer isso, insira a consulta de filtro OData **statuscode eq 1** e selecione **Sobrenome** no painel de conteúdo dinâmico. Para saber mais sobre como filtrar e classificar por consultas, consulte [MSDN: $filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) e [MSDN: $orderby](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
+Por exemplo, você pode usar uma consulta de filtro para recuperar somente contatos ativos e pode ordená-los por sobrenome. Para fazer isso, insira a consulta de filtro OData **StatusCode EQ 1** e selecione **Last Name** no painel de conteúdo dinâmico. Para obter mais informações sobre consultas de filtro e ordenar por, consulte [msdn: $Filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) e [msdn: $OrderBy](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
 
-  ![Consulta organizar por fluxo](./media/connection-dynamics365/flow-orderby-query.png)
+  ![Consulta de fluxo OrderBy](./media/connection-dynamics365/flow-orderby-query.png)
 
-### <a name="best-practices-when-using-advanced-options"></a>Práticas recomendadas ao usar as opções avançadas
-Ao adicionar um valor a um campo, é necessário corresponder ao tipo de campo, mesmo se você digitar um valor ou selecionar um no painel de conteúdo dinâmico.
+### <a name="best-practices-when-using-advanced-options"></a>Práticas recomendadas ao usar opções avançadas
+Ao adicionar um valor a um campo, você deve corresponder ao tipo de campo, independentemente de digitar um valor ou selecionar um no painel de conteúdo dinâmico.
 
-| Tipo de campo | Como usar | Onde encontrar | Nome | Tipo de dados |
+| Tipo de campo | Como usar | Onde encontrar | Nomes | Tipo de dados |
 | --- | --- | --- | --- | --- |
-| Campos de texto |Os campos de texto exigem uma única linha de texto ou conteúdo dinâmico que seja um campo do tipo texto. Os exemplos incluem os campos **Categoria** e **Subcategoria**. |**Configurações** > **Personalizações** > **Personalizar o Sistema** > **Entidades** > **Tarefa** > **Campos** |**categoria** |**Linha Única de Texto** |
-| Campos de número inteiro |Alguns campos exigem números inteiros ou um conteúdo dinâmico que seja um campo do tipo número inteiro. Os exemplos incluem **Porcentagem Concluída** e **Duração**. |**Configurações** > **Personalizações** > **Personalizar o Sistema** > **Entidades** > **Tarefa** > **Campos** |**percentcomplete** |**Número Inteiro** |
-| Campos de data |Alguns campos exigem uma data inserida no formato dd/mm/aaaa, ou um conteúdo dinâmico que seja um campo do tipo data. Os exemplos incluem **Criado em**, **Data Inicial**, **Início Real**, **Último Suspensão**, **Término Real** e **Data de Vencimento**. |**Configurações** > **Personalizações** > **Personalizar o Sistema** > **Entidades** > **Tarefa** > **Campos** |**createdon** |**Data e Hora** |
-| Campos que exigem uma ID de registro e tipo de pesquisa |Alguns campos que fazem referência a outro registro de entidade exigem a ID do registro e o tipo de pesquisa. |**Configurações** > **Personalizações** > **Personalizar o Sistema** > **Entidades** > **Conta** > **Campos** |**accountid** |**Chave Primária** |
-|Conjunto de opções|Os campos de conjunto de opções exigem que um valor inteiro conhecido seja passado por esse tipo de campo.  Na área de personalização do Dynamics 365, é possível exibir conjuntos de opções com suporte para o campo inteiro juntamente com o respectivo rótulo.|Configurações > Personalização > Personalizar o sistema > Entidades > Conta > Campos | Método de contato preferencial| Número inteiro|
+| Campos de texto |Os campos de texto exigem uma única linha de texto ou conteúdo dinâmico que seja um campo de tipo de texto. Os exemplos incluem a **categoria** e os campos **de subcategoria** . |**Configurações** > **personalizações** > **Personalizar as entidades de > do sistema** > **campos** de > de **tarefas** |**Categorias** |**Linha única de texto** |
+| Campos de inteiro |Alguns campos exigem conteúdo inteiro ou dinâmico que seja um campo de tipo inteiro. Os exemplos incluem **porcentagem concluída** e **duração**. |**Configurações** > **personalizações** > **Personalizar as entidades de > do sistema** > **campos** de > de **tarefas** |**PercentComplete** |**Número inteiro** |
+| Campos de data |Alguns campos exigem uma data inserida no formato mm/dd/aaaa ou conteúdo dinâmico que seja um campo de tipo de data. Os exemplos **incluem criado em**, **data de início**, **início real**, **último em tempo de espera**, **fim real**e **data de conclusão**. |**Configurações** > **personalizações** > **Personalizar as entidades de > do sistema** > **campos** de > de **tarefas** |**criar** |**Data e hora** |
+| Campos que exigem uma ID de registro e tipo de pesquisa |Alguns campos que fazem referência a outro registro de entidade exigem a ID do registro e o tipo de pesquisa. |**Configurações** > **personalizações** > **Personalizar as entidades de > do sistema** > **campos** de > de **conta** |**AccountId** |**Chave primária** |
+|Conjunto de opções|Os campos de conjunto de opções exigem que um valor inteiro conhecido seja passado para esse tipo de campo.  Na área de personalização do Dynamics 365, uma exibição a opção define o backup do campo inteiro junto com seu respectivo rótulo.|Configurações > Personalização > personalizar as entidades de > do sistema > campos de > de conta | Método de contato preferencial| Número inteiro|
 
-### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Mais exemplos de campos que exigem uma ID de registro e tipo de pesquisa
-Expandindo a tabela anterior, veja mais exemplos de campos que não funcionam com valores selecionados na lista de conteúdo dinâmico. Em vez disso, esses campos exigem uma ID de registro e tipo de pesquisa inseridos nos campos no PowerApps.
+### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Mais exemplos de campos que exigem uma ID de registro e um tipo de pesquisa
+Expandindo na tabela anterior, veja mais exemplos de campos que não funcionam com valores selecionados na lista de conteúdo dinâmico. Em vez disso, esses campos exigem uma ID de registro e um tipo de pesquisa inseridos nos campos no PowerApps.
 
-* **Proprietário** e **Tipo de Proprietário**.
+* **Proprietário** e **tipo de proprietário**.
   
-  * O campo **Proprietário** deve ser uma ID válida de registro de usuário ou de equipe.
-  * O **Tipo de Proprietário** deve ser **systemusers** ou **equipes**.
-* **Cliente** e **Tipo de Cliente**.
+  * O campo **proprietário** deve ser uma ID de registro de usuário ou de equipe válida.
+  * O **tipo de proprietário** deve ser **systemusers** ou **Teams**.
+* **Cliente** e **tipo de cliente**.
   
-  * O campo **Cliente** deve ser uma conta válida ou ID de registro do contato.
-  * O **Tipo de Cliente** deve ser **contas** ou **contatos**.
-* **Referente** e **Tipo Referente**.
+  * O campo **cliente** deve ser uma conta válida ou ID de registro de contato.
+  * O **tipo de cliente** deve ser **contas** ou **contatos**.
+* **Referente** a e **referente ao tipo**.
   
-  * O campo **Referente** deve ser uma ID de registro válida, como uma ID de registro de conta ou contato.
-  * O **Tipo Referente** deve ser o tipo de pesquisa para o registro, como **contas** ou **contatos**.
+  * O campo **referente** deve ser uma ID de registro válida, como uma ID de registro de conta ou contato.
+  * O **tipo referente** deve ser o tipo de pesquisa para o registro, como **contas** ou **contatos**.
 
-Esse exemplo adiciona um registro de conta que corresponde à ID do registro, adicionando-o ao campo **Referente** da tarefa.
+Este exemplo adiciona um registro de conta que corresponde à ID do registro, adicionando-o ao campo **referente** da tarefa.
 
-  ![ID de registro e tipo de conta do fluxo](./media/connection-dynamics365/flow-recordid-account.png)
+  ![Fluxo de registro e conta de tipo](./media/connection-dynamics365/flow-recordid-account.png)
 
-Esse exemplo também atribui a tarefa a um usuário específico com base na ID de registro do usuário.
+Este exemplo também atribui a tarefa a um usuário específico com base na ID de registro do usuário.
 
-  ![ID de registro e tipo de usuário do fluxo](./media/connection-dynamics365/flow-recordid-user.png)
+  ![Fluxo recordId e tipo usuário](./media/connection-dynamics365/flow-recordid-user.png)
 
-Para localizar a ID de um registro, consulte [Encontrar a ID do registro](#find-the-records-id) mais adiante neste tópico.
+Para localizar a ID de um registro, consulte [localizar a ID de registro](#find-the-records-id) mais adiante neste tópico.
 
-> **Importante:** os campos não deverão conter um valor se tiverem uma descrição "Somente para uso interno". Esses campos incluem **Caminho percorrido**, **Parâmetros Adicionais** e **Número de versão da regra de fuso horário.**
+> **Importante:** Os campos não devem conter um valor se eles tiverem uma descrição de "somente para uso interno". Esses campos incluem **caminho atravessado**, **parâmetros adicionais**e **número de versão da regra de fuso horário.**
 > 
 > 
 
-## <a name="find-the-records-id"></a>Encontrar a ID do registro
+## <a name="find-the-records-id"></a>Localizar a ID do registro
 1. No aplicativo Web do Dynamics 365, abra um registro, como um registro de conta.
-2. Na barra de ferramentas de ações, clique ou toque em **Pop-Out**
-   ![registro de pop-out](./media/connection-dynamics365/popout.png) (ou clique ou toque em **ENVIAR UM LINK POR EMAIL** para copiar a URL completa para seu programa de email padrão).
+2. Na barra de ferramentas ações, clique ou toque em **pop-Out**
+   ![registro de popout](./media/connection-dynamics365/popout.png) (ou clique ou toque em **enviar um link por email** para copiar a URL completa para seu programa de email padrão).
    
-    Na barra de endereços do navegador da Web, a URL contém a ID do registro entre os caracteres de codificação %7b e %7d.
+    Na barra de endereços do navegador da Web, a URL contém a ID de registro entre os caracteres de codificação% 7B e% 7D.
    
-   ![ID do registro](./media/connection-dynamics365/recordid.png)
+   ![RecordId](./media/connection-dynamics365/recordid.png)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 [Solução de problemas de um fluxo](fix-flow-failures.md)
 
-[P e R sobre o Flow em sua organização](organization-q-and-a.md)
+[Fluxo na sua organização Q & A](organization-q-and-a.md)
 
 [Perguntas frequentes](frequently-asked-questions.md)
 

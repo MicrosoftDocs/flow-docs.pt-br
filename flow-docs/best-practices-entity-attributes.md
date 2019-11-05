@@ -1,6 +1,6 @@
 ---
-title: Práticas recomendadas para uso de atributos de entidade de fluxo de processo empresarial | MicrosoftDocs
-description: Conheça as práticas recomendadas para uso de atributos de entidade de fluxo de processo empresarial.
+title: Práticas recomendadas para usar atributos de entidade do fluxo de processo de negócios | MicrosoftDocs
+description: Conheça as práticas recomendadas para usar atributos de entidade do fluxo de processo de negócios.
 ms.custom: ''
 ms.date: 04/23/2019
 ms.reviewer: ''
@@ -19,95 +19,96 @@ helpviewer_keywords:
 author: msftman
 ms.author: deonhe
 manager: kvivek
-ms.openlocfilehash: 950f03d78e708f00f28b68daf7c1012fae231c95
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: b46eac7317db8f5b63ebcd7b8b1fe8c79109bc11
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64472962"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545275"
 ---
-# <a name="best-practices-in-using-business-process-flow-attributes"></a>Práticas recomendadas para uso de atributos de entidade de fluxo de processo empresarial
+# <a name="best-practices-in-using-business-process-flow-attributes"></a>Práticas recomendadas no uso de atributos de fluxo de processo de negócios
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 
-Os atributos herdados relacionados ao processo nas entidades foi preterido. Aqui estão algumas práticas recomendadas para uso do atributo *Estágio Ativo* (activestageid), na entidade de fluxo do processo empresarial. 
+Os atributos herdados relacionados ao processo em entidades são preteridos. Aqui estão algumas práticas recomendadas para usar o atributo de *estágio ativo* (activestageid) na entidade de fluxo do processo de negócios. 
 
-## <a name="reporting-on-the-active-stage-of-a-business-process-flow"></a>Relatório sobre o estágio ativo de um fluxo de processo empresarial
+## <a name="reporting-on-the-active-stage-of-a-business-process-flow"></a>Relatórios sobre o estágio ativo de um fluxo de processo de negócios
 
-Digamos que você gostaria de obter uma exibição do pipeline de vendas gerando um relatório em que o estágio **Processo de Vendas do Cliente Potencial até a Oportunidade** esteja ativo.
+Digamos que você queira obter uma exibição do pipeline de vendas relatando no estágio ativo que o processo de vendas do **cliente potencial para a oportunidade** está.
 
-Anteriormente, para gerar relatórios sobre processos empresariais por estágio, era necessário definir um modo de exibição para cada entidade relacionada do fluxo de processo empresarial e, em seguida, gerar o relatório no campo *Estágio Ativo* (activestageid).
+Anteriormente, para relatar processos de negócios por etapa, é possível definir uma exibição em cada entidade relacionada do fluxo do processo de negócios e, em seguida, reportar o campo *estágio ativo* (activestageid).
 
-Com a substituição do campo *Estágio Ativo* (activestageid) nas entidades relacionadas, há duas maneiras de gerar relatórios nos fluxos de processo empresarial.
+Com a substituição do campo *estágio ativo* (activestageid) em entidades relacionadas, há duas maneiras de relatar fluxos de processos empresariais.
 
-### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Opção 1: modos de exibição e gráficos em entidades de fluxo de processo empresarial **(Recomendado)**
+### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Opção 1: exibições e gráficos na entidade de fluxo do processo de negócios **(recomendado)**
 
-Nas versões 9.0 e posteriores, cada fluxo de processo empresarial cria a própria entidade do Common Data Service, geralmente com o mesmo nome do fluxo. Para gerar relatórios sobre o fluxo do processo empresarial, selecione a entidade do fluxo sobre o qual você deseja relatar e, em seguida, crie modos de exibição e gráficos, como fez anteriormente.
+Nas versões 9,0 e superiores, cada fluxo de processo de negócios cria sua própria entidade Common Data Service, geralmente com o mesmo nome que o fluxo do processo comercial. Para relatar o fluxo do processo de negócios, selecione a entidade para o fluxo do processo de negócios que você deseja relatar e, em seguida, crie exibições e gráficos, da mesma forma que antes.
 
-Em nosso exemplo, siga as etapas para acessar a entidade do **Processo de Vendas do Cliente Potencial até a Oportunidade**:
+Em nosso exemplo, siga estas etapas para ir para a entidade do **processo de vendas do cliente potencial para a oportunidade** :
 1. Vá para https://web.powerapps.com.
-1. Selecione os **Dados**.
-1. Selecione as **Entidades**.
-1. Defina o filtro como **Todos**.
-1. Procure e selecione a entidade do **Processo de Vendas do Cliente Potencial até a Oportunidade**.
+1. Selecione os **dados**.
+1. Selecione as **entidades**.
+1. Defina o filtro como **todos**.
+1. Pesquise e selecione a entidade processo de **vendas de cliente potencial para oportunidade** .
 
-   ![Entidade do Processo de Vendas do Cliente Potencial até a Oportunidade](media/best-practices-entity-attributes/lead-opportunity-process.png)
+   ![entidade do processo de vendas de cliente potencial para oportunidade](media/best-practices-entity-attributes/lead-opportunity-process.png)
 
-Aqui, você pode definir modos de exibição e gráficos, da mesma maneira que o faria em qualquer outra entidade.
+Aqui, você pode definir exibições e gráficos da mesma forma como faria em qualquer outra entidade.
 
-![Detalhes da entidade do processo de tradução](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
+![detalhes da entidade processo de tradução](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
 
-A vantagem dessa abordagem é que você pode usar um único modo de exibição ou gráfico para gerar relatórios em fluxos de processos empresariais que abrangem várias entidades.
+Uma vantagem dessa abordagem é que você pode usar um único modo de exibição ou gráfico para relatar fluxos de processo de negócios que abrangem várias entidades.
 
-Além disso, como a entidade de fluxo de processo empresarial é igual a qualquer outra entidade personalizada no Common Data Service, você pode adicionar campos personalizados à entidade para rastrear as informações adicionais necessárias.
+Além disso, como a entidade de fluxo do processo de negócios não é diferente de qualquer outra entidade personalizada no Common Data Service, você pode adicionar campos personalizados à entidade para acompanhar quaisquer informações adicionais necessárias.
 
 ### <a name="option-2-copy-active-stage-to-a-related-entity"></a>Opção 2: copiar o estágio ativo para uma entidade relacionada
 
-Como alternativa, para continuar gerando relatórios fora da entidade relacionada, crie um fluxo para copiar o campo *Estágio Ativo* (activestageid) da entidade do fluxo de processo empresarial em um campo personalizado, nas entidades relacionadas do Common Data Service.
+Como alternativa, para continuar relatando a entidade relacionada, crie um fluxo para copiar o campo de *estágio ativo* (activestageid) da entidade de fluxo do processo de negócios para um campo personalizado nas entidades de Common Data Service relacionadas.
 
-Aqui estão algumas coisas que você deve levar em consideração ao usar esta abordagem:
+Aqui estão algumas coisas para ter em mente quando você usa essa abordagem:
 
-1.  É possível ter mais de um fluxo de processo empresarial em execução em uma única entidade. Com esta abordagem, convém ter um campo personalizado que armazene o estágio ativo de cada fluxo de processo empresarial executado na entidade. Esta abordagem garante a integridade do relatório.
+1.  É possível ter mais de um fluxo de processo de negócios em execução em uma única entidade. Com essa abordagem, é melhor ter um campo personalizado que armazene o estágio ativo para cada fluxo de processo de negócios executado na entidade. Essa abordagem garante a integridade do relatório.
 
-1.  Como o relatório é gerado na entidade relacionada, não é possível criar uma exibição de relatório única em fluxos de processos empresariais que abrangem várias entidades.
+1.  Como a geração de relatórios é controlada da entidade relacionada, não é possível criar uma única exibição que relate os fluxos de processos empresariais que abrangem várias entidades.
 
-## <a name="using-the-active-stage-to-run-logic"></a>Como usar o estágio ativo para executar lógica
+## <a name="using-the-active-stage-to-run-logic"></a>Usando o estágio ativo para executar a lógica
 
-Aqui estão alguns casos em que talvez você queira executar uma lógica com base no estágio ativo:
+Aqui estão alguns casos em que você pode querer executar a lógica com base no estágio ativo:
 
-### <a name="using-the-active-stage-to-run-client-side-logic"></a>Uso do estágio ativo para executar lógica do lado do cliente
+### <a name="using-the-active-stage-to-run-client-side-logic"></a>Usando o estágio ativo para executar a lógica do lado do cliente
 
-Há várias coisas que talvez você queira fazer automaticamente quando usar o processo empresarial. Por exemplo:
+Conforme você usa o processo de negócios, há muitas coisas que você pode querer fazer automaticamente. Por exemplo:
 
--   Alterar o fluxo do processo empresarial ativo, com base em informações disponibilizadas recentemente no formulário ou no processo empresarial.
+-   Altere o fluxo do processo comercial ativo com base em informações recentemente disponíveis sobre o fluxo do processo de negócios ou formulário.
 
--   Mover o estágio ativo para o estágio anterior ou seguinte, com base nos valores que os usuários inseriram nas etapas ou nos campos do formulário.
+-   Mova o estágio ativo para o estágio seguinte ou anterior, com base nos valores inseridos pelos usuários para etapas ou campos de formulário.
 
--   Ocultar ou mostrar guias de formulário de acordo com o estágio selecionado.
+-   Ocultar ou mostrar guias de formulário e campos com base no estágio selecionado.
 
--   Mostrar mensagens informativas e fazer cálculos com base nos fluxos de processos empresariais ativos, no estágio ativo ou selecionado, ou em eventos como mover o estágio ativo.
+-   Mostrar mensagens informativas e executar o calulations com base nos fluxos de processos de negócios ativos, no estágio ativo ou selecionado, ou em eventos como mover o estágio ativo.
 
 > [!TIP]
-> Para cenários como estes, use o conjunto compatível das [APIs de cliente](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) para fluxos de processos empresariais.
+> Para cenários como esses, use o conjunto de [APIs de cliente](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) com suporte para fluxos de processo de negócios.
 >
 
-### <a name="using-the-active-stage-to-run-server-side-logic"></a>Uso do estágio ativo para executar lógica do lado do servidor
+### <a name="using-the-active-stage-to-run-server-side-logic"></a>Usando o estágio ativo para executar a lógica do lado do servidor
 
-Pode haver casos em que a automação com base no fluxo do processo empresarial deve ser feita do lado do servidor. Por exemplo:
+Pode haver casos em que a automação baseada no fluxo do processo de negócios precisa ser feita no lado do servidor. Por exemplo:
 
--   Enviar um email a um usuário, se o estágio **Qualificar** do **Processo de Vendas de Oportunidade** ficar ativo por mais de 15 dias.
+-   Envie um email para um usuário se a **qualificação** do estágio do **processo de vendas da oportunidade** estiver ativa por mais de 15 dias.
 
--   Criar automaticamente um conjunto de atividades relevantes para o estágio ativo do **Processo de Vendas de Oportunidade**, sempre que houver alterações.
+-   Crie automaticamente um conjunto de atividades relevantes para o estágio ativo do **processo de vendas da oportunidade** sempre que ele for alterado.
 
--   Concluir automaticamente o **Processo de Vendas de Oportunidade**, quando a atividade de telefonema para fechamento for concluída.
+-   Conclua automaticamente o **processo de vendas da oportunidade** quando a atividade de chamada telefônica para fechamento for concluída.
 
 > [!TIP]
-> Use os fluxos de trabalho clássicos do Common Data Service ou os fluxos que você definiu para o processo empresarial da entidade.
+> Use fluxos de trabalho do Common Data Service clássico ou fluxos que você define na entidade para o fluxo do processo empresarial.
 > 
 
-Para criar um fluxo de trabalho clássico do Common Data Service que cria atividades para revisões de soluções internas, e para atender o cliente no estágio **Propor** do **Processo de Vendas de Oportunidade**:
+Para criar um fluxo de trabalho de Common Data Service clássico que cria atividades para análises de soluções internas e para acompanhar o cliente no estágio de **proposta** do **processo de vendas da oportunidade**:
 
-1. Crie o fluxo de trabalho na entidade do **Processo de Vendas de Oportunidade** e defina-o para ser executado sempre que houver alterações no campo **Estágio Ativo** da entidade. 
-1. Defina uma condição para verificar se o campo **Estágio Ativo** corresponde ao campo **Propor**. 
-1. Crie um registro de compromisso e telefonema para a revisão interna da solução, e a chamada de cliente para revisar a solução, respectivamente.
+1. Crie-o na entidade **processo de vendas da oportunidade** e defina-o para ser executado sempre que o campo **estágio ativo** da entidade for alterado. 
+1. Defina uma condição para verificar se o campo **ativo de estágio** é igual a **propor**. 
+1. Crie um registro de telefonema e telefonema para a revisão interna da solução e a chamada do cliente para examinar a solução, respectivamente.
 
-   ![fechar acompanhamento de estágio](media/best-practices-entity-attributes/close-stage-followup.png)
+   ![fechar acompanhamento do estágio](media/best-practices-entity-attributes/close-stage-followup.png)

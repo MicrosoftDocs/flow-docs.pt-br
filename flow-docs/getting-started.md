@@ -1,6 +1,6 @@
 ---
 title: Introdução | Microsoft Docs
-description: Maneiras rápidas de começar a automatizar seu trabalho e sua vida com o Microsoft Flow
+description: Maneiras rápidas de começar a automatizar seu trabalho e sua vida com a automatização de energia
 services: ''
 suite: flow
 documentationcenter: na
@@ -10,7 +10,7 @@ editor: ''
 tags: ''
 ms.service: flow
 ms.devlang: na
-ms.topic: hero-article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2017
@@ -20,117 +20,134 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f667401774e49505009cd416f6975ff38683a5c7
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 54d1478f34743b6059692b927da8baf2c49a35a7
+ms.sourcegitcommit: 53f049dc7e7cad652e728941ee426b7ad2a116da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65035206"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73589845"
 ---
-# <a name="get-started-with-microsoft-flow"></a>Introdução ao Microsoft Flow #
+# <a name="get-started-with-power-automate"></a>Introdução à automatização de energia
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bem-vindo! O Microsoft Flow é um serviço com o qual você pode criar fluxos de trabalho automatizados entre seus aplicativos e serviços favoritos para sincronizar arquivos, obter notificações, coletar dados e muito mais.
+<br>
+<iframe width="1129" height="635" src="https://www.youtube.com/embed/hCuxuUaGC6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Os principais tipos de fluxos são [automatizado](get-started-logic-flow.md), [botão](introduction-to-button-flows.md), [agendado](run-scheduled-tasks.md) e [processo empresarial](business-process-flows-overview.md).
+Inicial! A automatização de energia é um serviço que ajuda a criar fluxos de trabalho automatizados entre seus aplicativos e serviços favoritos para sincronizar arquivos, obter notificações, coletar dados e muito mais.
 
-Se você é um personalizador do Dynamics 365 Customer Engagement, talvez já esteja familiarizado com os processos clássicos do Common Data Service que incluem, [fluxos de trabalho](configure-workflow-steps.md), [ações](create-actions.md), [fluxos de tarefas móveis](create-mobile-task-flow.md) e [caixas de diálogo](use-cds-for-apps-dialogs.md).
+Os principais tipos de fluxo são fluxos [automatizados](get-started-logic-flow.md), de [botões](introduction-to-button-flows.md), [agendados](run-scheduled-tasks.md)e de [processos comerciais](business-process-flows-overview.md) .
 
-A primeira etapa consiste em [inscrever-se](sign-up-sign-in.md). Mas, se você já tem uma conta do Microsoft Flow, [entre](https://flow.microsoft.com/signin) usando um tablet, computador desktop ou telefone.
+## <a name="types-of-flows"></a>Tipos de fluxos
+
+A automatização de energia é um dos três pilares da plataforma de energia. Ele fornece uma plataforma de código baixo para fluxo de trabalho e automação de processo. Aqui está uma lista dos diferentes tipos de fluxos:
+
+| **Tipo de fluxo**                                                                       | **Caso de uso**                                                                                  | **Alvo**                                                                             |
+|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| [Fluxos automatizados](get-started-logic-flow.md)                 | Crie um fluxo que executa uma ou mais tarefas automaticamente depois que ele é disparado por um evento. | [Conectores](https://docs.microsoft.com/connectors/) para serviços de nuvem ou locais. |
+| [Fluxos de botão](introduction-to-button-flows.md)              | Execute tarefas repetitivas de qualquer lugar, a qualquer momento, por meio de seu dispositivo móvel.                        |                                                                                        |
+| [Fluxos agendados](run-scheduled-tasks.md)                    | Crie um fluxo que executa uma ou mais tarefas em uma agenda.             |                                                                                        |
+| [Fluxos de processos de negócios](business-process-flows-overview.md) | Defina um conjunto de etapas para que as pessoas sigam para levá-las a um resultado desejado.                 | Processos humanos                                                                        |
+| [Fluxos da interface do usuário (visualização)](ui-flows/overview.md)                                                | Registre e automatize a reprodução de etapas manuais no software herdado.                    | Aplicativos Web e de área de trabalho que não têm APIs disponíveis para automação.    |
+
+Você pode criar e gerenciar todos os fluxos da guia **meus fluxos** na automatização de energia.
+
+Se você for um usuário do Dynamics 365, também poderá estar familiarizado com os processos de Common Data Service clássicos que incluem, [fluxos de trabalho](configure-workflow-steps.md), [ações](create-actions.md), [fluxos de tarefas móveis](create-mobile-task-flow.md)e [caixas de diálogo](use-cds-for-apps-dialogs.md).
+
+A primeira etapa é [inscrever-](sign-up-sign-in.md)se ou, se você já tiver uma conta com energia automatizada, [entrar](https://flow.microsoft.com/signin) no Tablet, computador desktop ou até mesmo em seu telefone.
 
 ## <a name="check-out-the-start-page"></a>Confira a página inicial ##
 
-[Na página inicial ](https://flow.microsoft.com) do Microsoft Flow, é possível [explorar um conjunto variado de modelos](https://flow.microsoft.com/templates) e conhecer os principais recursos do programa. É possível obter uma ideia do que é possível e como o Microsoft Flow pode ajudar sua empresa e sua vida.
+[Na página inicial](https://flow.microsoft.com) da energia automatizada, você pode [explorar um conjunto diversificado de modelos](https://flow.microsoft.com/templates) e saber mais sobre os principais recursos da automatização de energia. Você pode ter uma noção rápida do que é possível e como a automatização da energia pode ajudar sua empresa e sua vida.
 
-Com o Microsoft Flow, é possível:
+Com a automatização de energia, você pode:
 
-- Pesquisar modelos e serviços facilmente.
+- Pesquise facilmente modelos e serviços.
 
-    ![Página inicial do Flow 1](./media/getting-started/flowhome1.png)
+    ![Página inicial do fluxo 1](./media/getting-started/flowhome1.png)
 
-- Escolher entre os serviços mais populares.
+- Escolha entre os serviços mais populares.
 
-    ![Página inicial do Flow 2](./media/getting-started/flowhome2.png)
+    ![Página inicial do fluxo 2](./media/getting-started/flowhome2.png)
 
-- Exibir uma visão geral de cada fluxo.
+- Consulte uma visão geral de cada fluxo.
 
-    ![Página inicial do Flow 3](./media/getting-started/flowhome3.png)
+    ![Página inicial do fluxo 3](./media/getting-started/flowhome3.png)
 
-Cada modelo é elaborado para uma finalidade específica. Por exemplo, o programa oferece modelos destinados a enviar uma mensagem de texto para você quando seu chefe envia emails, adicionar clientes potenciais do Twitter ao Dynamics 365 ou fazer backup de arquivos. Esses modelos representam apenas a ponta do iceberg. Eles servem para inspirá-lo a criar fluxos personalizados, especialmente para os processos de que você precisa.
+Cada modelo é projetado para uma finalidade específica. Por exemplo, há modelos para enviar uma mensagem de texto quando seu chefe envia emails para você, adicionando leads do Twitter ao Dynamics 365 ou fazendo backup de seus arquivos. Esses modelos são apenas a ponta do iceberg. Eles destinam-se a inspirar você a criar fluxos personalizados para os processos exatos de que precisa.
 
 ## <a name="create-your-first-flow"></a>Criar seu primeiro fluxo ##
 
-1. Selecione um modelo que seja útil para você. Veja a seguir o exemplo de modelo simples, [**Obter lembretes diários por Email**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/).
+1. Selecione um modelo que seja útil para você. Um modelo simples é [**obter lembretes diários no email**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
     ![modelo de lembrete diário](./media/getting-started/template-details.png)
 
-1. Selecione **Continuar**.
+1. Selecione **continuar**.
 
     ![Criar conexão](./media/getting-started/create-connection.png)
 
-1. Insira os endereços de email para os quais você enviará o lembrete diário. Em seguida, insira a mensagem de lembrete. Por fim, selecione **Criar fluxo** e verifique se o fluxo está funcionando conforme o esperado.
+1. Insira os endereços de email para os quais o lembrete diário será enviado. Em seguida, insira a mensagem de lembrete. Por fim, selecione **criar fluxo**e verifique se o fluxo está sendo executado conforme o esperado.
 
-    ![Forneça credenciais para a conexão](./media/getting-started/configure-email-details.png)
+    ![Fornecer credenciais para a conexão](./media/getting-started/configure-email-details.png)
 
     > [!NOTE]
-    > É possível explorar as condições que disparam o fluxo e as ações que resultam desses eventos. Brinque com as configurações para personalizar o fluxo. Você pode inclusive adicionar ou excluir ações.
+    > Você pode explorar as condições que disparam o fluxo e a ação que resulta desse evento. Experimente com as configurações para tornar o fluxo seu próprio. Você pode até mesmo adicionar ou excluir ações.
 
-1. Selecione **Concluído**.
+1. Selecione **concluído**.
 
-[Siga este tutorial](get-started-logic-template.md) para saber mais sobre como criar fluxos usando modelos.
+[Siga este tutorial](get-started-logic-template.md) para saber mais sobre como criar fluxos a partir de modelos.
 
-## <a name="get-creative"></a>Seja criativo ##
+## <a name="get-creative"></a>Obtenha o criativo ##
 
-Agora que você já criou o primeiro fluxo com um modelo, use as mais de [150 fontes de dados](https://flow.microsoft.com/connectors/) com suporte do Microsoft Flow para [criar fluxos personalizados do zero](get-started-logic-flow.md).
+Agora que você criou seu primeiro fluxo a partir de um modelo, use qualquer uma das mais de [150 fontes de dados](https://flow.microsoft.com/connectors/) que a energia automatizada oferece suporte para [criar seus próprios fluxos do zero](get-started-logic-flow.md).
 
-![Criar um fluxo](./media/getting-started/build-a-flow.png)
+![Criando um fluxo](./media/getting-started/build-a-flow.png)
 
-Quando cria um fluxo do zero, você pode controlar o fluxo de trabalho inteiro. Aqui estão algumas ideias para ajudá-lo a começar:
+Ao criar um fluxo do zero, você controla todo o fluxo de trabalho. Aqui estão algumas ideias para começar:
 
-- [Fluxos com várias etapas](multi-step-logic-flow.md).
-- [Executar tarefas em uma agenda](run-scheduled-tasks.md).
-- [Criar um fluxo de aprovação](wait-for-approvals.md).
-- [Assistir a um fluxo em ação](see-a-flow-run.md).
+- [Flui com várias etapas](multi-step-logic-flow.md).
+- [Executar tarefas em um agendamento](run-scheduled-tasks.md).
+- [Crie um fluxo de aprovação](wait-for-approvals.md).
+- [Assista a um fluxo em ação](see-a-flow-run.md).
 - [Publicar um modelo](publish-a-template.md).
-- [Criar fluxos usando um modelo do Microsoft Teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
+- [Crie fluxos de um modelo do Microsoft Teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 
-## <a name="peek-at-the-code"></a>Inspecionar o código
+## <a name="peek-at-the-code"></a>Espiar o código
 
-Não é necessário ser um desenvolvedor para criar fluxos, no entanto, o Microsoft Flow fornece o recurso **Inspecionar código**, com o qual as pessoas podem analisar detalhadamente o código que é gerado para todas as ações e gatilhos em um fluxo. A inspeção no código pode proporcionar uma compreensão clara dos dados que estão em uso por gatilhos e ações. Siga estas etapas para inspecionar o código que é gerado para os fluxos, de dentro do designer do Microsoft Flow: 
+Você não precisa ser um desenvolvedor para criar fluxos, no entanto, a automatização de energia fornece um recurso de **inspecionar código** que permite que qualquer pessoa examine mais atentamente o código gerado para todas as ações e gatilhos em um fluxo. A inspeção do código pode lhe dar uma compreensão mais clara dos dados que estão sendo usados por gatilhos e ações. Siga estas etapas para inspecionar o código que é gerado para seus fluxos de dentro do designer de energia automatizada: 
 
-1. Selecione o item de menu **...**, no canto superior direito de qualquer **ação** ou **gatilho**. 
-1. Selecione **Código de espiada**.
+1. Selecione o item de menu **...** no canto superior direito de qualquer **ação** ou **gatilho**. 
+1. Selecione **código de inspeção**.
 
     ![Inspecionar código](media/getting-started/peek-code.png)
 
-1. Veja a representação JSON completa dos gatilhos e das ações. Ela inclui todas as entradas, como o texto que você insere diretamente, e as expressões usadas. Você pode selecionar expressões aqui e colá-las no editor de expressão de **Conteúdo Dinâmico**. Com isso, você também tem uma maneira de verificar os dados que devem estar presentes no fluxo.
+1. Observe a representação JSON completa das ações e dos gatilhos. Isso inclui todas as entradas, como o texto inserido diretamente e as expressões usadas. Você pode selecionar expressões aqui e, em seguida, colá-las no editor de expressão de **conteúdo dinâmico** . Isso também pode fornecer uma maneira de verificar os dados esperados estão presentes no fluxo.
 
     ![Inspecionar código](media/getting-started/peek-code-details.png)
    
 
-## <a name="find-your-flows-easily"></a>Localizar os fluxos com facilidade
+## <a name="find-your-flows-easily"></a>Encontre seus fluxos facilmente
 
-Quando sua imaginação começar a *fluir*, certamente você criará vários fluxos. Não se preocupe, pois é fácil encontrar os fluxos. Basta usar a caixa de pesquisa na tela **Meus fluxos**, **Fluxos de equipe**, **Conexões** ou **Soluções** para exibir somente os fluxos que correspondem aos termos de pesquisa inseridos.
+Quando os sucos criativos começam a *fluir*, você pode criar vários fluxos. Não se preocupe, encontrar seus fluxos é fácil. basta usar a caixa de pesquisa na tela **meus fluxos**, **fluxos de equipe**, **conexões**ou **soluções** para exibir apenas os fluxos que correspondem aos termos de pesquisa que você inserir.
 
-![Filtrar ou pesquisar fluxos](media/getting-started/filter-search-box.png)
+![Filtrar ou Pesquisar fluxos](media/getting-started/filter-search-box.png)
  
 > [!NOTE]
-> O filtro de pesquisa localiza apenas os fluxos que foram carregados na página. Caso não encontre um determinado fluxo, experimente selecionar **Carregar mais**, na parte inferior da página.
+> O filtro de pesquisa localiza apenas os fluxos que foram carregados na página. Se você não encontrar seu fluxo, tente selecionar **carregar mais** na parte inferior da página.
 
-## <a name="get-notifications-when-somethings-wrong"></a>Receber notificações quando algo está errado
+## <a name="get-notifications-when-somethings-wrong"></a>Obter notificações quando algo estiver errado
 
-Use o centro de notificações do Microsoft Flow, localizado no canto superior direito do designer, para ver rapidamente uma lista dos fluxos que falharam recentemente. O centro de notificações exibe um número que indica a quantidade de fluxos que falharam recentemente.
+Use o centro de notificação de automatização de energia (localizado no canto superior direito do designer) para ver rapidamente uma lista de fluxos que falharam recentemente. A central de notificações exibe um número que indica o número de fluxos que falharam recentemente.
 
-Nesse local, você pode navegar até a página **Atividade** do Microsoft Flow para ver todos os fluxos executados, que enviaram notificações ou que falharam recentemente.
+No centro de notificações, você pode navegar até a página **atividade** da energia automatizada para ver todos os fluxos que foram executados recentemente, enviar notificações ou falha.
 
 ![Centro de notificações](media/getting-started/notification-center.png)
 
 ## <a name="use-the-mobile-app"></a>Usar o aplicativo móvel ##
 
-Baixe o aplicativo móvel Microsoft Flow para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows). Com este aplicativo, é possível [monitorar a atividade do fluxo](mobile-monitor-activity.md), [gerenciar os fluxos](mobile-manage-flows.md) e [criar fluxos usando modelos](mobile-create-flow.md).
+Baixe o aplicativo móvel de energia automatizada para [Android](https://aka.ms/flowmobiledocsandroid), [Ios](https://aka.ms/flowmobiledocsios)ou [Windows Phone](https://aka.ms/flowmobilewindows). Com esse aplicativo, você pode [monitorar a atividade de fluxo](mobile-monitor-activity.md), [gerenciar seus fluxos](mobile-manage-flows.md) e [criar fluxos a partir de modelos](mobile-create-flow.md).
 
 ## <a name="were-here-to-help"></a>Estamos aqui para ajudar ##
 
-Estamos entusiasmados em ver o que você pode fazer com o Microsoft Flow e queremos garantir que você tenha uma ótima experiência. Confira nossos tutoriais de [aprendizagem interativa](https://flow.microsoft.com/guided-learning/) e [participe da nossa comunidade](http://go.microsoft.com/fwlink/?LinkID=787467) para fazer perguntas e compartilhar ideias. [Entre em contato com o suporte](http://go.microsoft.com/fwlink/?LinkID=787479) se tiver algum problema.
+Estamos empolgados para ver o que você faz com a automatização de energia e queremos garantir que você tenha uma ótima experiência. Lembre-se de conferir nossos tutoriais de [aprendizado guiado](https://flow.microsoft.com/guided-learning/) e [participar de nossa comunidade](https://go.microsoft.com/fwlink/?LinkID=787467) para fazer perguntas e compartilhar suas ideias. [Contate o suporte](https://go.microsoft.com/fwlink/?LinkID=787479) se você encontrar algum problema.

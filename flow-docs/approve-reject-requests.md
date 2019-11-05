@@ -1,6 +1,6 @@
 ---
-title: Exiba, aprove ou rejeite as solicitações de aprovação. | Microsoft Docs
-description: Saiba como exibir, aprovar ou rejeitar as solicitações de aprovação no Microsoft Flow.
+title: Exibir, aprovar ou rejeitar solicitações de aprovação. | Microsoft Docs
+description: Saiba como exibir, aprovar ou rejeitar solicitações de aprovação no Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,17 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0197d117f2e7a7e22dbe77e64111b21dc890f83b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: d972c21e21092fc08b2bb33dd6d62f41f0221daa
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64462440"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546086"
 ---
 # <a name="manage-approval-requests-in-microsoft-flow"></a>Gerenciar solicitações de aprovação no Microsoft Flow
-O Microsoft Flow facilita a automatizar os [processos do fluxo de trabalho de aprovação](modern-approvals.md). Neste passo a passo, você aprenderá a exibir, aprovar e rejeitar as solicitações de aprovação enviadas do Microsoft Flow.
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Microsoft Flow facilita a automatização dos [processos de fluxo de trabalho de aprovação](modern-approvals.md). Neste tutorial, você aprende a exibir, aprovar e rejeitar solicitações de aprovação enviadas do Microsoft Flow.
 
-## <a name="view-pending-approval-requests"></a>Exibir solicitações de aprovação pendente
+## <a name="view-pending-approval-requests"></a>Exibir solicitações de aprovação pendentes
 [!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
 
 ## <a name="approve-a-request"></a>Aprovar uma solicitação
@@ -39,9 +40,9 @@ O Microsoft Flow facilita a automatizar os [processos do fluxo de trabalho de ap
 ## <a name="reject-a-request"></a>Rejeitar uma solicitação
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]
 
-## <a name="learn-more"></a>Saiba mais
-* Crie [fluxos de aprovação.](modern-approvals.md)
-* Crie [fluxos de aprovação sequencial.](sequential-modern-approvals.md)
-* Crie [fluxos de aprovação paralela.](parallel-modern-approvals.md)
-* Instale o aplicativo móvel Microsoft Flow para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), ou [Windows Phone](https://aka.ms/flowmobilewindows).
+## <a name="learn-more"></a>Saiba Mais
+* Criar [fluxos de aprovação.](modern-approvals.md)
+* Criar [fluxos de aprovação sequencial.](sequential-modern-approvals.md)
+* Criar [fluxos de aprovação paralela.](parallel-modern-approvals.md)
+* Instale o aplicativo móvel Microsoft Flow para [Android](https://aka.ms/flowmobiledocsandroid), [Ios](https://aka.ms/flowmobiledocsios)ou [Windows Phone](https://aka.ms/flowmobilewindows).
 

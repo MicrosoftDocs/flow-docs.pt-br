@@ -1,6 +1,6 @@
 ---
-title: Use o centro de administração para gerenciar os ambientes e as políticas de dados. | Microsoft Docs
-description: O centro de administração do Microsoft Flow é usado pelo locatário e administradores de ambiente para gerenciar as políticas de dados e os ambientes para as implantações do Microsoft Flow.
+title: Use o centro de administração para gerenciar ambientes e políticas de dados. | Microsoft Docs
+description: O centro de administração do Microsoft Flow é usado por administradores de locatários e de ambiente para gerenciar políticas de dados e ambientes para implantações de Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,32 +20,33 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 60688ef8290caae516793326bd487c291f1f0a83
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 669097f5519ad8bfcecac666984102f67629e433
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456034"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545142"
 ---
-# <a name="the-admin-center"></a>O Centro de Administração
+# <a name="the-admin-center"></a>O centro de administração
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-O centro de administração é o local central em que administradores de locatários e administradores de ambiente gerenciam as políticas de dados e os ambientes de uma organização. As alterações feitas no centro de administração estão imediatamente disponíveis para usuários na organização.
+O centro de administração é o local central em que administradores de locatários e administradores de ambiente gerenciam os ambientes e as políticas de dados de uma organização. As alterações feitas no centro de administração ficam imediatamente disponíveis para os usuários dentro da organização.
 
-![visão geral](./media/admin-center-introduction/overview.png)
+![Sobre](./media/admin-center-introduction/overview.png)
 
-## <a name="access-the-admin-center"></a>Acessar o Centro de Administração
+## <a name="access-the-admin-center"></a>Acessar o centro de administração
 
 * Navegue até https://admin.flow.microsoft.com para acessar o centro de administração do Microsoft Flow.
 
-## <a name="environments"></a>Ambientes
+## <a name="environments"></a>Sistemas
 
 Saiba mais sobre como usar [ambientes](environments-overview-admin.md) para gerenciar usuários, permissões e funções.
 
 ## <a name="data-policies"></a>Políticas de dados
 
-Saiba mais sobre como usar [políticas de dados](prevent-data-loss.md) para criar regras que gerenciam como os dados corporativos são compartilhados entre serviços em fluxos.
+Saiba mais sobre como usar [políticas de dados](prevent-data-loss.md) para criar regras que gerenciam como os dados de negócios são compartilhados entre serviços em fluxos.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* [Saiba mais sobre os ambientes](environments-overview-admin.md)
+* [Saiba mais sobre ambientes](environments-overview-admin.md)
 * [Saiba mais sobre o Microsoft Flow](getting-started.md)

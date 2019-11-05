@@ -1,5 +1,5 @@
 ---
-title: Saiba como exportar fluxos com reconhecimento de solução | Microsoft Docs
+title: Saiba como exportar fluxos com reconhecimento de soluções | Microsoft Docs
 description: Saiba como exportar fluxos com reconhecimento de solução.
 services: ''
 suite: flow
@@ -20,30 +20,31 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ffc83e99be227257a97d514f3238d52a7627d8ab
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 377bc56c16200cc30492ee279b8d0179d1167bcd
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455942"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547889"
 ---
 # <a name="export-a-solution"></a>Exportar uma solução
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Para mover a solução e as respectivas dependências para um novo ambiente, faça o seguinte:
+Siga estas etapas para mover sua solução e suas dependências para um novo ambiente:
 
-1. Selecione **Soluções**, na barra de navegação.
+1. Selecione **soluções** na barra de navegação.
 1. Selecione a solução que você deseja exportar.
-1. Selecione **Exportar**, no menu superior.
-1. Selecione **Como não gerenciado**.
+1. Selecione **Exportar** no menu na parte superior.
+1. Selecione **como não gerenciado**.
 
    ![](./media/export-flow-solution/flow-export-options.png)
 
-1. Atribua um nome e salve a solução.
+1. Salve a solução com um nome de sua escolha.
 
    > [!NOTE]
-   > No momento, não há suporte para a opção **Como gerenciado**.
+   > Como não há suporte para **o gerenciado** no momento.
 
-## <a name="learn-more"></a>Saiba mais
+## <a name="learn-more"></a>Saiba Mais
 
 <!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
 

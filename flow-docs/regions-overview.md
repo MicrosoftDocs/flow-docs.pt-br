@@ -1,6 +1,6 @@
 ---
-title: Visão geral das regiões no Microsoft Flow | Microsoft Docs
-description: Visão geral de perguntas e respostas sobre regiões no Microsoft Flow
+title: Visão geral de regiões para Microsoft Flow | Microsoft Docs
+description: Visão geral com perguntas e respostas sobre regiões no Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,49 +20,51 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: dce9fa4bb838f931acdcd95710d82d15bdc7dd24
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 33c5a1c331d9874f6b794e8fd2ea92b541024ec6
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64464914"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548479"
 ---
-# <a name="faq-for-regions-in-microsoft-flow"></a>Perguntas Frequentes sobre regiões no Microsoft Flow
-Este documento fornece uma lista de perguntas frequentes sobre o Microsoft Flow.
+# <a name="faq-for-regions-in-microsoft-flow"></a>Perguntas frequentes sobre regiões no Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Este documento fornece uma lista de perguntas frequentes sobre Microsoft Flow.
 
-## <a name="how-do-i-find-out-where-my-flow-is-deployed"></a>Como posso descobrir onde o meu fluxo está implantado?
-O fluxo é implantado na [região](https://azure.microsoft.com/regions/) que hospeda o [ambiente](environments-overview-admin.md). Por exemplo, se seu ambiente for criado na região da Europa, o seu fluxo é implantado nos data centers da Europa.
+## <a name="how-do-i-find-out-where-my-flow-is-deployed"></a>Como fazer descobrir onde meu fluxo está implantado?
+O fluxo é implantado na [região](https://azure.microsoft.com/regions/) que hospeda o [ambiente](environments-overview-admin.md). Por exemplo, se o seu ambiente for criado na região da Europa, seu fluxo será implantado nos data centers da Europa.
 
-Os administradores podem identificar a região se eles entrarem no [centro de administração](https://admin.flow.microsoft.com) do Microsoft Flow. A guia **Ambientes** lista todos os ambientes e regiões existentes.
+Os administradores podem identificar a região se entrarem no centro de [Administração](https://admin.flow.microsoft.com)do Microsoft Flow. A guia **ambientes** lista todos os ambientes existentes e suas regiões.
 
-![exibir ambientes](media/regions-overview/environments-list.png)
+![Exibir ambientes](media/regions-overview/environments-list.png)
 
 ## <a name="what-regions-are-available"></a>Quais regiões estão disponíveis?
 * Estados Unidos
-* Europa
-* Ásia
+* Européia
+* Centro
 * Austrália
 * Índia
 * Japão
 * Canadá
 * América do Sul
 * Reino Unido
-* (GCC) do Governo dos EUA
+* Governo dos EUA (GCC)
+* França
 
-## <a name="what-features-are-specific-to-a-given-region"></a>Quais recursos são específicos a uma determinada região?
-Os ambientes podem ser criados em diferentes regiões e são associados a esse local geográfico. Quando você cria um fluxo em um ambiente, esse fluxo é implantado em datacenters neste local geográfico. Isso se aplica a qualquer item que você criar no ambiente, incluindo o modelo de dados comuns, fluxos, conexões, gateways, aplicativos e conectores personalizados.
+## <a name="what-features-are-specific-to-a-given-region"></a>Quais recursos são específicos para uma determinada região?
+Os ambientes podem ser criados em regiões diferentes e estão associados a esse local geográfico. Quando você cria um fluxo em um ambiente, esse fluxo é implantado em data centers nesse local geográfico. Isso se aplica a todos os itens que você criar nesse ambiente, incluindo o modelo de dados comum, fluxos, conexões, gateways, aplicativos e conectores personalizados.
 
-Para obter um melhor desempenho, crie seu ambiente na região mais próxima de seus usuários. Por exemplo, se os usuários estiverem na Europa, crie seus ambientes na região da Europa. Se os usuários estiverem nos Estados Unidos, crie seus ambientes na região dos Estados Unidos.
+Para obter um desempenho ideal, crie seu ambiente na região mais próxima de seus usuários. Por exemplo, se os usuários estiverem na Europa, crie seus ambientes na região da Europa. Se os usuários estiverem na Estados Unidos, crie seus ambientes na região Estados Unidos.
 
-## <a name="gateways"></a>Gateways
+## <a name="gateways"></a>gateways
 Os gateways são:
 
-* Não está disponível na região Índia.
-* Suportado apenas nos ambientes padrão, não nos ambientes personalizados.
+* Não está disponível na região da Índia.
+* Com suporte apenas no ambiente padrão, não em ambientes personalizados.
 
-## <a name="is-microsoft-flow-available-in-national-clouds"></a>O Microsoft Flow está disponível em nuvens nacionais?
-Não, o Microsoft Flow não está disponível nas nuvens nacionais. O suporte para as nuvens nacionais está planejado para 2018.
+## <a name="is-microsoft-flow-available-in-national-clouds"></a>O está Microsoft Flow disponível em nuvens nacionais?
+Ok. [Saiba mais](./us-govt.md).
 
 ## <a name="what-outbound-ip-addresses-are-used-in-each-region"></a>Quais endereços IP de saída são usados em cada região?
-Veja [Limites e configuração](limits-and-config.md).
+Consulte [limites e configuração](limits-and-config.md).
 

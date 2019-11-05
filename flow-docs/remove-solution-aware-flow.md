@@ -1,6 +1,6 @@
 ---
 title: Saiba como remover ou excluir fluxos com reconhecimento de solução | Microsoft Docs
-description: Saiba como remover ou excluir fluxos com reconhecimento de solução.
+description: Saiba como remover ou excluir fluxos com reconhecimento de soluções.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,32 +20,33 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 120689bce2100c383297f95371387f9b41559ffe
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e4bab1f20abb01682836dcf832abcb65d315334c
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465082"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548484"
 ---
 # <a name="remove-a-solution-aware-flow"></a>Remover um fluxo com reconhecimento de solução
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Você pode remover um fluxo de uma solução ou exclui-lo totalmente de um ambiente.
+Você pode remover um fluxo de uma solução ou excluir completamente o fluxo de um ambiente.
 
-Ação|Resultado
+Action|Disso
 ------|-----------
-Remover desta solução|O fluxo é removido da solução selecionada, mas permanece no ambiente. Você pode usar o fluxo em outras soluções no ambiente, em uma data posterior.
-Excluir deste ambiente|O fluxo é excluído e não fica disponível no ambiente.
+Remover desta solução|O fluxo é removido da solução selecionada, mas permanece no ambiente. Você pode usar o fluxo em outras soluções no ambiente em uma data posterior.
+Excluir deste ambiente|O fluxo é excluído; Ele não está disponível no ambiente.
 
-1. Entre no Microsoft Flow e selecione **Soluções**, na barra de navegação.
+1. Entre no Microsoft Flow e, em seguida, selecione **soluções** na barra de navegação.
 1. Selecione a solução que contém o fluxo que você deseja excluir.
 
    ![](./media/remove-solution-aware-flow/new-flow-inside-solution.png)
    
-1. Selecione **...** (Mais Comandos) no fluxo, **Remover** e depois **Remover desta solução** ou **Excluir deste ambiente**.
+1. Selecione **...** (mais comandos) para o fluxo, selecione **remover**e, em seguida, selecione **remover dessa solução** ou **excluir deste ambiente**.
 
    ![](./media/remove-solution-aware-flow/delete-flow-from-solution-options.png)
 
-## <a name="learn-more"></a>Saiba mais
+## <a name="learn-more"></a>Saiba Mais
 
 - [Criar uma solução](./overview-solution-flows.md)
 - [Criar um fluxo em uma solução](./create-flow-solution.md)
