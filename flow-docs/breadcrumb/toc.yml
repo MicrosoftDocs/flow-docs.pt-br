@@ -2,10 +2,14 @@
   href: /
   topicHref: /
   items:
-    - name: Fluxo
-      tocHref: /flow/
-      topicHref: /flow/
+    - name: Power Platform
+      href: /power-platform/
+      topicHref: /power-platform/
       items:
-        - name: Aprendizagem Guiada
-          tocHref: /flow/guided-learning/
-          topicHref: /flow/guided-learning/
+        - name: Power Automate
+          tocHref: /flow/
+          topicHref: /flow/
+          items:
+            - name: Aprendizagem Guiada
+              tocHref: /flow/guided-learning/
+              topicHref: /flow/guided-learning/
